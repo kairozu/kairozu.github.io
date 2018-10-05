@@ -14,10 +14,13 @@ a, a:focus, a:hover { color: #687768; }
     display: flex;
     max-width: 1170px;
     margin: 0 auto;
-    flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.fc-flex-50 {
-    flex: 0 1 50%;
+.fc-flex-60 { flex: 0 1 60%; }
+.fc-flex-30 { flex: 0 1 30%; }
+
+@media all and (max-width: 768px) {
+    .fc { flex-wrap: wrap; }
+    .fc div { flex: 0 1 100%; }
 }
