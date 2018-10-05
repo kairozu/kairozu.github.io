@@ -1,0 +1,14 @@
+{% include head.html %}
+    {% include topnav.html %}
+    <div class="navlist">
+        <ul class="fa-ul">
+            {% for p in site.categories['updates'] %}
+                <li><i class="fa-li fa fa-pencil-square-o fa-fw"></i>
+                <a class="orange_bold" href="{{ production_url }}{{ p.url }}">
+                    {{ p.title }}
+                </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% include foot.html %}

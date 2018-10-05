@@ -1,0 +1,11 @@
+a, a:link, a:visited {
+    text-decoration: none;
+    color: #455d67;
+    -webkit-transition: 200ms color ease-in-out;
+    -moz-transition: 200ms color ease-in-out;
+    -o-transition: 200ms color ease-in-out;
+    transition: 200ms color ease-in-out;
+}
+a, a:focus, a:hover { color: #687768; }
+.light { font-weight: 200; }
+.bold { font-weight: 600; }

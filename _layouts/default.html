@@ -1,0 +1,11 @@
+{% include head.html %}
+	<div class="row_white">
+		<div class="post_content">
+			<h1>{{ page.title }}</h1>
+			<p class="post_status">Date: {{ page.date | date: "%Y.%m.%d" }}</p>
+			{% assign p = page %}
+			{% include post_tags.html %}
+			{{ content }}   
+		</div>
+	</div>
+{% include foot.html %}

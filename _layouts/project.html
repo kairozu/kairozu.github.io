@@ -1,0 +1,13 @@
+{% include head.html %}
+	<div class="row_white">
+		<div class="project_content">
+			<h1>{{ page.title }}</h1>
+			<img height="300" class="image_r" src="{{ page.image }}" />
+			<p class="post_status">Date: {{ page.date | date: "%Y.%m.%d" }}</p>
+			<p class="project_status">GitHub Link: <a class="orange_bold" href="{{ page.project-github-link }}">{{ page.project-github-link }}</a></p>
+			{% assign p = page %}
+			{% include post_tags.html %}
+			{{ content }}   
+		</div>
+	</div>
+{% include foot.html %}

@@ -1,0 +1,31 @@
+{% include head.html %}
+    <div class="row_white">
+        <div class="post_content">
+            <h1>{{ page.title }}</h1>
+            <br /><br />
+            {% for p in site.tags[page.tag] %}
+                <p class="home_contentlist_title">
+                    {% elsif p.tags[0] == 'science' %}
+                        <i class="fa-main fa-pencil-square-o fa-fw"></i>
+                    {% elsif p.tags[0] == 'travel' %}
+                        <i class="fa-main fa-pencil-square-o fa-fw"></i>
+                    {% elsif p.tags[0] == 'code' %}
+                        <i class="fa-main fa-gear fa-fw"></i>
+                    {% elsif p.tags[0] == 'project' %}
+                        <i class="fa-main fa-gear fa-fw"></i>
+                    {% elsif p.tags[0] == 'japanese' %}
+                        <i class="fa-main fa-sun-o fa-fw"></i>
+                    {% elsif p.tags[0] == 'japan' %}
+                        <i class="fa-main fa-sun-o fa-fw"></i>
+                    {% else %}
+                        <i class="fa-main fa-pencil-square-o fa-fw"></i>
+                    {% endif %}
+                        {{ p.date | date: "%Y.%m.%d" }} <a class="orange_bold" href="{{p.url | prepend: site.baseurl}}">{{ p.title }}</a>
+                </p>
+                <p class="index_content">
+                    {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:40 }}
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+{% include foot.html %}

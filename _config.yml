@@ -1,0 +1,25 @@
+permalink: /:categories/:title 
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+title: Kairozu
+tagline: Kairozu Sandbox
+author:
+  name: Amber Fechko
+  email: amber@kairozu.com
+  github: kairozu
+    
+production_url: https://kairozu.github.io
+
+contentlist:
+  - title: Projects
+    url: /projects/
+  - title: Updates
+    url: /updates/
