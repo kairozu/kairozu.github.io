@@ -1,0 +1,25 @@
+{% include head.html %}
+<div class="row_white">
+    <div class="index_list_main">
+        <div class="index_navigation">
+            {% assign INDEX_NAME = page.indextype %}
+            {% if INDEX_NAME == 'updates' %}
+                {% include nav.html %}
+            {% endif %}
+            {% if INDEX_NAME == 'projects' %}
+                {% include navproject.html %}
+            {% endif %}
+        </div>
+        <div class="index_content_list">
+            {% for p in site.categories[INDEX_NAME] limit 15 %}
+            <p class="index_title">
+                {{ p.date | date: "%Y.%m.%d" }} <a class="orange_bold" href="{{ p.url }}">{{ p.title }}</a>
+            </p>
+            <p class="index_content">
+                {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:75 }}
+            </p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% include foot.html %}
