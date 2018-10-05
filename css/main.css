@@ -9,3 +9,22 @@ a, a:link, a:visited {
 a, a:focus, a:hover { color: #687768; }
 .light { font-weight: 200; }
 .bold { font-weight: 600; }
+
+.fc {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.fc-flex-50 {
+    flex: 0 1 50%;
+}
+
+.fc-center {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
