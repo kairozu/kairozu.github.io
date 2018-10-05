@@ -1,13 +1,11 @@
-{% include head.html %}
-    <div class="navlist">
-        <ul class="fa-ul">
-            {% for p in site.categories['projects'] %}
-                <li><i class="fa-li fa fa-gear fa-fw"></i>
-                <a class="orange_bold" href="{{ production_url }}{{ p.url }}">
-                    {{ p.title }}
-                </a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-{% include foot.html %}
+<div class="navlist">
+    <ul class="fa-ul">
+        {% for p in site.categories['projects'] %}
+            <li><i class="fa-li fa fa-gear fa-fw"></i>
+            <a class="orange_bold" href="{{ production_url }}{{ p.url }}">
+                {{ p.title }}
+            </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
