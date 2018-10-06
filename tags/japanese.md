@@ -1,6 +1,6 @@
 ---
 layout: tag
-title: Japanese-Related Posts
+title: 日本語 の ポースト
 tag: japanese
 icon: fa-language
 permalink: /tags/japanese/
