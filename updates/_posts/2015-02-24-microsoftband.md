@@ -34,7 +34,7 @@ In addition to adding the jar file to your Android project, you will also need t
 ```
 <uses-permission android:name="android.permission.BLUETOOTH"/>
 ```
-<br />
+
 ```
 <uses-permission android:name="com.microsoft.band.service.access.BIND_BAND_SERVICE"/>
 ```
