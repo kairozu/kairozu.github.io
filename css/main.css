@@ -5,6 +5,7 @@ html, body {
 }
 body.mainContent {
     background: #c3ccce;
+    color: #17242c;
 }
 a, a:link, a:visited {
     text-decoration: none;

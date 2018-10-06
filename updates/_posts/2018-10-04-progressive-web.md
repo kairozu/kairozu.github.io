@@ -1,8 +1,8 @@
 ---
-layout: project
+layout: content
 title: Progressive Web Apps
-project-github-link: https://github.com/kairozu/pwamber/
 tags: project code
+hasgithub: https://github.com/kairozu/pwamber/
 ---
 
 I've been fascinated by Progressive Web Applications (PWA) lately. I've largely been using Angular to build things, but with every new PWA comes a few odds and ends that I've learned, and as such, I'll try to keep track of them here. The general repository for these PWA experiments is here: [https://github.com/kairozu/pwamber/](https://github.com/kairozu/pwamber).

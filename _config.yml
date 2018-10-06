@@ -19,7 +19,5 @@ author:
 production_url: https://kairozu.github.io
 
 contentlist:
-  - title: Projects
-    url: /projects/
   - title: Updates
     url: /updates/

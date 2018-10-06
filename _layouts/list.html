@@ -2,22 +2,24 @@
 <div class="bodyWrap">
     <div class="fcMain">
         <div class="fcSideList">
-            {% assign INDEX_NAME = page.indextype %}
-            {% if INDEX_NAME == 'updates' %}
-                {% include nav.html %}
-            {% endif %}
-            {% if INDEX_NAME == 'projects' %}
-                {% include navproject.html %}
-            {% endif %}
+            <ul class="fa-ul">
+                {% for p in site.categories['updates'] %}
+                    <li><span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
+                    <a class="orange_bold" href="{{ production_url }}{{ p.url }}">
+                        {{ p.title }}
+                    </a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
         <div class="fcMainList">
-            {% for p in site.categories[INDEX_NAME] limit 30 %}
-            <p class="index_title">
-                {{ p.date | date: "%Y.%m" }} <a class="orange_bold" href="{{ p.url }}">{{ p.title }}</a>
-            </p>
-            <p class="index_content">
-                {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:75 }}
-            </p>
+            {% for p in site.categories['updates'] limit 15 %}
+                <p class="index_title">
+                    {{ p.date | date: "%Y.%m" }} <a class="orange_bold" href="{{ p.url }}">{{ p.title }}</a>
+                </p>
+                <p class="index_content">
+                    {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:75 }}
+                </p>
             {% endfor %}
         </div>
     </div>
