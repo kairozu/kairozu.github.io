@@ -48,16 +48,17 @@ This watch face is programmed using the JavaScript/HTML5 web app method, and it 
 * I'm surprised by the bizarre lack of developer support (on Samsung's own forums!), questions like these go unanswered: [http://developer.samsung.com/forum/board/thread/view.do?boardName=SDK&messageId=279858](http://developer.samsung.com/forum/board/thread/view.do?boardName=SDK&messageId=279858)
 
 ## AWatch Custom Watch Face Notes
-* **Weather**  
+**Weather**  
 Without an easy way to call for weather data from the built in app, I'm pulling the current location and querying Weather Underground w/the latitude/longitude for current conditions.
+
 1. Get the current position: *navigator.geolocation.getCurrentPosition(success, failure, options);*
-2. Create a new *XMLHttpRequest* to grab the data from WUnderground: http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml
-    * Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc.
+2. Create a new *XMLHttpRequest* to grab the data from WUnderground: http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml (Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc)
 3. Parse out the data you want from the returned XML tags (temp_f and weather in my case).
 4. Create a routine to update as desired; since alarm services aren't currently available unless you have a Samsung Partner certificate (shaking my head at you, Samsung), in my *updateTime()* function I update the weather once an hour (if minutes <= 30 and weather hasn't already been checked that hour).
 
 **Pedometer**  
 The HumanActivityMonitor API allows you query the total # of steps taken since the application (watch face widget in this case) was loaded, or the total # of steps taken FOR ALL TIME. I have no idea who decided why those were more important than "daily steps" which is something that the S-Health pedometer can do. There's a function to ask for differences in step count based on timestamps, but the documentation wasn't sufficient for me figuring out how to use that in my favor. End result: a dirty hack. Every night at midnight I save the total # of steps taken FOR ALLLLL TIMEEEE to local storage.
+
 1. I call the AccumulativePedometerListener whenever new steps are detected: *tizen.humanactivitymonitor.setAccumulativePedometerListener(onStepChange);*
 2. I grab the last saved total step count: *step_diff = localStorage['com.dendriticspine.awatch.stepcount'];*
 3. If step_diff is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: *localStorage.setItem('com.dendriticspine.awatch.stepcount', step_ts);*
@@ -67,12 +68,14 @@ The end result is that for the first day, before midnight, the count is inaccura
 
 **Battery**  
 Battery monitoring is straightforward, make the following calls and update your display accordingly in the *getBatteryState()* function:
+
 *battery.addEventListener('chargingchange', getBatteryState);*  
 *battery.addEventListener('chargingtimechange', getBatteryState);*  
 *battery.addEventListener('dischargingtimechange', getBatteryState);*  
 *battery.addEventListener('levelchange', getBatteryState);*
 
 **Time/Time Zones**  
+
     * Use *date = tizen.time.getCurrentDateTime()* to call the current date/time, and pull your desired info from the resulting date object.
     * Display a time other than the reported one, e.g. I want my watch to be 10 minutes fast: *date.setMinutes(date.getMinutes() + 10)*
     * Switch time zones: *date2 = date.toTimezone('Asia/Tokyo')*
@@ -80,9 +83,9 @@ Battery monitoring is straightforward, make the following calls and update your 
 **Watch Ambient Mode**  
 The Watch Face has two different display states: “active” and “always-on.” The name “active state” is very self-explanatory. In the active state, the Watch Face displays in full color. On the other hand, the always-on state (aka "ambient mode") uses limited colors and brightness. Ambient mode can use up to 10 percent of the total screen pixels in low brightness, doesn't support anti-aliasing or "second" information (due to the lower screen refresh rates), and the background must be in black. Allowed colors are: cyan, magenta, yellow, red, green, blue, and white (no greyscale).  I use the canvas HTML element to draw an analog watch w/the day/date display. Right now I'm hiding/showing HTML elements to switch between the canvas layout and the regular HTML layout, which seems ugly, but works well enough.
 
-    Because the ambient mode watch face is displayed at all times unless users decide to turn it off, a screen burn-in protection is required -- the system slightly changes the positions of the on-screen elements at a specific rate (I spent a solid hour thinking this was an error in the trig I'd used to calculate where the hour/minute hands would be).  
+Because the ambient mode watch face is displayed at all times unless users decide to turn it off, a screen burn-in protection is required -- the system slightly changes the positions of the on-screen elements at a specific rate (I spent a solid hour thinking this was an error in the trig I'd used to calculate where the hour/minute hands would be).  
 
-    The ambient_tick event is triggered every minute while the device is in the ambient mode. You can use the callback to update the time on your watch application in the ambient mode. In this callback, do not perform time-consuming task and always update the UI as fast as possible. The platform can put the device to sleep shortly after the ambient tick expires.
+The ambient_tick event is triggered every minute while the device is in the ambient mode. You can use the callback to update the time on your watch application in the ambient mode. In this callback, do not perform time-consuming task and always update the UI as fast as possible. The platform can put the device to sleep shortly after the ambient tick expires.
 
 ## Submitting to the Samsung Application Store
 Submitting an app to the Google Play Store is a painless and one might almost say.. pleasant process. Submitting an app to the Samsung store is the opposite. Unless you have a "partner" license, your options are limited, there are no private/beta streams available for publishing, and the time between hitting "submit" and being able to download your app via store is.. <del>I can't say just yet, but it has been 2 days so far</del>. I understand why everyone wants to have their own walled garden of an app store, but it surely won't succeed with such limited developer support/delays in publishing.
