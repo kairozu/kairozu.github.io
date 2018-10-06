@@ -10,9 +10,9 @@
 			<i class="fab fa-github fa-fw"></i> <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
 		{% endif %}
 		<i class="fas fa-calendar-alt fa-fw"></i> {{ page.date | date: "%Y.%m" }}<br />
+		{% assign p = page %}
+		{% include post_tags.html %}
 	</div>
-	{% assign p = page %}
-	{% include post_tags.html %}
 	{{ content }}
 	<br /><br />
 </div>
