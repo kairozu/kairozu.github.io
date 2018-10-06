@@ -76,9 +76,9 @@ Battery monitoring is straightforward, make the following calls and update your 
 
 **Time/Time Zones**  
 
-    * Use *date = tizen.time.getCurrentDateTime()* to call the current date/time, and pull your desired info from the resulting date object.
-    * Display a time other than the reported one, e.g. I want my watch to be 10 minutes fast: *date.setMinutes(date.getMinutes() + 10)*
-    * Switch time zones: *date2 = date.toTimezone('Asia/Tokyo')*
+* Use *date = tizen.time.getCurrentDateTime()* to call the current date/time, and pull your desired info from the resulting date object.
+* Display a time other than the reported one, e.g. I want my watch to be 10 minutes fast: *date.setMinutes(date.getMinutes() + 10)*
+* Switch time zones: *date2 = date.toTimezone('Asia/Tokyo')*
 
 **Watch Ambient Mode**  
 The Watch Face has two different display states: “active” and “always-on.” The name “active state” is very self-explanatory. In the active state, the Watch Face displays in full color. On the other hand, the always-on state (aka "ambient mode") uses limited colors and brightness. Ambient mode can use up to 10 percent of the total screen pixels in low brightness, doesn't support anti-aliasing or "second" information (due to the lower screen refresh rates), and the background must be in black. Allowed colors are: cyan, magenta, yellow, red, green, blue, and white (no greyscale).  I use the canvas HTML element to draw an analog watch w/the day/date display. Right now I'm hiding/showing HTML elements to switch between the canvas layout and the regular HTML layout, which seems ugly, but works well enough.
