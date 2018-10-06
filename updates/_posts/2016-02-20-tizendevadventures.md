@@ -55,7 +55,8 @@ Without an easy way to call for weather data from the built in app, I'm pulling 
     * Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc.
 3. Parse out the data you want from the returned XML tags (temp_f and weather in my case).
 4. Create a routine to update as desired; since alarm services aren't currently available unless you have a Samsung Partner certificate (shaking my head at you, Samsung), in my *updateTime()* function I update the weather once an hour (if minutes <= 30 and weather hasn't already been checked that hour).
-* **Pedometer**  
+
+**Pedometer**  
 The HumanActivityMonitor API allows you query the total # of steps taken since the application (watch face widget in this case) was loaded, or the total # of steps taken FOR ALL TIME. I have no idea who decided why those were more important than "daily steps" which is something that the S-Health pedometer can do. There's a function to ask for differences in step count based on timestamps, but the documentation wasn't sufficient for me figuring out how to use that in my favor. End result: a dirty hack. Every night at midnight I save the total # of steps taken FOR ALLLLL TIMEEEE to local storage.
 1. I call the AccumulativePedometerListener whenever new steps are detected: *tizen.humanactivitymonitor.setAccumulativePedometerListener(onStepChange);*
 2. I grab the last saved total step count: *step_diff = localStorage['com.dendriticspine.awatch.stepcount'];*
@@ -63,17 +64,20 @@ The HumanActivityMonitor API allows you query the total # of steps taken since t
 4. I subtract the current total step count from *step_diff*.
 5. At midnight I save the current total step count to *step_diff* again.
 The end result is that for the first day, before midnight, the count is inaccurate. Once the first midnight occurs, and the proper "total # of steps taken since you've had the device" is saved, the daily step count should be accurate. This is really ugly, I know, I'd love a better way to accomplish this.
-* **Battery**  
+
+**Battery**  
 Battery monitoring is straightforward, make the following calls and update your display accordingly in the *getBatteryState()* function:
 *battery.addEventListener('chargingchange', getBatteryState);*  
 *battery.addEventListener('chargingtimechange', getBatteryState);*  
 *battery.addEventListener('dischargingtimechange', getBatteryState);*  
 *battery.addEventListener('levelchange', getBatteryState);*
-* **Time/Time Zones**  
+
+**Time/Time Zones**  
     * Use *date = tizen.time.getCurrentDateTime()* to call the current date/time, and pull your desired info from the resulting date object.
     * Display a time other than the reported one, e.g. I want my watch to be 10 minutes fast: *date.setMinutes(date.getMinutes() + 10)*
     * Switch time zones: *date2 = date.toTimezone('Asia/Tokyo')*
-* **Watch Ambient Mode**  
+
+**Watch Ambient Mode**  
 The Watch Face has two different display states: “active” and “always-on.” The name “active state” is very self-explanatory. In the active state, the Watch Face displays in full color. On the other hand, the always-on state (aka "ambient mode") uses limited colors and brightness. Ambient mode can use up to 10 percent of the total screen pixels in low brightness, doesn't support anti-aliasing or "second" information (due to the lower screen refresh rates), and the background must be in black. Allowed colors are: cyan, magenta, yellow, red, green, blue, and white (no greyscale).  I use the canvas HTML element to draw an analog watch w/the day/date display. Right now I'm hiding/showing HTML elements to switch between the canvas layout and the regular HTML layout, which seems ugly, but works well enough.
 
     Because the ambient mode watch face is displayed at all times unless users decide to turn it off, a screen burn-in protection is required -- the system slightly changes the positions of the on-screen elements at a specific rate (I spent a solid hour thinking this was an error in the trig I'd used to calculate where the hour/minute hands would be).  
