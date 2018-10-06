@@ -47,6 +47,9 @@ a, a:focus, a:hover { color: #687768; }
     margin-left: 1.7em;
 }
 
+.image_r { float: right; margin: 5px 0 5px 20px; }
+.image_l { float: left; margin: 5px 20px 5px 0; }
+
 @media all and (max-width: 756px) {
     .fcMain { flex-wrap: wrap; }
     .fcMain div { flex: 0 1 100%; }

@@ -7,7 +7,7 @@ hasgithub: https://github.com/kairozu/pwamber/
 
 I've been fascinated by Progressive Web Applications (PWA) lately. I've largely been using Angular to build things, but with every new PWA comes a few odds and ends that I've learned, and as such, I'll try to keep track of them here. The general repository for these PWA experiments is here: [https://github.com/kairozu/pwamber/](https://github.com/kairozu/pwamber).
 
-## Mathotron
+## Mathotron (October 2018)
 <img class="image_l" height="135" alt="mathotron" src="/images/mathotron.png" />
 
 Simple calculator that keeps a ticker tape history of mathematical operations. It's pretty simple and lacking in aesthetic quality, but I wanted to test hosting PWAs on GitHub Pages.
