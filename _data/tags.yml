@@ -5,10 +5,10 @@ japan:
 japanese:
   name: Japanese
 project:
-  name: Projects
+  name: Project
 science:
   name: Science
 travel:
   name: Travel
 update:
-  name: Updates
+  name: Update
