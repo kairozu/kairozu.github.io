@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: content
 title: Tizen Dev Adventures
 hasgithub: https://github.com/kairozu/Gear-S2-AWatch
 hasimg: /images/awatchface.png
