@@ -1,10 +1,11 @@
 ---
-layout: project
+layout: content
 title: Insect Flight Lab
-project-github-link: https://github.com/kairozu/Insect-Flight-Lab
-image: /images/torque_render.png
+hasgithub: https://github.com/kairozu/Insect-Flight-Lab
+hasimg: /images/torque_render.png
 tags: project science code
 ---
+
 ## Summary
 Series of tools designed for observing and experimenting with the mechanics of insect flight. Includes a tethered insect flight simulator which combines a closed loop visual feedback system with an optical transducer that records torque produced by yaw motions -- this allows for (soft) real time external control of the relationship between insect yaw motions and resulting movement of the insect's visual field. I was interested in the extent to which feedback gain between torque (yaw) and image motion determines an animal's ability to track a visual stimulus, along with the ability of an animal to adapt to different gains (including negative gain) applied to the feedback loop.  The latter investigates the potential for natural plasticity in the visual flight control circuit. 
 
