@@ -47,6 +47,10 @@ a, a:focus, a:hover { color: #687768; }
     flex: 0 1 20%; }
 .fa-ul {
     margin-left: 1.7em;
+    line-height: 1.5em;
+}
+.headerMeta {
+    line-height: 1.5em;
 }
 
 .image_r { float: right; margin: 5px 0 5px 20px; }

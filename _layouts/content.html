@@ -1,6 +1,7 @@
 {% include head.html %}
-	<div class="content">
-		<h1>{{ page.title }}</h1>
+	<h1>{{ page.title }}</h1>
+
+	<div class="headerMeta">
 		{% if page.hasimg %}
 			<img height="300" class="image_r" src="{{ page.image }}" />
 		{% endif %}
@@ -8,9 +9,9 @@
 			<i class="fab fa-github fa-fw"></i> <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
 		{% endif %}
 		<i class="fas fa-calendar-alt fa-fw"></i> {{ page.date | date: "%Y.%m" }}<br />
-		{% assign p = page %}
-		{% include post_tags.html %}
-		{{ content }}
 	</div>
+	{% assign p = page %}
+	{% include post_tags.html %}
+	{{ content }}
 	<br /><br />
 {% include foot.html %}
