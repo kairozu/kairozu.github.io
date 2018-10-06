@@ -3,7 +3,7 @@ title: Kairozu Tags
 permalink: /tags/
 sitemap: false
 ---
-{% import head.html %}
+{% include head.html %}
     <ul class="fa-ul">
         {% assign tags = site.tags | sort 0 %}
         {% for tag_item in tags %}
@@ -13,4 +13,4 @@ sitemap: false
             </li>
         {% endfor %}
     </ul>
-{% import foot.html %}
+{% include foot.html %}
