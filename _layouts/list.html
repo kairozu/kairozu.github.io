@@ -11,9 +11,9 @@
             {% endif %}
         </div>
         <div class="fcMainList">
-            {% for p in site.categories[INDEX_NAME] limit 15 %}
+            {% for p in site.categories[INDEX_NAME] limit 30 %}
             <p class="index_title">
-                {{ p.date | date: "%Y.%m.%d" }} <a class="orange_bold" href="{{ p.url }}">{{ p.title }}</a>
+                {{ p.date | date: "%Y.%m" }} <a class="orange_bold" href="{{ p.url }}">{{ p.title }}</a>
             </p>
             <p class="index_content">
                 {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:75 }}
