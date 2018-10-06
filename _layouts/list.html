@@ -1,7 +1,7 @@
 {% include head.html %}
     <div class="fcMain">
         <div class="fcSideList">
-            <span class="bold cutive">Recent Updates</span>
+            <span class="bold">Recent Updates</span>
             <ul class="fa-ul">
                 {% for p in site.posts %}
                     <li>
@@ -26,7 +26,7 @@
                     </li>
                 {% endfor %}
             </ul>
-            <span class="bold cutive">Category Tags</span>
+            <span class="bold">Category Tags</span>
             <ul class="fa-ul">
                 {% assign tags = site.tags | sort 0 %}
                 {% for tag_item in tags %}

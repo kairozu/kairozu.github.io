@@ -3,7 +3,7 @@
     <h1><i class="fas {{ page.icon }}"></i> {{ page.title }}</h1>
     {% for p in site.tags[page.tag] %}
         <p>
-            <span class="cutive">{{ p.date | date: "%Y.%m" }}</span> <a href="{{p.url | prepend: site.baseurl}}">{{ p.title }}</a><br />
+            <span class="light">{{ p.date | date: "%Y.%m" }}</span> <a href="{{p.url | prepend: site.baseurl}}">{{ p.title }}</a><br />
             {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:30 }}
         </p>
     {% endfor %}
