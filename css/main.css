@@ -10,13 +10,22 @@ a, a:focus, a:hover { color: #687768; }
 .light { font-weight: 200; }
 .bold { font-weight: 600; }
 
+.fcNav {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+.navLink {
+    margin: 20px;
+    text-align: center;
+}
 .fc {
     display: flex;
     max-width: 1170px;
     margin: 0 auto;
     justify-content: space-between;
 }
-
 .fc-flex-60 { flex: 0 1 60%; }
 .fc-flex-30 { flex: 0 1 30%; }
 
