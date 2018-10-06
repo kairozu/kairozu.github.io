@@ -1,7 +1,7 @@
 {% include head.html %}
 <div class="bodyWrap">
     <div class="fcMain">
-        <div class="fc-flex-30">
+        <div class="fcSideList">
             {% assign INDEX_NAME = page.indextype %}
             {% if INDEX_NAME == 'updates' %}
                 {% include nav.html %}
@@ -10,7 +10,7 @@
                 {% include navproject.html %}
             {% endif %}
         </div>
-        <div class="fc-flex-60">
+        <div class="fcMainList">
             {% for p in site.categories[INDEX_NAME] limit 15 %}
             <p class="index_title">
                 {{ p.date | date: "%Y.%m.%d" }} <a class="orange_bold" href="{{ p.url }}">{{ p.title }}</a>
