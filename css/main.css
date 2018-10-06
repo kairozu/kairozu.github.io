@@ -23,6 +23,15 @@ a, a:focus, a:hover { color: #687768; }
 .bodyWrap {
     margin: 0 20px;
 }
+.bodyContainer {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.flexBox {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .fcNav {
     max-width: 1170px;
     margin: 0 auto;
@@ -55,6 +64,7 @@ a, a:focus, a:hover { color: #687768; }
 
 .image_r { float: right; margin: 5px 0 5px 20px; }
 .image_l { float: left; margin: 5px 20px 5px 0; }
+.image_center { margin: 0 auto; display: block; }
 
 @media all and (max-width: 756px) {
     .fcMain { flex-wrap: wrap; }
