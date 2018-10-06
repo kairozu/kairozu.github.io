@@ -92,7 +92,7 @@ A surprising number of people have e-mailed me for help with using or modifying 
 
 Note: This assumes you’re running Windows 10.
 
-# Create a Microsoft Application ID
+### Create a Microsoft Application ID
 Go to <a href="https://account.live.com/developers/applications">https://account.live.com/developers/applications</a> and log in to your Microsoft Account. Under Live SDK applications, click the button to **Add an App**. Enter whatever name you’d like, e.g. “MyBandSandboxApp” and click **Create Application**.
 
 <img class="image_center" width="775" src="/images/vs_install_a.png" />
@@ -103,10 +103,10 @@ The **Application ID** (purple highlight below) is your *ClientId*, and the stri
 
 <img class="image_center" width="775" src="/images/vs_install_b.png" />
 
-# Download and Extract BandSandbox Code
+### Download and Extract BandSandbox Code
 Download and unzip (right click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/dendriticspine/MS-Band-DataSandbox/archive/master.zip">https://github.com/dendriticspine/MS-Band-DataSandbox/archive/master.zip</a>
 
-# Download and Install Visual Studio Community
+### Download and Install Visual Studio Community
 Download and run the Visual Studio Community installer: <a href="https://www.visualstudio.com/vs/community/">https://www.visualstudio.com/vs/community/</a>
 
 When you’re presented with the installation options window shown below, select **.NET desktop environment**. You can ignore the tabs for individual components and language packs. Click the **Install** button.
@@ -119,12 +119,12 @@ After installation, click the **Launch** button.
 
 Signing in to your Microsoft account isn’t required -- for now, select *Not now, maybe later.* on the welcome screen. Leave the defaults for Development Settings/Color Theme, and click the **Start Visual Studio** button.
 
-<div class="image_container">
-	<div class="image_container_box"><img height="400" src="/images/vs_install3.png" /></div> 
-	<div class="image_container_box"><img height="400" src="/images/vs_install4.png" /></div>
+<div class="flexBox">
+	<img height="400" src="/images/vs_install3.png" />
+	<img height="400" src="/images/vs_install4.png" />
 </div>
 
-# Open, Modify, and Build BandSandbox
+### Open, Modify, and Build BandSandbox
 On the Start Page, click **Open Project / Solution** (or go to File > Open Project or Solution), and navigate to where you unzipped the BandSandbox GitHub repository (the default path is: *Downloads/MS-Band-DataSandbox-master/MS-Band-DataSandbox-master/*). Select the Microsoft Visual Studio Solution file named **BandSandbox(.sln)** to open it. A security warning will pop up, click the **OK** button to continue.
 
 <img class="image_center" width="775" src="/images/vs_install5.png" />
