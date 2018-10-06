@@ -10,12 +10,13 @@ a, a:focus, a:hover { color: #687768; }
 .light { font-weight: 200; }
 .bold { font-weight: 600; }
 
-.bodyContainer {
+.bodyWrap {
     width: 100%;
+    margin: 0 20px;
+}
+.fcNav {
     max-width: 1170px;
     margin: 0 auto;
-}
-.fcFlexEnd {
     display: flex;
     justify-content: flex-end;
 }
@@ -24,15 +25,19 @@ a, a:focus, a:hover { color: #687768; }
     margin: 5px;
     text-align: center;
 }
-.fcSpaceBetween {
+.fcMain {
+    max-width: 1170px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.fc-flex-60 { flex: 0 1 60%; }
-.fc-flex-30 { flex: 0 1 30%; }
+.fcMainList { flex: 0 1 75%; }
+.fcSideList {
+    min-width: 250px;
+    flex: 0 1 20%; }
 
 @media all and (max-width: 756px) {
-    .fcSpaceBetween { flex-wrap: wrap; }
-    .fcSpaceBetween div { flex: 0 1 100%; }
-    .fcFlexEnd { justify-content: space-between; }
+    .fcMain { flex-wrap: wrap; }
+    .fcMain div { flex: 0 1 100%; }
+    .fcNav { justify-content: space-between; }
 }
