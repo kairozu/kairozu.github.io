@@ -10,26 +10,29 @@ a, a:focus, a:hover { color: #687768; }
 .light { font-weight: 200; }
 .bold { font-weight: 600; }
 
-.fcNav {
-    display: flex;
+.bodyContainer {
+    width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+}
+.fcFlexEnd {
+    display: flex;
     justify-content: flex-end;
 }
 .navLink {
-    margin: 20px;
+    padding: 10px 20px;
+    margin: 5px;
     text-align: center;
 }
-.fc {
+.fcSpaceBetween {
     display: flex;
-    max-width: 1170px;
-    margin: 0 auto;
     justify-content: space-between;
 }
 .fc-flex-60 { flex: 0 1 60%; }
 .fc-flex-30 { flex: 0 1 30%; }
 
-@media all and (max-width: 768px) {
-    .fc { flex-wrap: wrap; }
-    .fc div { flex: 0 1 100%; }
+@media all and (max-width: 756px) {
+    .fcSpaceBetween { flex-wrap: wrap; }
+    .fcSpaceBetween div { flex: 0 1 100%; }
+    .fcFlexEnd { justify-content: space-between; }
 }
