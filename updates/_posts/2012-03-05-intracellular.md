@@ -1,8 +1,8 @@
 ---
-layout: defaultimg
+layout: content
 title: Intracellular Recording
 tags: science
-image: /images/helixa_ganglia.png
+hasimg: /images/helixa_ganglia.png
 ---
 The nervous system of Helix aspersa consists of a small number of large neurons (motor, sensory, and interneurons) grouped into discrete ganglia located throughout the snail (vs one cephalized structure in the head). Exposing the subesophageal ganglia, part of a ring of ganglia surrounding the esophagus, allows for intracellular recordings from neurons in the left parietal and right parietal ganglia -- these neurons carry signals to and from the gut, head, and foot of the snail. The recordings below are from a neuron in the right parietal ganglia (circled in green on the right).
 
