@@ -5,9 +5,9 @@
 			<img height="300" class="image_r" src="{{ page.image }}" />
 		{% endif %}
 		{% if page.hasgithub %}
-			GitHub: <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
+			<i class="fab fa-github fa-fw"></i> <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
 		{% endif %}
-		Date: {{ page.date | date: "%Y.%m" }}<br />
+		<i class="fas fa-calendar-alt fa-fw"></i> {{ page.date | date: "%Y.%m" }}<br />
 		{% assign p = page %}
 		{% include post_tags.html %}
 		{{ content }}

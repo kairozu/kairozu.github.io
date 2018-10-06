@@ -1,6 +1,6 @@
 {% if p.tags.size > 0 %}
     <div>
-        <i class="fas fa-tags"></i>
+        <i class="fas fa-tags fa-fw"></i>
         {% for tag in p.tags | sort %}
             <a href="{{site.url}}{{site.baseurl}}/tags/{{ tag }}">{{ site.data.tags[tag].name }}</a>{% if forloop.last == false %}, {% endif %}
         {% endfor %}
