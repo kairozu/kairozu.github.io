@@ -5,11 +5,12 @@
 			<img height="300" class="image_r" src="{{ page.image }}" />
 		{% endif %}
 		{% if page.hasgithub %}
-			GitHub: Link
+			GitHub: [{{ page.hasgithub }}]({{ page.hasgithub }})<br />
 		{% endif %}
-		<p class="status">Date: {{ page.date | date: "%Y.%m" }}</p>
+		Date: {{ page.date | date: "%Y.%m" }}<br />
 		{% assign p = page %}
 		{% include post_tags.html %}
 		{{ content }}
 	</div>
+	<br /><br />
 {% include foot.html %}
