@@ -4,23 +4,22 @@
     {% for p in site.tags[page.tag] %}
         <p>
             {% if p.tags[0] == 'science' %}
-                <i class="fa-main fa-pencil-square-o fa-fw"></i>
+                <i class="fas fa-flask fa-fw"></i>
             {% elsif p.tags[0] == 'travel' %}
-                <i class="fa-main fa-pencil-square-o fa-fw"></i>
+                <i class="fas fa-plane fa-fw"></i>
             {% elsif p.tags[0] == 'code' %}
-                <i class="fa-main fa-gear fa-fw"></i>
+                <i class="fas fa-code fa-fw"></i>
             {% elsif p.tags[0] == 'project' %}
                 <i class="fa-main fa-gear fa-fw"></i>
             {% elsif p.tags[0] == 'japanese' %}
-                <i class="fa-main fa-sun-o fa-fw"></i>
-            {% elsif p.tags[0] == 'translation' %}
-                <i class="fa-main fa-sun-o fa-fw"></i>
+                <i class="fas fa-language fa-fw"></i>
             {% elsif p.tags[0] == 'japan' %}
-                <i class="fa-main fa-sun-o fa-fw"></i>
+                <i class="fas fa-sun fa-fw"></i>
             {% else %}
-                <i class="fa-main fa-pencil-square-o fa-fw"></i>
+                <i class="fas fa-edit fa-fw"></i>
             {% endif %}
-                {{ p.date | date: "%Y.%m" }} <a href="{{p.url | prepend: site.baseurl}}">{{ p.title }}</a>{{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:30 }}
+                {{ p.date | date: "%Y.%m" }} <a href="{{p.url | prepend: site.baseurl}}">{{ p.title }}</a><br />
+                {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:30 }}
         </p>
     {% endfor %}
 

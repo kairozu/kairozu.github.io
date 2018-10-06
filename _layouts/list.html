@@ -4,10 +4,25 @@
             Recent Updates
             <ul class="fa-ul">
                 {% for p in site.posts %}
-                    <li><span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
-                    <a href="{{ production_url }}{{ p.url }}">
-                        {{ p.title }}
-                    </a>
+                    <li>
+                        {% if p.tags[0] == 'science' %}
+                            <span class="fa-li"><i class="fas fa-flask fa-fw"></i></span>
+                        {% elsif p.tags[0] == 'travel' %}
+                            <span class="fa-li"><i class="fas fa-plane fa-fw"></i></span>
+                        {% elsif p.tags[0] == 'code' %}
+                            <span class="fa-li"><i class="fas fa-code fa-fw"></i></span>
+                        {% elsif p.tags[0] == 'project' %}
+                            <span class="fa-li"><i class="fa-main fa-gear fa-fw"></i></span>
+                        {% elsif p.tags[0] == 'japanese' %}
+                            <span class="fa-li"><i class="fas fa-language fa-fw"></i></span>
+                        {% elsif p.tags[0] == 'japan' %}
+                            <span class="fa-li"><i class="fas fa-sun fa-fw"></i></span>
+                        {% else %}
+                            <span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
+                        {% endif %}
+                        <a href="{{ production_url }}{{ p.url }}">
+                            {{ p.title }}
+                        </a>
                     </li>
                 {% endfor %}
             </ul>
@@ -16,7 +31,22 @@
                 {% assign tags = site.tags | sort 0 %}
                 {% for tag_item in tags %}
                     {% assign tag = (tag_item | first) %}
-                    <li><span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
+                    <li>
+                        {% if tag == 'science' %}
+                            <span class="fa-li"><i class="fas fa-flask fa-fw"></i></span>
+                        {% elsif tag == 'travel' %}
+                            <span class="fa-li"><i class="fas fa-plane fa-fw"></i></span>
+                        {% elsif tag == 'code' %}
+                            <span class="fa-li"><i class="fas fa-code fa-fw"></i></span>
+                        {% elsif tag == 'project' %}
+                            <span class="fa-li"><i class="fa-main fa-gear fa-fw"></i></span>
+                        {% elsif tag == 'japanese' %}
+                            <span class="fa-li"><i class="fas fa-language fa-fw"></i></span>
+                        {% elsif tag == 'japan' %}
+                            <span class="fa-li"><i class="fas fa-sun fa-fw"></i></span>
+                        {% else %}
+                            <span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
+                        {% endif %}
                         <a href="{{site.url}}{{site.baseurl}}/tags/{{tag}}">{{site.data.tags[tag].name}}</a> ({{site.tags[tag].size}})
                     </li>
                 {% endfor %}
