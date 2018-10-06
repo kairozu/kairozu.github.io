@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+}
 a, a:link, a:visited {
     text-decoration: none;
     color: #455d67;
