@@ -1,7 +1,7 @@
 {% include head.html %}
     <div class="fcMain">
         <div class="fcSideList">
-            <span class="bold">Recent Updates</span>
+            <span class="bold cutive">Recent Updates</span>
             <ul class="fa-ul">
                 {% for p in site.posts %}
                     <li>
@@ -26,7 +26,7 @@
                     </li>
                 {% endfor %}
             </ul>
-            <span class="bold">Category Tags</span>
+            <span class="bold cutive">Category Tags</span>
             <ul class="fa-ul">
                 {% assign tags = site.tags | sort 0 %}
                 {% for tag_item in tags %}
@@ -55,7 +55,7 @@
         </div>
         <div class="fcMainList">
             {% for p in site.posts limit 15 %}
-                <span class="larger"><span class="cutive">{{ p.date | date: "%Y.%m" }}</span> <a href="{{ p.url }}">{{ p.title }}</a></span>
+                <span class="larger"><span class="light">{{ p.date | date: "%Y.%m" }}</span> <a href="{{ p.url }}">{{ p.title }}</a></span>
                 <p>
                     {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:75 }}
                 </p>

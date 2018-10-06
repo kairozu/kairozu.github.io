@@ -4,6 +4,7 @@ permalink: /tags/
 sitemap: false
 ---
 {% include head.html %}
+<div class="bodyContainer">
     <ul class="fa-ul">
         {% assign tags = site.tags | sort 0 %}
         {% for tag_item in tags %}
@@ -13,4 +14,5 @@ sitemap: false
             </li>
         {% endfor %}
     </ul>
+</div>
 {% include foot.html %}
