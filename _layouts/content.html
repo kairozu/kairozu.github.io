@@ -5,7 +5,7 @@
 			<img height="300" class="image_r" src="{{ page.image }}" />
 		{% endif %}
 		{% if page.hasgithub %}
-			GitHub: [{{ page.hasgithub }}]({{ page.hasgithub }})<br />
+			GitHub: <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
 		{% endif %}
 		Date: {{ page.date | date: "%Y.%m" }}<br />
 		{% assign p = page %}
