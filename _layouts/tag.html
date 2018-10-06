@@ -20,10 +20,7 @@
             {% else %}
                 <i class="fa-main fa-pencil-square-o fa-fw"></i>
             {% endif %}
-                {{ p.date | date: "%Y.%m" }} <a href="{{p.url | prepend: site.baseurl}}">{{ p.title }}</a>
-        </p>
-        <p>
-            {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:40 }}
+                {{ p.date | date: "%Y.%m" }} <a href="{{p.url | prepend: site.baseurl}}">{{ p.title }}</a>{{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:30 }}
         </p>
     {% endfor %}
 

@@ -1,6 +1,7 @@
 {% include head.html %}
     <div class="fcMain">
         <div class="fcSideList">
+            Recent Updates
             <ul class="fa-ul">
                 {% for p in site.posts %}
                     <li><span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
@@ -10,17 +11,16 @@
                     </li>
                 {% endfor %}
             </ul>
-            Kairozu Tags
-
-        <ul class="fa-ul">
-            {% assign tags = site.tags | sort 0 %}
-            {% for tag_item in tags %}
-                {% assign tag = (tag_item | first) %}
-                <li>
-                    <a href="{{site.url}}{{site.baseurl}}/tags/{{tag}}">{{site.data.tags[tag].name}}</a> ({{site.tags[tag].size}})
-                </li>
-            {% endfor %}
-        </ul>
+            Category Tags
+            <ul class="fa-ul">
+                {% assign tags = site.tags | sort 0 %}
+                {% for tag_item in tags %}
+                    {% assign tag = (tag_item | first) %}
+                    <li><span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
+                        <a href="{{site.url}}{{site.baseurl}}/tags/{{tag}}">{{site.data.tags[tag].name}}</a> ({{site.tags[tag].size}})
+                    </li>
+                {% endfor %}
+            </ul>
 
         </div>
         <div class="fcMainList">
