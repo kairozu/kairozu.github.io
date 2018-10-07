@@ -3,6 +3,7 @@ layout: content
 title: Insect Flight Lab
 hasgithub: https://github.com/kairozu/Insect-Flight-Lab
 hasimg: /images/torque_render.png
+imgwidth: 133
 tags: project science code
 ---
 Series of tools designed for observing and experimenting with the mechanics of insect flight. Includes a tethered insect flight simulator which combines a closed loop visual feedback system with an optical transducer that records torque produced by yaw motions -- this allows for (soft) real time external control of the relationship between insect yaw motions and resulting movement of the insect's visual field. I was interested in the extent to which feedback gain between torque (yaw) and image motion determines an animal's ability to track a visual stimulus, along with the ability of an animal to adapt to different gains (including negative gain) applied to the feedback loop.  The latter investigates the potential for natural plasticity in the visual flight control circuit. 
@@ -37,8 +38,8 @@ Series of tools designed for observing and experimenting with the mechanics of i
 * NI-DAQ board for data collection (in my experience, the more expensive the DAQ board, the more issues you will have -- be wary)
 
 <div class="flexBox">
-	<div class="innerImg" style="background-image: url('/images/torquearena.png');"></div>
-	<div class="innerImg" style="background-image: url('/images/testing_torque.jpg');"></div>
+	<a href="/images/torquearena.png"><div class="innerImg" style="background-image: url('/images/torquearena.png');"></div></a>
+	<a href="/images/testing_torque.jpg"><div class="innerImg" style="background-image: url('/images/testing_torque.jpg');"></div></a>
 </div>
 
 ## Notes
@@ -48,8 +49,8 @@ This system was used to gather data for the following papers:
 * [Autostabilizing airframe articulation: Animal inspired air vehicle control](/images/autostabilizing.pdf) (Dyhr JP, et al.)
 
 <div class="flexBox">
-	<div class="innerImg" style="background-image: url('/images/torque2.0.png');"></div>
-	<div class="innerImg" style="background-image: url('/images/torque2.0board.png');"></div>
+	<a href=""><div class="innerImg" style="background-image: url('/images/torque2.0.png');"></div></a>
+	<a href=""><div class="innerImg" style="background-image: url('/images/torque2.0board.png');"></div></a>
 </div>
 
 The torque sensor and associated divider circuit allow us to measure the yaw motions of tethered insects mid-flight. 
@@ -62,7 +63,7 @@ Upgrades from previous builds:
 * Added capacitors to the photodiode splitter circuit
 * Upgraded the crossbar (see pictures)
 
-<div class="innerImg" style="background-image: url('/images/torqueTest_sinusoidalGrating2Hz.png');"></div>
+<a href="/images/torqueTest_sinusoidalGrating2Hz.png"><div class="innerImg" style="background-image: url('/images/torqueTest_sinusoidalGrating2Hz.png');"></div></a>
 
 The top plot is representative of how the pattern presented to the insect was moving -- in this case a single horizontal bar moving back and forth across the insect's visual field. The bottom plot is the torque recorded during this time; you can see the insect attempting to follow the horizontal bar. 
 	

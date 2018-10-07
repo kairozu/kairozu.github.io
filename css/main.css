@@ -67,20 +67,16 @@ a, a:focus, a:hover { color: #687768; }
     align-items: center;
     justify-content: space-between;
 }
-.headerImgContainer {
-    order: 2;
-    max-width: 300px;
-}
-.headerImg {
-    width: 100%;
-}
 .headerData {
     min-width: 300px;
-    order: 1;
+}
+.headerImg {
+    float: right; 
 }
 .innerImg {
     width: 100%;
     height: 300px;
+    margin: 10px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

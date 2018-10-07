@@ -2,20 +2,16 @@
 <div class="bodyContainer">
 	<h1>{{ page.title }}</h1>
 
-	<div class="headerMeta">
-		{% if page.hasimg %}
-			<div class="headerImgContainer">
-				<img class="headerImg" src="{{ page.hasimg }}" />
-			</div>
+	{% if page.hasimg %}
+		<img class="headerImg" width="{{ page.imgwidth }}" src="{{ page.hasimg }}" />
+	{% endif %}
+	<div class="headerData">
+		{% if page.hasgithub %}
+			<i class="fab fa-github fa-fw"></i> <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
 		{% endif %}
-		<div class="headerData">
-			{% if page.hasgithub %}
-				<i class="fab fa-github fa-fw"></i> <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
-			{% endif %}
-			<i class="fas fa-calendar-alt fa-fw"></i> {{ page.date | date: "%Y.%m" }}<br />
-			{% assign p = page %}
-			{% include post_tags.html %}
-		</div>
+		<i class="fas fa-calendar-alt fa-fw"></i> {{ page.date | date: "%Y.%m" }}<br />
+		{% assign p = page %}
+		{% include post_tags.html %}
 	</div>
 	{{ content }}
 	<br /><br />
