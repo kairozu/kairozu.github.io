@@ -31,7 +31,6 @@ a, a:focus, a:hover { color: #687768; }
     display: flex;
     justify-content: space-around;
 }
-
 .fcNav {
     max-width: 1170px;
     margin: 0 auto;
@@ -68,7 +67,7 @@ a, a:focus, a:hover { color: #687768; }
     min-width: 300px;
     line-height: 1.7em;
 }
-.headerDataItem { margin-bottom: 1em; }
+.headerDataItem { margin-bottom: 5px; }
 .headerImg {
     float: right; 
     margin: 0 0 5px 10px;
