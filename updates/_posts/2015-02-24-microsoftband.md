@@ -48,8 +48,8 @@ Works: import com.microsoft.band.ConnectionResult;<br />
 Fails: BandClient bandClient = BandClientManager.getInstance() .create(getActivity(), pairedBands[0]);<br />
 Works: BandClient bandClient = BandClientManager.getInstance() .create(getApplicationContext(), pairedBands[0]);<br />
 <br />
-Fails: BandPendingResult<BandConnectionResult> pendingResult = bandClient.connect();<br />
-Works: BandPendingResult<ConnectionResult> pendingResult = bandClient.connect();<br />
+Fails: BandPendingResult&lt;BandConnectionResult&gt; pendingResult = bandClient.connect();<br />
+Works: BandPendingResult&lt;ConnectionResult&gt; pendingResult = bandClient.connect();<br />
 </span>
 
 Leaving this running on the phone drains the battery of the Band pretty quickly (constantly reading from the sensors + transmitting via bluetooth), but it's good for brief usage to see how the sensors work. There's also an option to determine whether the band is currently in contact with skin, and how "stable" the heart rate reading is.
