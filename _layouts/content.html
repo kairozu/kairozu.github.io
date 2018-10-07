@@ -4,14 +4,16 @@
 
 	<div class="headerMeta">
 		{% if page.hasimg %}
-			<img height="300" class="image_r" src="{{ page.hasimg }}" />
+			<img class="headerImg image_r" src="{{ page.hasimg }}" />
 		{% endif %}
-		{% if page.hasgithub %}
-			<i class="fab fa-github fa-fw"></i> <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
-		{% endif %}
-		<i class="fas fa-calendar-alt fa-fw"></i> {{ page.date | date: "%Y.%m" }}<br />
-		{% assign p = page %}
-		{% include post_tags.html %}
+		<div class="headerData">
+			{% if page.hasgithub %}
+				<i class="fab fa-github fa-fw"></i> <a href="{{ page.hasgithub }}">{{ page.hasgithub }}</a><br />
+			{% endif %}
+			<i class="fas fa-calendar-alt fa-fw"></i> {{ page.date | date: "%Y.%m" }}<br />
+			{% assign p = page %}
+			{% include post_tags.html %}
+		</div>
 	</div>
 	{{ content }}
 	<br /><br />
