@@ -63,8 +63,8 @@ Upgrades from previous builds:
 * Added capacitors to the photodiode splitter circuit
 * Upgraded the crossbar (see pictures)
 
-<div class="centerImg" style="background-image: url('/images/torqueTest_sinusoidalGrating2Hz.png');"></div>
+<img class="centerImg" alt="torque test w/sinusoidal grating" src="/images/torqueTest_sinusoidalGrating2Hz.png" />
 
 The top plot is representative of how the pattern presented to the insect was moving -- in this case a single horizontal bar moving back and forth across the insect's visual field. The bottom plot is the torque recorded during this time; you can see the insect attempting to follow the horizontal bar. 
-	
+
 Delay is an issue, in circuits and in visual refresh rates. Most projectors don't actually refresh the display image as often as the refresh rate would imply, and documentation on this is lacking. Ideally this entire system would be implemented in a RT OS.
