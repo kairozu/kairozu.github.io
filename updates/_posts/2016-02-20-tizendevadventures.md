@@ -60,8 +60,8 @@ Without an easy way to call for weather data from the built in app, I'm pulling 
 The HumanActivityMonitor API allows you query the total # of steps taken since the application (watch face widget in this case) was loaded, or the total # of steps taken FOR ALL TIME. I have no idea who decided why those were more important than "daily steps" which is something that the S-Health pedometer can do. There's a function to ask for differences in step count based on timestamps, but the documentation wasn't sufficient for me figuring out how to use that in my favor. End result: a dirty hack. Every night at midnight I save the total # of steps taken FOR ALLLLL TIMEEEE to local storage.
 
 1. I call the <span class="mono">AccumulativePedometerListener</span> whenever new steps are detected: <span class="mono">tizen.humanactivitymonitor. setAccumulativePedometerListener( onStepChange );</span>
-2. I grab the last saved total step count: <span class="mono">step_diff = localStorage[ 'com.dendriticspine.awatch.stepcount' ];</span>
-3. If <span class="mono">step_diff</span> is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: <span class="mono">localStorage.setItem( 'com.dendriticspine.awatch.stepcount', step_ts );</span>
+2. I grab the last saved total step count: <span class="mono">step_diff = localStorage[ 'com.dendriticspine .awatch.stepcount' ];</span>
+3. If <span class="mono">step_diff</span> is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: <span class="mono">localStorage.setItem( 'com.dendriticspine .awatch.stepcount', step_ts );</span>
 4. I subtract the current total step count from <span class="mono">step_diff</span>.
 5. At midnight I save the current total step count to <span class="mono">step_diff</span> again.
 The end result is that for the first day, before midnight, the count is inaccurate. Once the first midnight occurs, and the proper "total # of steps taken since you've had the device" is saved, the daily step count should be accurate. This is really ugly, I know, I'd love a better way to accomplish this.
@@ -70,10 +70,10 @@ The end result is that for the first day, before midnight, the count is inaccura
 Battery monitoring is straightforward, make the following calls and update your display accordingly in the <span class="mono">getBatteryState()</span> function:
 
 <span class="mono">
-battery.addEventListener('chargingchange', getBatteryState);<br />
-battery.addEventListener('chargingtimechange', getBatteryState);<br />  
-battery.addEventListener('dischargingtimechange', getBatteryState);* <br /> 
-battery.addEventListener('levelchange', getBatteryState);
+battery.addEventListener( 'chargingchange', getBatteryState );<br />
+battery.addEventListener( 'chargingtimechange', getBatteryState );<br />  
+battery.addEventListener( 'dischargingtimechange', getBatteryState );* <br /> 
+battery.addEventListener( 'levelchange', getBatteryState );
 </span>
 
 **Time/Time Zones**  
