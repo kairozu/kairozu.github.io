@@ -74,7 +74,7 @@ a, a:focus, a:hover { color: #687768; }
     float: right; 
 }
 .innerImg {
-    width: 100%;
+    width: 300px;
     height: 300px;
     margin: 10px;
     background-position: center;
