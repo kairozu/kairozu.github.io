@@ -95,13 +95,13 @@ Note: This assumes you’re running Windows 10.
 ### Create a Microsoft Application ID
 Go to <a href="https://account.live.com/developers/applications">https://account.live.com/developers/applications</a> and log in to your Microsoft Account. Under Live SDK applications, click the button to **Add an App**. Enter whatever name you’d like, e.g. “MyBandSandboxApp” and click **Create Application**.
 
-<img class="image_center" width="775" src="/images/vs_install_a.png" />
+<img class="image_center" src="/images/vs_install_a.png" />
 
 Under Platforms, click **Add Platform** and select the **Native Application** option. A new “Native Application” section will appear in the Platforms section (already shown in the image below). Scroll down to the bottom of the page and click the **Save** button.
 
 The **Application ID** (purple highlight below) is your *ClientId*, and the string under **Application Secrets** (orange highlight below) is your *ClientSecret*. Copy these two strings to a text file, an e-mail, or somewhere else you’ll be able to access them later. The ClientId and the ClientSecret shown in these images won't work for you.
 
-<img class="image_center" width="775" src="/images/vs_install_b.png" />
+<img class="image_center" src="/images/vs_install_b.png" />
 
 ### Download and Extract BandSandbox Code
 Download and unzip (right click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/kairozu/Microsoft-Band-Utils/archive/master.zip">https://github.com/kairozu/Microsoft-Band-Utils/archive/master.zip</a>
@@ -111,11 +111,11 @@ Download and run the Visual Studio Community installer: <a href="https://www.vis
 
 When you’re presented with the installation options window shown below, select **.NET desktop environment**. You can ignore the tabs for individual components and language packs. Click the **Install** button.
 
-<img class="image_center" width="775" src="/images/vs_install1.png" />
+<img class="image_center" src="/images/vs_install1.png" />
 
 After installation, click the **Launch** button.
 
-<img class="image_center" width="775" src="/images/vs_install2.png" />
+<img class="image_center" src="/images/vs_install2.png" />
 
 Signing in to your Microsoft account isn’t required -- for now, select *Not now, maybe later.* on the welcome screen. Leave the defaults for Development Settings/Color Theme, and click the **Start Visual Studio** button.
 
@@ -127,19 +127,19 @@ Signing in to your Microsoft account isn’t required -- for now, select *Not no
 ### Open, Modify, and Build BandSandbox
 On the Start Page, click **Open Project / Solution** (or go to File > Open Project or Solution), and navigate to where you unzipped the BandSandbox GitHub repository (the default path is: *Downloads/Microsoft-Band-Utils-master/BandSandbox-Data-Extract/*). Select the Microsoft Visual Studio Solution file named **BandSandbox(.sln)** to open it. A security warning will pop up, click the **OK** button to continue.
 
-<img class="image_center" width="775" src="/images/vs_install5.png" />
+<img class="image_center" src="/images/vs_install5.png" />
 
 In the Solution Explorer window, right click **BandSandbox** and select *Properties* to open the project properties window.
 
-<img class="image_center" width="775" src="/images/vs_install6.png" />
+<img class="image_center" src="/images/vs_install6.png" />
 
 Go to the *Signing* tab, click the dropdown menu where it says *Choose a strong name key file:* and select **<New…>**. Type in a new name for your key file (e.g. “new_band_sandbox_key”), then enter a new password and click the **OK** button.
 
-<img class="image_center" width="775" src="/images/vs_install7.png" />
+<img class="image_center" src="/images/vs_install7.png" />
 
 Click the **small arrow indicator** next to MainWindow.xaml to reveal **MainWindow.xaml.cs**. Double-click on **MainWindow.xaml.cs** to open the file.
 
-<img class="image_center" width="775" src="/images/vs_install8.png" />
+<img class="image_center" src="/images/vs_install8.png" />
 
 Replace the text that says *replace-with-your-own-application-id* with the **Application ID** you created earlier, and replace the text that says *replace-with-your-own-client-secret* with the **Application Secret** you created earlier. Keep the quotation marks. The two lines should look something like this when you’re done, but with your own values.
 
@@ -148,12 +148,12 @@ Replace the text that says *replace-with-your-own-application-id* with the **App
 
 At the top of the window, click the dropdown menu where it says Debug and select **Release**. Next, go to the File menu, and select Save All. Last, go to the Build menu, and select Build Solution.
 
-<img class="image_center" width="775" src="/images/vs_install9.png" />
+<img class="image_center" src="/images/vs_install9.png" />
 
 Assuming that the build completes successfully, go back to the folder where you unzipped the GitHub repository, go into the **BandSandbox** directory, then the **bin** directory, and finally the **Release** directory. The **BandSandbox(.exe)** file is the program you will run to download your data. 
 
-<img class="image_center" width="775" src="/images/vs_install10.png" />
+<img class="image_center" src="/images/vs_install10.png" />
 
 This folder (Release) can be copied and used from another computer; the **Newtonsoft.json** and **Newtonsoft.json.dll** files (orange highlight in the image below) must be kept in the same folder as the BandSandbox executable for it to run properly.
 
-<img class="image_center" width="775" src="/images/vs_install11.png" />
+<img class="image_center" src="/images/vs_install11.png" />

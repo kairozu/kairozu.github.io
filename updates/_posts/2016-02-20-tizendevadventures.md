@@ -58,9 +58,9 @@ Without an easy way to call for weather data from the built in app, I'm pulling 
 **Pedometer**  
 The HumanActivityMonitor API allows you query the total # of steps taken since the application (watch face widget in this case) was loaded, or the total # of steps taken FOR ALL TIME. I have no idea who decided why those were more important than "daily steps" which is something that the S-Health pedometer can do. There's a function to ask for differences in step count based on timestamps, but the documentation wasn't sufficient for me figuring out how to use that in my favor. End result: a dirty hack. Every night at midnight I save the total # of steps taken FOR ALLLLL TIMEEEE to local storage.
 
-1. I call the AccumulativePedometerListener whenever new steps are detected: *tizen.humanactivitymonitor.setAccumulativePedometerListener(onStepChange);*
-2. I grab the last saved total step count: *step_diff = localStorage['com.dendriticspine.awatch.stepcount'];*
-3. If step_diff is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: *localStorage.setItem('com.dendriticspine.awatch.stepcount', step_ts);*
+1. I call the AccumulativePedometerListener whenever new steps are detected: *tizen.humanactivitymonitor. setAccumulativePedometerListener( onStepChange );*
+2. I grab the last saved total step count: *step_diff = localStorage[ 'com.dendriticspine.awatch.stepcount' ];*
+3. If step_diff is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: *localStorage.setItem( 'com.dendriticspine.awatch.stepcount', step_ts );*
 4. I subtract the current total step count from *step_diff*.
 5. At midnight I save the current total step count to *step_diff* again.
 The end result is that for the first day, before midnight, the count is inaccurate. Once the first midnight occurs, and the proper "total # of steps taken since you've had the device" is saved, the daily step count should be accurate. This is really ugly, I know, I'd love a better way to accomplish this.
@@ -91,11 +91,11 @@ Submitting an app to the Google Play Store is a painless and one might almost sa
 
 Update: After 7 days, my watch face widget was approved.. but the partner configuration app was denied with the report below. While the issue they point out is real, and I absolutely don't mind being held to their design quality standards, I'm absolutely floored that someone is actually going through QA for all of the submitted apps. THEY EVEN INCLUDED A CUSTOM VIDEO OF MY APP RUNNING ON A DEV KIT TO HIGHLIGHT THE ISSUE THEY WERE HAVING. Absolutely crazy!! No wonder it took 7 days!
 
-<img class="image_center" width="775" src="/images/samsungdenied.png" />
+<img class="image_center" src="/images/samsungdenied.png" />
 
 Update 2: I fixed the text formatting issue and re-submitted.. and waited another 7 days. This time it was rejected because configuration changes made from the AWConfig app aren't immediately reflected in the AWatch watchface. Unfortunately this is intentional; the watchface must be reloaded manually. I don't have partner-level API access (and lack the business license/desire needed to apply) so I cannot force the watchface to reload from within the AWConfig app (tizen.application.kill is partner-level). I don't want to query the filesystem for configuration changes from AWatch because that'd be an unreasonable and unnecessary drain on resources. I suppose I'll give them credit for conveying the issue without using words? Images below are screenshots from the video that Samsung sent me w/the rejection. I submitted a question through their "one on one developer support" (?) asking for recommendations. We'll see.
 
-<img class="image_center" width="775" src="/images/watch_failure.png" />
+<img class="image_center" src="/images/watch_failure.png" />
 
 <b>Update 3: Success! Both AWatch and AWConfig are both listed on the Samsung Gear Store. There are updates I'd like to make on both apps, but the lengthy process involved w/updating apps puts any minor updates I'd like to make at the absolute bottom of my todo list. </b>
 
