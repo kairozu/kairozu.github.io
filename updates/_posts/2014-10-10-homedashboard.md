@@ -3,6 +3,7 @@ layout: content
 title: Home Control Dashboard
 hasgithub: https://github.com/kairozu/Home-Dashboard
 hasimg: /images/homedash.png
+imgwidth: 240
 tags: project code
 ---
 Central control dashboard to consolidate my various "smart home" systems (Hue, Nest, Sonos, etc) -- building my own allows for a level of control on par with various commercial solutions, with the added bonus of being able to add my own elements and sensors in the future. Side bonus: I've learned lots (not all of which is good) about the things I have in my home. Each tab could be considered a separate project (and many of them are derivative of such -- links below under each section), but the central repository for the entire dashboard is here: [https://github.com/kairozu/Home-Dashboard](https://github.com/kairozu/Home-Dashboard).
@@ -47,7 +48,7 @@ Basic splash page to display date/time/current+future weather conditions. I used
 * Needs an hourly view for the current day, and possibly changing the rain cloud percentage to something else.. multiple people have asked me if that's percent humidity, but it's supposed to be percent chance of rain. Debating signing up for a paid WUnderground plan so I have access to more data.
 * Currently I'm grabbing the "name" of the weather (cloudy, sunny, etc) from the icon that WUnderground would normally assign. This changes the weather icon on my page along w/the color of the background. Grey for cloudy, blue for rain, yellow for sun:
 
-<img class="image_center" height="100" alt="green blue yellow weather screens" src="/images/weather-gby.png" />
+<img class="centerImg" alt="green blue yellow weather screens" src="/images/weather-gby.png" />
 
 * Also dark grey/black for night, as well as green for "oh no, there's an error" or "I haven't encountered this weather-name before." I'm not 100% happy with these gradients, but I haven't thought of a better way to display current conditions. Considering going the Yahoo! Weather route and pulling CC-licensed images from Flickr which match the current weather conditions.
 
@@ -78,8 +79,8 @@ Automatic/ethernet-based sun shade control for a pre-existing Somfy installation
 * Resistors (~350 Ohm)
 
 <div class="flexBox">
-	<img height="200" alt="somfy rf board connected to arduino" src="/images/denhikage_board.jpg" />
-	<img height="200" alt="arduino & ethernet shield" src="/images/denhikage1.jpg" />
+	<a href="/images/denhikage_board.jpg"><div class="innerImg" style="background-image: url('/images/denhikage_board.jpg');"></div></a>
+	<a href="/images/denhikage1.jpg"><div class="innerImg" style="background-image: url('/images/denhikage1.jpg');"></div></a>
 </div>
 
 ### Sun Shade Notes
@@ -89,8 +90,8 @@ Automatic/ethernet-based sun shade control for a pre-existing Somfy installation
 * Arduino connects to ethernet shield which connects to the protoboard. Each 'control' (up, down, stop, and select) is run through an optoisolator (quad chip used in these examples) before connecting to a digital pin. Each LED is connected to an analog pin. I'm really bad at Fritzing, it turns out, but here's a spiderweb to illustrate.
 
 <div class="flexBox">
-	<img height="300" src="/images/denhikage-ss.png" />
-	<img height="300" src="/images/layout-messy.PNG" />
+	<a href="/images/denhikage-ss.png"><div class="innerImg" style="background-image: url('/images/denhikage-ss.png');"></div></a>
+	<a href="/images/layout-messy.PNG"><div class="innerImg" style="background-image: url('/images/layout-messy.PNG');"></div></a>
 </div>
 
 ## Climate Control (Nest)

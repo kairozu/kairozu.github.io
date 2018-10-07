@@ -49,8 +49,8 @@ This system was used to gather data for the following papers:
 * [Autostabilizing airframe articulation: Animal inspired air vehicle control](/images/autostabilizing.pdf) (Dyhr JP, et al.)
 
 <div class="flexBox">
-	<a href=""><div class="innerImg" style="background-image: url('/images/torque2.0.png');"></div></a>
-	<a href=""><div class="innerImg" style="background-image: url('/images/torque2.0board.png');"></div></a>
+	<a href="/images/torque2.0.png"><div class="innerImg" style="background-image: url('/images/torque2.0.png');"></div></a>
+	<a href="/images/torque2.0board.png"><div class="innerImg" style="background-image: url('/images/torque2.0board.png');"></div></a>
 </div>
 
 The torque sensor and associated divider circuit allow us to measure the yaw motions of tethered insects mid-flight. 
