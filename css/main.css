@@ -91,7 +91,7 @@ a, a:focus, a:hover { color: #687768; }
 
 .image_r { float: right; margin: 5px 0 5px 20px; }
 .image_l { float: left; margin: 5px 20px 5px 0; }
-.image_center { 
+.centerImg { 
     margin: 0 auto; 
     max-width: 80%;
     display: block; }
