@@ -78,8 +78,8 @@ Automatic/ethernet-based sun shade control for a pre-existing Somfy installation
 * Resistors (~350 Ohm)
 
 <div class="flexBox">
-	<img height="300" alt="somfy rf board connected to arduino" src="/images/denhikage_board.jpg" />
-	<img height="300" alt="arduino & ethernet shield" src="/images/denhikage1.jpg" />
+	<img height="200" alt="somfy rf board connected to arduino" src="/images/denhikage_board.jpg" />
+	<img height="200" alt="arduino & ethernet shield" src="/images/denhikage1.jpg" />
 </div>
 
 ### Sun Shade Notes
