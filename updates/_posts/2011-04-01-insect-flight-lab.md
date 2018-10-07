@@ -62,7 +62,7 @@ Upgrades from previous builds:
 * Added capacitors to the photodiode splitter circuit
 * Upgraded the crossbar (see pictures)
 
-<div class="innerImg" style="background-image: url('images/torqueTest_sinusoidalGrating2Hz.png');"></div>
+<div class="innerImg" style="background-image: url('/images/torqueTest_sinusoidalGrating2Hz.png');"></div>
 
 The top plot is representative of how the pattern presented to the insect was moving -- in this case a single horizontal bar moving back and forth across the insect's visual field. The bottom plot is the torque recorded during this time; you can see the insect attempting to follow the horizontal bar. 
 	
