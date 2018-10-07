@@ -79,6 +79,13 @@ a, a:focus, a:hover { color: #687768; }
     min-width: 300px;
     order: 1;
 }
+.innerImg {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .spacerClear {
     width: 100%;
     height: 0px;

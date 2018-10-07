@@ -48,8 +48,8 @@ This system was used to gather data for the following papers:
 * [Autostabilizing airframe articulation: Animal inspired air vehicle control](/images/autostabilizing.pdf) (Dyhr JP, et al.)
 
 <div class="flexBox">
-	<img class="image_center" src="/images/torque2.0.png" /> 
-	<img class="image_center" src="/images/torque2.0board.png" />
+	<div class="innerImg" style="background-image: url('/images/torque2.0.png');"></div>
+	<div class="innerImg" style="background-image: url('/images/torque2.0board.png');"></div>
 </div>
 
 The torque sensor and associated divider circuit allow us to measure the yaw motions of tethered insects mid-flight. 
@@ -62,7 +62,7 @@ Upgrades from previous builds:
 * Added capacitors to the photodiode splitter circuit
 * Upgraded the crossbar (see pictures)
 
-<img class="image_center" src="/images/torqueTest_sinusoidalGrating2Hz.png" />
+<div class="innerImg" style="background-image: url('images/torqueTest_sinusoidalGrating2Hz.png');"></div>
 
 The top plot is representative of how the pattern presented to the insect was moving -- in this case a single horizontal bar moving back and forth across the insect's visual field. The bottom plot is the torque recorded during this time; you can see the insect attempting to follow the horizontal bar. 
 	
