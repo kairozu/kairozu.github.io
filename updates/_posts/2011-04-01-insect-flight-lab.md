@@ -37,8 +37,8 @@ Series of tools designed for observing and experimenting with the mechanics of i
 * NI-DAQ board for data collection (in my experience, the more expensive the DAQ board, the more issues you will have -- be wary)
 
 <div class="flexBox">
-	<img height="400" src="/images/torquearena.png" />
-	<img height="400" src="/images/testing_torque.jpg" />
+	<img class="image_center" src="/images/torquearena.png" />
+	<img class="image_center" src="/images/testing_torque.jpg" />
 </div>
 
 ## Notes
@@ -48,8 +48,8 @@ This system was used to gather data for the following papers:
 * [Autostabilizing airframe articulation: Animal inspired air vehicle control](/images/autostabilizing.pdf) (Dyhr JP, et al.)
 
 <div class="flexBox">
-	<img height="400" src="/images/torque2.0.png" /> 
-	<img height="400" src="/images/torque2.0board.png" />
+	<img class="image_center" src="/images/torque2.0.png" /> 
+	<img class="image_center" src="/images/torque2.0board.png" />
 </div>
 
 The torque sensor and associated divider circuit allow us to measure the yaw motions of tethered insects mid-flight. 
