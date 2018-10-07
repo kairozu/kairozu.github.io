@@ -65,7 +65,12 @@ a, a:focus, a:hover { color: #687768; }
     justify-content: space-between;
 }
 .headerImg {
+    order: 2;
     max-width: 300px;
+}
+.headerData {
+    min-width: 300px;
+    order: 1;
 }
 .spacerClear {
     width: 100%;
