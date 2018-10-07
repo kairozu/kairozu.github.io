@@ -62,11 +62,13 @@ a, a:focus, a:hover { color: #687768; }
 .headerMeta {
     line-height: 1.7em;
     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-between;
 }
 .headerImgContainer {
     order: 2;
-    max-width: 300px;
+    width: 300px;
 }
 .headerImg {
     width: 100%;
