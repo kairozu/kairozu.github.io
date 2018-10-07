@@ -34,8 +34,8 @@ In [Android Studio](http://developer.android.com/sdk/index.html), include the [M
 In addition to adding the jar file to your Android project, you will also need to declare the following uses-permission tags in the AndroidManifest.xml:
 
 <span class="mono">
-&lt;uses-permission android:name="android.permission.BLUETOOTH"/&gt;<br />
-&lt;uses-permission android:name="com.microsoft.band.service.access.BIND_BAND_SERVICE"/&gt;
+&lt;uses-permission android: name="android.permission .BLUETOOTH"/&gt;<br />
+&lt;uses-permission android: name="com.microsoft.band.service.access .BIND_BAND_SERVICE"/&gt;
 </span>
 
 The Band SDK documentation can be found here: [http://developer.microsoftband.com/docs/MicrosoftBandSDKPreview.pdf](http://developer.microsoftband.com/docs/MicrosoftBandSDKPreview.pdf)
@@ -45,8 +45,8 @@ A few changes to the documentation examples:<br />
 Fails: import com.microsoft.band.BandConnectionResult;<br />
 Works: import com.microsoft.band.ConnectionResult;<br />
 <br />
-Fails: BandClient bandClient = BandClientManager.getInstance().create(getActivity(), pairedBands[0]);<br />
-Works: BandClient bandClient = BandClientManager.getInstance().create(getApplicationContext(), pairedBands[0]);<br />
+Fails: BandClient bandClient = BandClientManager.getInstance() .create(getActivity(), pairedBands[0]);<br />
+Works: BandClient bandClient = BandClientManager.getInstance() .create(getApplicationContext(), pairedBands[0]);<br />
 <br />
 Fails: BandPendingResult<BandConnectionResult> pendingResult = bandClient.connect();<br />
 Works: BandPendingResult<ConnectionResult> pendingResult = bandClient.connect();<br />
