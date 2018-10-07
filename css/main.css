@@ -63,6 +63,13 @@ a, a:focus, a:hover { color: #687768; }
     line-height: 1.7em;
 }
 
+.spacerClear {
+    width: 100%;
+    height: 0px;
+    display: block;
+    clear: both;
+}
+
 .image_r { float: right; margin: 5px 0 5px 20px; }
 .image_l { float: left; margin: 5px 20px 5px 0; }
 .image_center { margin: 0 auto; display: block; }
