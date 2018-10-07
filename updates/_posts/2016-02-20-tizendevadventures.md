@@ -52,16 +52,16 @@ This watch face is programmed using the JavaScript/HTML5 web app method, and it 
 Without an easy way to call for weather data from the built in app, I'm pulling the current location and querying Weather Underground w/the latitude/longitude for current conditions.
 
 1. Get the current position: <span class="mono">navigator.geolocation .getCurrentPosition(success, failure, options);</span>
-2. Create a new <span class="mono">XMLHttpRequest</span> to grab the data from WUnderground: http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml (Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc)
-3. Parse out the data you want from the returned XML tags (temp_f and weather in my case).
+2. Create a new <span class="mono">XMLHttpRequest</span> to grab the data from WUnderground: [http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml](http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml) (Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc)
+3. Parse out the data you want from the returned XML tags (<span class="mono">temp_f</span> and <span class="mono">weather</span> in my case).
 4. Create a routine to update as desired; since alarm services aren't currently available unless you have a Samsung Partner certificate (shaking my head at you, Samsung), in my <span class="mono">updateTime()</span> function I update the weather once an hour (if minutes <= 30 and weather hasn't already been checked that hour).
 
 **Pedometer**  
 The HumanActivityMonitor API allows you query the total # of steps taken since the application (watch face widget in this case) was loaded, or the total # of steps taken FOR ALL TIME. I have no idea who decided why those were more important than "daily steps" which is something that the S-Health pedometer can do. There's a function to ask for differences in step count based on timestamps, but the documentation wasn't sufficient for me figuring out how to use that in my favor. End result: a dirty hack. Every night at midnight I save the total # of steps taken FOR ALLLLL TIMEEEE to local storage.
 
-1. I call the AccumulativePedometerListener whenever new steps are detected: <span class="mono">tizen.humanactivitymonitor. setAccumulativePedometerListener( onStepChange );</span>
+1. I call the <span class="mono">AccumulativePedometerListener</span> whenever new steps are detected: <span class="mono">tizen.humanactivitymonitor. setAccumulativePedometerListener( onStepChange );</span>
 2. I grab the last saved total step count: <span class="mono">step_diff = localStorage[ 'com.dendriticspine.awatch.stepcount' ];</span>
-3. If step_diff is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: <span class="mono">localStorage.setItem( 'com.dendriticspine.awatch.stepcount', step_ts );</span>
+3. If <span class="mono">step_diff</span> is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: <span class="mono">localStorage.setItem( 'com.dendriticspine.awatch.stepcount', step_ts );</span>
 4. I subtract the current total step count from <span class="mono">step_diff</span>.
 5. At midnight I save the current total step count to <span class="mono">step_diff</span> again.
 The end result is that for the first day, before midnight, the count is inaccurate. Once the first midnight occurs, and the proper "total # of steps taken since you've had the device" is saved, the daily step count should be accurate. This is really ugly, I know, I'd love a better way to accomplish this.
