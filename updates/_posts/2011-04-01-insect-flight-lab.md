@@ -37,8 +37,8 @@ Series of tools designed for observing and experimenting with the mechanics of i
 * NI-DAQ board for data collection (in my experience, the more expensive the DAQ board, the more issues you will have -- be wary)
 
 <div class="flexBox">
-	<img class="image_center" src="/images/torquearena.png" />
-	<img class="image_center" src="/images/testing_torque.jpg" />
+	<div class="innerImg" style="background-image: url('/images/torquearena.png');"></div>
+	<div class="innerImg" style="background-image: url('/images/testing_torque.jpg');"></div>
 </div>
 
 ## Notes
