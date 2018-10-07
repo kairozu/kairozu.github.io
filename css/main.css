@@ -64,9 +64,12 @@ a, a:focus, a:hover { color: #687768; }
     display: flex;
     justify-content: space-between;
 }
-.headerImg {
+.headerImgContainer {
     order: 2;
     max-width: 300px;
+}
+.headerImg {
+    width: 100%;
 }
 .headerData {
     min-width: 300px;
@@ -81,7 +84,10 @@ a, a:focus, a:hover { color: #687768; }
 
 .image_r { float: right; margin: 5px 0 5px 20px; }
 .image_l { float: left; margin: 5px 20px 5px 0; }
-.image_center { margin: 0 auto; display: block; }
+.image_center { 
+    margin: 0 auto; 
+    width: 80%;
+    display: block; }
 
 @media all and (max-width: 756px) {
     .fcMain { flex-wrap: wrap; }
