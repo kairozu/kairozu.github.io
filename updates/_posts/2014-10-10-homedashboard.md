@@ -94,12 +94,6 @@ Automatic/ethernet-based sun shade control for a pre-existing Somfy installation
 	<a href="/images/layout-messy.PNG"><div class="innerImg" style="background-image: url('/images/layout-messy.PNG');"></div></a>
 </div>
 
-## Climate Control (Nest)
-<img class="image_l" height="150" alt="leaf" src="/images/leaf.png" />
-Haven't finished this controller yet, but the Nest API seems fairly straightforward. The Nest API can be found here: [https://developer.nest.com/documentation/cloud/nest-api-intro](https://developer.nest.com/documentation/cloud/nest-api-intro).
-
-<div class="spacerClear"></div>
-
 ## Music Dashboard (Sonos)
 Modified version of jishi's Node.js Sonos Web Controller. I primarily listen to Pandora channels over the Sonos system -- currently those must be added as favorites through another interface to be visible in this this web controller. To add different Sonos zones to a group, drag and drop in the left hand column. 
 
@@ -107,15 +101,10 @@ Modified version of jishi's Node.js Sonos Web Controller. I primarily listen to 
 * Node.js: [http://nodejs.org](http://nodejs.org/)
 * Sonos Controller for Node.js: [https://github.com/jishi/node-sonos-web-controller](https://github.com/jishi/node-sonos-web-controller)
 
-Installing Node.js:<br />
+Installing Node.js & have Node.js start the Sonos interface on boot, add this to your rc.local file:<br />
 
-``` 
-wget http://node-arm.herokuapp.com/node\_latest\_armhf.deb
-sudo dpkg -i node\_latest\_armhf.deb 
-```
-
-To have Node.js start the Sonos interface on boot, add this to your rc.local file:
-
-```
+<span class="mono">
+wget http://node-arm.herokuapp.com/node\_latest\_armhf.deb<br />
+sudo dpkg -i node\_latest\_armhf.deb<br />
 su pi -c 'node /var/www/sonos/server.js < /dev/null &'
-```
+</span>
