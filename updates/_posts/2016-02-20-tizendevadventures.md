@@ -5,7 +5,6 @@ hasgithub: https://github.com/kairozu/Gear-S2-AWatch
 hasimg: /images/awatchface.png
 tags: project code
 ---
-## Summary
 The Samsung Gear S2 Smartwatch runs Tizen (Android Wear is more common on Android-compatible smartwatches) -- it's a project within the Linux Foundation (based on the Linux kernel/GNU C library implementing the Linux API), but is "governed" by a "technical steering group" composed of Samsung, Intel, and others. There's a native C++ framework and a web application framework that allows for HTML5/JS apps to run without a browser.
 
 There are pros and cons of the Gear S2, but I like the round interface/bezel navigation and I have the 4G version that allows for a cellular connection without tethering my phone (meaning I can go for a run w/just the watch and have it track GPS/receive messages/play music through bluetooth headphones). The battery life is great and charging is fast, but the Gear app store leaves a lot to be desired if you're looking for anything beyond email/messaging/watch functionality/fitness.
