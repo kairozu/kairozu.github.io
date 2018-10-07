@@ -70,7 +70,7 @@ The accelerometer and gyroscope/angular velocity x/y/z orientation (image taken 
 The download/export option offered by Microsoft in their Health Dashboard doesn't give you the full set of data collected by the Microsoft Band. This is a quick (and dirty) program to download _everything_ (or what you choose) using their Health Cloud API. The code is really ugly, and it errs on the slow side to avoid server-side rate limiting, but it works.
 
 I also threw together (again, really ugly) some Python scripts to help parse/display the data:
-[https://github.com/dendriticspine/HealthData-Analysis](https://github.com/dendriticspine/HealthData-Analysis)
+[https://github.com/kairozu/Microsoft-Band-Utils/tree/master/Band-Data-Analysis](https://github.com/kairozu/Microsoft-Band-Utils/tree/master/Band-Data-Analysis)
 
 **Relevant Resources**
 * Microsoft Health Cloud: [https://developer.microsoftband.com/cloudAPI](https://developer.microsoftband.com/cloudAPI)
@@ -99,12 +99,12 @@ Go to <a href="https://account.live.com/developers/applications">https://account
 
 Under Platforms, click **Add Platform** and select the **Native Application** option. A new “Native Application” section will appear in the Platforms section (already shown in the image below). Scroll down to the bottom of the page and click the **Save** button.
 
-The **Application ID** (purple highlight below) is your *ClientId*, and the string under **Application Secrets** (orange highlight below) is your *ClientSecret*. Copy these two strings to a text file, an e-mail, or somewhere else you’ll be able to access them later.
+The **Application ID** (purple highlight below) is your *ClientId*, and the string under **Application Secrets** (orange highlight below) is your *ClientSecret*. Copy these two strings to a text file, an e-mail, or somewhere else you’ll be able to access them later. The ClientId and the ClientSecret shown in these images won't work for you.
 
 <img class="image_center" width="775" src="/images/vs_install_b.png" />
 
 ### Download and Extract BandSandbox Code
-Download and unzip (right click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/dendriticspine/MS-Band-DataSandbox/archive/master.zip">https://github.com/dendriticspine/MS-Band-DataSandbox/archive/master.zip</a>
+Download and unzip (right click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/kairozu/Microsoft-Band-Utils/archive/master.zip">https://github.com/kairozu/Microsoft-Band-Utils/archive/master.zip</a>
 
 ### Download and Install Visual Studio Community
 Download and run the Visual Studio Community installer: <a href="https://www.visualstudio.com/vs/community/">https://www.visualstudio.com/vs/community/</a>
@@ -125,7 +125,7 @@ Signing in to your Microsoft account isn’t required -- for now, select *Not no
 </div>
 
 ### Open, Modify, and Build BandSandbox
-On the Start Page, click **Open Project / Solution** (or go to File > Open Project or Solution), and navigate to where you unzipped the BandSandbox GitHub repository (the default path is: *Downloads/MS-Band-DataSandbox-master/MS-Band-DataSandbox-master/*). Select the Microsoft Visual Studio Solution file named **BandSandbox(.sln)** to open it. A security warning will pop up, click the **OK** button to continue.
+On the Start Page, click **Open Project / Solution** (or go to File > Open Project or Solution), and navigate to where you unzipped the BandSandbox GitHub repository (the default path is: *Downloads/Microsoft-Band-Utils-master/BandSandbox-Data-Extract/*). Select the Microsoft Visual Studio Solution file named **BandSandbox(.sln)** to open it. A security warning will pop up, click the **OK** button to continue.
 
 <img class="image_center" width="775" src="/images/vs_install5.png" />
 
