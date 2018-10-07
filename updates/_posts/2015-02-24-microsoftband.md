@@ -33,24 +33,24 @@ In [Android Studio](http://developer.android.com/sdk/index.html), include the [M
 
 In addition to adding the jar file to your Android project, you will also need to declare the following uses-permission tags in the AndroidManifest.xml:
 
-<code>
-<uses-permission android:name="android.permission.BLUETOOTH"/>
-<uses-permission android:name="com.microsoft.band.service.access.BIND_BAND_SERVICE"/>
-</code>
+<span class="mono">
+&lt;uses-permission android:name="android.permission.BLUETOOTH"/&gt;<br />
+&lt;uses-permission android:name="com.microsoft.band.service.access.BIND_BAND_SERVICE"/&gt;
+</span>
 
 The Band SDK documentation can be found here: [http://developer.microsoftband.com/docs/MicrosoftBandSDKPreview.pdf](http://developer.microsoftband.com/docs/MicrosoftBandSDKPreview.pdf)
 
 A few changes to the documentation examples:<br />
-<code>
-Fails: import com.microsoft.band.BandConnectionResult;
-Works: import com.microsoft.band.ConnectionResult;
-
-Fails: BandClient bandClient = BandClientManager.getInstance().create(getActivity(), pairedBands[0]);
-Works: BandClient bandClient = BandClientManager.getInstance().create(getApplicationContext(), pairedBands[0]);
-
-Fails: BandPendingResult<BandConnectionResult> pendingResult = bandClient.connect();
-Works: BandPendingResult<ConnectionResult> pendingResult = bandClient.connect();
-</code>
+<span class="mono">
+Fails: import com.microsoft.band.BandConnectionResult;<br />
+Works: import com.microsoft.band.ConnectionResult;<br />
+<br />
+Fails: BandClient bandClient = BandClientManager.getInstance().create(getActivity(), pairedBands[0]);<br />
+Works: BandClient bandClient = BandClientManager.getInstance().create(getApplicationContext(), pairedBands[0]);<br />
+<br />
+Fails: BandPendingResult<BandConnectionResult> pendingResult = bandClient.connect();<br />
+Works: BandPendingResult<ConnectionResult> pendingResult = bandClient.connect();<br />
+</span>
 
 Leaving this running on the phone drains the battery of the Band pretty quickly (constantly reading from the sensors + transmitting via bluetooth), but it's good for brief usage to see how the sensors work. There's also an option to determine whether the band is currently in contact with skin, and how "stable" the heart rate reading is.
 

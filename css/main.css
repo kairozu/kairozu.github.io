@@ -21,6 +21,7 @@ a, a:focus, a:hover { color: #687768; }
 .light { font-weight: 200; }
 .bold { font-weight: 600; }
 .larger { font-size: larger; }
+.mono { font-family: monospace; }
 
 .bodyWrap {
     margin: 0 20px;
