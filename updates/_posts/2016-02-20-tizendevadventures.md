@@ -3,6 +3,7 @@ layout: content
 title: Tizen Dev Adventures
 hasgithub: https://github.com/kairozu/Gear-S2-AWatch
 hasimg: /images/awatchface.png
+imgwidth: 200
 tags: project code
 ---
 The Samsung Gear S2 Smartwatch runs Tizen (Android Wear is more common on Android-compatible smartwatches) -- it's a project within the Linux Foundation (based on the Linux kernel/GNU C library implementing the Linux API), but is "governed" by a "technical steering group" composed of Samsung, Intel, and others. There's a native C++ framework and a web application framework that allows for HTML5/JS apps to run without a browser.
@@ -37,9 +38,9 @@ This watch face is programmed using the JavaScript/HTML5 web app method, and it 
 
 ## Progress (Concept->Build 1->Build 2)
 <div class="flexBox">
-    <img height="250" src="/images/awatch_template.png" />
-    <img height="250" src="/images/awatch_build1.png" />
-    <img height="250" src="/images/awatchface.png" />
+	<a href="/images/awatch_template.png"><div class="innerImg" style="background-image: url('/images/awatch_template.png');"></div></a>
+	<a href="/images/awatch_build1.png"><div class="innerImg" style="background-image: url('/images/awatch_build1.png');"></div></a>
+    <a href="/images/awatchface.png"><div class="innerImg" style="background-image: url('/images/awatchface.png');"></div></a>
 </div>
 
 ## Current Frustrations

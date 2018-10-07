@@ -3,6 +3,7 @@ layout: content
 title: MS Band Utilities
 hasgithub: https://github.com/kairozu/Microsoft-Band-Utils
 hasimg: /images/bandsandbox.png
+imgwidth: 240
 tags: project code
 ---
 This is a summary of the various utilities I made for interacting with the Microsoft Band: a simple Android app for polling the sensor data, and a windows app for downloading data from Microsoft Health Cloud w/a few simple Python scripts for parsing/analyzing data. 
