@@ -40,6 +40,8 @@ Series of tools designed for observing and experimenting with the mechanics of i
 <div class="flexBox">
 	<a href="/images/torquearena.png"><div class="innerImg" style="background-image: url('/images/torquearena.png');"></div></a>
 	<a href="/images/testing_torque.jpg"><div class="innerImg" style="background-image: url('/images/testing_torque.jpg');"></div></a>
+	<a href="/images/torque2.0.png"><div class="innerImg" style="background-image: url('/images/torque2.0.png');"></div></a>
+	<a href="/images/torque2.0board.png"><div class="innerImg" style="background-image: url('/images/torque2.0board.png');"></div></a>
 </div>
 
 ## Notes
@@ -48,14 +50,7 @@ This system was used to gather data for the following papers:
 * [Abdicating power for control: a precision timing strategy to modulate function of flight power muscles](/images/abdicating.pdf) (Sponberg S, Daniel TL)
 * [Autostabilizing airframe articulation: Animal inspired air vehicle control](/images/autostabilizing.pdf) (Dyhr JP, et al.)
 
-<div class="flexBox">
-	<a href="/images/torque2.0.png"><div class="innerImg" style="background-image: url('/images/torque2.0.png');"></div></a>
-	<a href="/images/torque2.0board.png"><div class="innerImg" style="background-image: url('/images/torque2.0board.png');"></div></a>
-</div>
-
-The torque sensor and associated divider circuit allow us to measure the yaw motions of tethered insects mid-flight. 
-
-Upgrades from previous builds:
+The torque sensor and associated divider circuit allow us to measure the yaw motions of tethered insects mid-flight. Upgrades from previous builds:
 
 * Switched to a tungsten torsion wire (stainless steel torsion wire had terrible hysteresis effects, wasn't strong enough)
 * Used an wavelength matched LED for the dual photodiode (~940nm)
