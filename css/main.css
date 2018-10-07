@@ -3,10 +3,6 @@ html, body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
 body.mainContent {
     background: #c3ccce;
     color: #17242c;
