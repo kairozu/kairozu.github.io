@@ -6,6 +6,8 @@ html, body {
 body.mainContent {
     background: #c3ccce;
     color: #17242c;
+    word-wrap: break-word; /* old name */
+    overflow-wrap: break-word;
 }
 a, a:link, a:visited {
     text-decoration: none;
@@ -68,7 +70,7 @@ a, a:focus, a:hover { color: #687768; }
 }
 .headerImgContainer {
     order: 2;
-    width: 300px;
+    max-width: 300px;
 }
 .headerImg {
     width: 100%;
