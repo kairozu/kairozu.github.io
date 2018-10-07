@@ -6,8 +6,6 @@ html, body {
 body.mainContent {
     background: #c3ccce;
     color: #17242c;
-    word-wrap: break-word; /* old name */
-    overflow-wrap: break-word;
 }
 a, a:link, a:visited {
     text-decoration: none;
@@ -16,6 +14,8 @@ a, a:link, a:visited {
     -moz-transition: 200ms color ease-in-out;
     -o-transition: 200ms color ease-in-out;
     transition: 200ms color ease-in-out;
+    word-wrap: break-word; /* old name */
+    overflow-wrap: break-word;
 }
 a, a:focus, a:hover { color: #687768; }
 .light { font-weight: 200; }
@@ -90,7 +90,7 @@ a, a:focus, a:hover { color: #687768; }
 .image_l { float: left; margin: 5px 20px 5px 0; }
 .image_center { 
     margin: 0 auto; 
-    width: 80%;
+    max-width: 80%;
     display: block; }
 
 @media all and (max-width: 756px) {
