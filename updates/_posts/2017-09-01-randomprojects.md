@@ -13,6 +13,16 @@ These are various snippets of projects ranging from completed smaller projects t
 
 Python scripts to parse WaniKani kanji & vocabulary JSON dumps into Anki decks w/kanji stroke orders. See WaniKani's API documentation for pulling kanji/vocabulary data: [https://www.wanikani.com/api](https://www.wanikani.com/api) (a WaniKani account API key is required). WaniKani is great and you should support them with a subscription. This is for extra practice, especially with regard to writing kanji w/a stroke order reference. Please don't use this to avoid supporting WaniKani.
 
+## Spike Train Calculator
+<img class="imageR" height="150" alt="weather" src="/images/spiketrain.png" />
+<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Ephys-Stimulation](https://github.com/kairozu/Ephys-Stimulation)
+
+Converts between inter-pulse intervals/train burst widths and frequency/number of pulses & plots an example waveform (also my first foray into JS/jQuery). Mostly useful for visualizing spike trains in discussions or double checking your math when hopping between ephys equipment.
+
+Once you begin entering values, the example waveform will not plot until all values have been entered. You can choose between calculating your waveform from the inter-pulse period and the train burst width, or from the # of pulses and the frequency of those pulses -- the alternate option will be displayed automatically.  Scientific notation is displayed on the right for reference if you're using a system that requires SN (AM Systems, yay).
+
+<div class="spacerClear"></div>
+
 ## 4-Letter Word Generator
 <i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Kairozu-Sandbox/blob/master/lockcombo.py](https://github.com/kairozu/Kairozu-Sandbox/blob/master/lockcombo.py)
 

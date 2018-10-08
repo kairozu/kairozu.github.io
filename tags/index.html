@@ -6,9 +6,9 @@ sitemap: false
 {% include head.html %}
 <div class="bodyContainer">
     <ul class="fa-ul">
-        {% assign tags = site.tags | sort 0 %}
+        {% assign tags = site.tags | sort %}
         {% for tag_item in tags %}
-            {% assign tag = (tag_item | first) %}
+            {% assign tag = tag_item | first %}
             <li>
                 <a href="{{site.url}}{{site.baseurl}}/tags/{{tag}}">{{site.data.tags[tag].name}}</a> ({{site.tags[tag].size}})
             </li>
