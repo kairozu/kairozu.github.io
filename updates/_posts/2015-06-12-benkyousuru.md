@@ -1,6 +1,7 @@
 ---
 layout: content
 title: Simple Japanese Games
+hasgithub: https://github.com/kairozu/Simple-JP-Games
 tags: japanese project code
 ---
 A collection of JavaScript-based web tools for studying Japanese hiragana, katakana, particles, and counters. The former two are easily modified for other a/b-style sets of data. The tool for particles presents a sentence in Japanese with a particle missing, an English translation to clarify the meaning of the sentence, and four options for appropriate particles. The counter tool shows a set of 1-10 items and asks for the Japanese translation. 

@@ -10,7 +10,7 @@ I've been fascinated by Progressive Web Applications (PWA) lately. I've largely 
 
 ## Mathotron (October 2018)
 <img class="imageL" height="160" alt="mathotron" src="/images/mathotron.png" />
-<div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/kairozu/Progressive-Web-Apps/mathotron">https://github.com/kairozu/Progressive-Web-Apps/mathotron</a></div>
+<div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/kairozu/Progressive-Web-Apps/tree/master/mathotron">https://github.com/kairozu/Progressive-Web-Apps/tree/master/mathotron</a></div>
 <div class="listItem"><i class="fas fa-paper-plane fa-fw"></i> <a href="https://kairozu.github.io/sandbox/mathotron">https://kairozu.github.io/sandbox/mathotron</a></div>
 
 Simple calculator that keeps a ticker tape history of mathematical operations. It's pretty simple and lacking in aesthetic quality, but I wanted to test hosting PWAs on GitHub Pages.
