@@ -6,7 +6,6 @@ hasimg: /images/elolive.png
 imgwidth: 240
 tags: project code
 ---
-## Elo Live Score
 FiveThirtyEight made a system for [comparing your own NFL forecasts to those made by their Elo rating system](https://projects.fivethirtyeight.com/2018-nfl-forecasting-game/). On week 1, it is possible that I made at least one choice based on preferred mascot, but by week 4, I had cloned their [GitHub repository](https://github.com/fivethirtyeight/nfl-elo-game) and was trying to make my own model. I wish I could say that my week 4 was more accurate than my week 1, but, look, maybe my model just needs more work.
 
 ***I have no connection to FiveThirtyEight**. I didn't ask them for permission to make this. If they ask me to take it down, I am happy to do so. I'm a huge fan of the work they do. Nate, please don't sue me.*
