@@ -94,12 +94,17 @@ div.space-table {
 
 .headerData {
     min-width: 300px;
-    line-height: 1.7em;
+    line-height: 1.6em;
 }
 .headerDataItem { margin-bottom: 5px; }
 .headerImg {
     float: right; 
     margin: 0 0 10px 20px;
+}
+
+.listItem {
+    margin-bottom: 5px;
+    line-height: 1.6em;
 }
 
 .imageR { float: right; margin: 0px 0 10px 20px; }
