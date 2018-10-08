@@ -1,27 +1,27 @@
 {% include head.html %}
 <div class="bodyContainer">
     <h1>Kairozu Updates (Complete List)</h1>
-        {% for p in site.posts %}
-            <p>
-            <span class="larger">
-                {% if p.tags[0] == 'science' %}
-                    <i class="fas fa-flask fa-fw"></i>
-                {% elsif p.tags[0] == 'travel' %}
-                    <i class="fas fa-plane fa-fw"></i>
-                {% elsif p.tags[0] == 'code' %}
-                    <i class="fas fa-code fa-fw"></i>
-                {% elsif p.tags[0] == 'project' %}
-                    <i class="fas fa-cog fa-fw"></i>
-                {% elsif p.tags[0] == 'japanese' %}
-                    <i class="fas fa-language fa-fw"></i>
-                {% elsif p.tags[0] == 'japan' %}
-                    <i class="fas fa-sun fa-fw"></i>
-                {% else %}
-                    <i class="fas fa-edit fa-fw"></i>
-                {% endif %}
-                <span class="light">{{ p.date | date: "%Y.%m" }}</span> <a href="{{ p.url }}">{{ p.title }}</a></span><br />
-                {{ p.excerpt | strip_html | truncatewords:20 }}
-            </p>
-        {% endfor %}
+    {% for p in site.posts %}
+        <p>
+        <span class="larger">
+            {% if p.tags[0] == 'science' %}
+                <i class="fas fa-flask fa-fw"></i>
+            {% elsif p.tags[0] == 'travel' %}
+                <i class="fas fa-plane fa-fw"></i>
+            {% elsif p.tags[0] == 'code' %}
+                <i class="fas fa-code fa-fw"></i>
+            {% elsif p.tags[0] == 'project' %}
+                <i class="fas fa-cog fa-fw"></i>
+            {% elsif p.tags[0] == 'japanese' %}
+                <i class="fas fa-language fa-fw"></i>
+            {% elsif p.tags[0] == 'japan' %}
+                <i class="fas fa-sun fa-fw"></i>
+            {% else %}
+                <i class="fas fa-edit fa-fw"></i>
+            {% endif %}
+            <span class="light">{{ p.date | date: "%Y.%m" }}</span> <a href="{{ p.url }}">{{ p.title }}</a></span><br />
+            {{ p.excerpt | strip_html | truncatewords:20 }}
+        </p>
+    {% endfor %}
 </div>
 {% include foot.html %}
