@@ -4,9 +4,7 @@ title: Japanese Line Breaks
 tags: japanese
 ---
 
-<span class="smaller italics">Note: the formatting on this page will depend on your browser and/or screen size, but the word-break examples might yield something of a trainwreck.</span>
-
-Regardless of spaces ([latin](https://unicode-table.com/en/0020/) or [ideographic](https://unicode-table.com/en/3000/)) or punctuation, [word-break: keep-all](https://www.w3schools.com/cssref/css3_pr_word-break.asp) is a necessary CSS attribute to avoid Japanese words being split indiscriminately.
+Regardless of spaces ([latin](https://unicode-table.com/en/0020/) or [ideographic](https://unicode-table.com/en/3000/)) or punctuation, [word-break: keep-all](https://www.w3schools.com/cssref/css3_pr_word-break.asp) is a necessary CSS attribute to avoid Japanese words being split indiscriminately. <span class="italics">Note: the formatting on this page will depend on your browser and/or screen size, but the word-break examples might yield something of a trainwreck.</span>
 
 ## Line Break on Japanese Punctuation
 Most browsers and platforms don't preferentially break lines on standard Japanese punctuation, but even those that do will still leave large blocks of text escaping their containers.

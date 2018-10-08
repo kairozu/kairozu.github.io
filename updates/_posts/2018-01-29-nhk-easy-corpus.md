@@ -3,10 +3,9 @@ layout: content
 title: NHK Easy Corpus
 tags: japanese code
 ---
+I wanted to make a Japanese text corpus with a reading level somewhere on the lower end of the young adult range. NHK Easy News (aka NEWS WEB EASY) seems to be the gold standard for frequently updated, quality content specifically aimed at younger readers and those learning Japanese. The stories are written in short, easy sentences, with furigana above the kanji and dictionary popups on more complicated vocabulary. Alas, there's no easily accessible, complete archive.
 
 <span class="smaller italics">Note: I love love love the NHK. Please pay your NHK reception fee (受信料) if you live in Japan. If you decide to pull text from the NHK Easy site, please be kind with your bandwidth demands, and don't abuse their site. Thanks. <3</span>
-
-I wanted to make a Japanese text corpus with a reading level somewhere on the lower end of the young adult range. NHK Easy News (aka NEWS WEB EASY) seems to be the gold standard for frequently updated, quality content specifically aimed at younger readers and those learning Japanese. The stories are written in short, easy sentences, with furigana above the kanji and dictionary popups on more complicated vocabulary. Alas, there's no easily accessible, complete archive.
 
 I sourced an NHK Easy archive from 2012-Current through a few different methods:
 <ul>
