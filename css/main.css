@@ -2,25 +2,24 @@
 
 html, body {
     height: 100%;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
 }
 body.mainContent {
-    background: #c3ccce;
+    background: #dbe0e1;
     color: #17242c;
 }
-li p {
-    margin: 0;
-}
-th {
-    text-align: left;
-}
-h1, h2, h3 {
-    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; 
-}
-code {
+li { margin: 5px 0; }
+li p { margin: 0; }
+th { text-align: left; }
+p > code {
     word-wrap: break-word; /* old name */
     overflow-wrap: break-word;
+}
+.snugTop {
+    margin-top: 0;
 }
 .divResponsive {
     min-height: .01%;
@@ -45,7 +44,6 @@ a, a:link, a:visited {
     word-break: break-word;
 }
 a, a:focus, a:hover { color: #687768; }
-.light { font-weight: 200; }
 .bold { font-weight: 600; }
 .italics { font-style: italic; }
 .larger { font-size: larger; }
@@ -53,11 +51,19 @@ a, a:focus, a:hover { color: #687768; }
 .xsmall { font-size: x-small; }
 .mono { font-family: monospace; }
 .text-align-center { text-align: center; }
-.anon { font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; }
 .bodyWrap { margin: 0 20px; }
 .bodyContainer {
     max-width: 1170px;
     margin: 0 auto;
+}
+.listDate {
+    font-size: x-small;
+    padding: 2px 4px;
+    border-radius: 5px;
+    background: #c3ccce;
+    margin-left: 6px;
+    vertical-align: top;
+    line-height: 2.4;
 }
 
 .flexBox {
@@ -79,7 +85,6 @@ a, a:focus, a:hover { color: #687768; }
     font-weight: 600;
     font-size: larger; 
     text-align: center;
-    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; 
 }
 .fcMain {
     max-width: 1170px;
