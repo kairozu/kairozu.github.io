@@ -3,7 +3,7 @@
 	<h1>{{ page.title }}</h1>
 
 	{% if page.hasimg %}
-		<img class="headerImg" width="{{ page.imgwidth }}" src="{{ page.hasimg }}" />
+		<a href="{{ page.hasimg }}"><img class="headerImg" width="{{ page.imgwidth }}" src="{{ page.hasimg }}" alt="{{ page.title }}" /></a>
 	{% endif %}
 	<div class="headerData">
 		{% assign p = page %}

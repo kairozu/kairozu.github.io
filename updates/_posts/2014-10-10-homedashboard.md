@@ -23,7 +23,7 @@ Central control dashboard to consolidate my various "smart home" systems (Hue, N
 6. Acquire necessary API keys for your personal use (Google Maps, Weather Underground)
 
 ## Home Screen
-<img class="image_l" height="150" alt="home screen" src="/images/home.png" />
+<a href="/images/home.png"><img class="imageL" height="130" alt="home screen" src="/images/home.png" /></a>
 
 The header tab navigation/general page aesthetics are css-styled via bootstrap w/some additional modifications that probably qualify as a crime against standardization. Font awesome icons are used in the navigation tabs. Currently the traffic map stands alone on half the page; I might extend it to fill the content width to make things look less awkward. 
 
@@ -33,7 +33,7 @@ The header tab navigation/general page aesthetics are css-styled via bootstrap w
 * API Key for Google Maps (Log in > Services > Google Maps JS APIv3 > API Access > Key for browser apps): [https://code.google.com/apis/console](https://code.google.com/apis/console)
 
 ## Weather Update
-<img class="image_r" height="150" alt="weather" src="/images/weather.png" />
+<a href="/images/weather.png"><img class="imageR" height="130" alt="weather" src="/images/weather.png" /></a>
 
 Basic splash page to display date/time/current+future weather conditions. I used the default Weather app under Windows 8 as a perpetual display in my living room for some time, but as the design faltered and ads appeared, I decided to roll my own solution. This works best as a perpetual display, not as an occasionally-visited browser tab.
 
@@ -48,12 +48,12 @@ Basic splash page to display date/time/current+future weather conditions. I used
 * Needs an hourly view for the current day, and possibly changing the rain cloud percentage to something else.. multiple people have asked me if that's percent humidity, but it's supposed to be percent chance of rain. Debating signing up for a paid WUnderground plan so I have access to more data.
 * Currently I'm grabbing the "name" of the weather (cloudy, sunny, etc) from the icon that WUnderground would normally assign. This changes the weather icon on my page along w/the color of the background. Grey for cloudy, blue for rain, yellow for sun:
 
-<img class="centerImg" alt="green blue yellow weather screens" src="/images/weather-gby.png" />
+<a href="/images/weather-gby.png"><img class="imageCenter" alt="green blue yellow weather screens" src="/images/weather-gby.png" /></a>
 
 * Also dark grey/black for night, as well as green for "oh no, there's an error" or "I haven't encountered this weather-name before." I'm not 100% happy with these gradients, but I haven't thought of a better way to display current conditions. Considering going the Yahoo! Weather route and pulling CC-licensed images from Flickr which match the current weather conditions.
 
 ## Light Control (Hue)
-<img class="image_l" height="150" alt="lights" src="/images/lights.png" />
+<a href="/images/lights.png"><img class="imageL" height="130" alt="lights" src="/images/lights.png" /></a>
 
 Interacting with the Philips Hue lights is both surprisingly and alarmingly easy. Authentication with the Hue bridge is done via plaintext http and only requires a known username for full authentication ("new" users require physical authentication through the hub, but existing usernames can be easily hijacked). Anyone on the same network would have little trouble taking control of your lights. That said, interacting with the Hue system is fairly straightforward, and the jsHue library from John Peloquin (link below) is an eloquent interface for the Hue API.
 
@@ -67,7 +67,7 @@ Commands are sent to the Hue system as URL strings. The API debug tool (http://<
 * jsColor Library
 
 ## Sun Shade Control
-<img class="image_r" height="150" alt="shades" src="/images/shades.png" />
+<a href="/images/shades.png"><img class="imageR" height="130" alt="shades" src="/images/shades.png" /></a>
 
 Automatic/ethernet-based sun shade control for a pre-existing Somfy installation. A Somfy RF board connected to an Arduino w/an ethernet shield is used for back-end control, w/an Android app or web browser used for sending commands. Shade activation works by accessing custom URLs via the internal network to indicate desired shade mechanism. Should not be used without some layer of security, which depends on your network. 
 
@@ -78,20 +78,18 @@ Automatic/ethernet-based sun shade control for a pre-existing Somfy installation
 * Optoisolators; one for each channel that you plan to use: [https://www.sparkfun.com/products/784](https://www.sparkfun.com/products/784)
 * Resistors (~350 Ohm)
 
-<div class="flexBox">
-	<a href="/images/denhikage_board.jpg"><div class="innerImg" style="background-image: url('/images/denhikage_board.jpg');"></div></a>
-	<a href="/images/denhikage1.jpg"><div class="innerImg" style="background-image: url('/images/denhikage1.jpg');"></div></a>
-</div>
-
 ### Sun Shade Notes
+<a href="/images/denhikage-ss.png"><img class="imageR" height="170" alt="android app screenshot of shade operations" src="/images/denhikage-ss.png" /></a>
 * Somfy RF boards can be harvested from Somfy remotes -- purchase one that has however many channels you which to replicate. To clone an existing remote's settings, put both remotes on the channel you want to clone, then hold the button on the back of the original remote down for 2s (the shades will move up/down briefly), followed by holding the button on the back of the new remote down for 2s (the shades will again move up/down briefly). I seemed to have some issues with this process if I tried to do sequential channel programming, so after doing one channel, I'd wait about 5 minutes, do another channel, etc.
 * More information on Somfy systems can be found here: [http://www.somfy.com/.../literature/instructions](http://www.somfy.com/nam_pro/index.cfm?page=/nam_pro/home/trade/commercial_literature/instructions)
 * A single Android app controls both, I tried to make the shade shapes roughly translate to the shade shapes IRL. You select the shade, and then hit up, down, or stop. The app works by sending a request to a specific URL at the IP of each arduino -- when those requests are received, the arduino parses the URL to extract the command. This also means you can control the shades via your computer.
 * Arduino connects to ethernet shield which connects to the protoboard. Each 'control' (up, down, stop, and select) is run through an optoisolator (quad chip used in these examples) before connecting to a digital pin. Each LED is connected to an analog pin. I'm really bad at Fritzing, it turns out, but here's a spiderweb to illustrate.
 
+<div class="spacerClear"></div>
+
 <div class="flexBox">
-	<a href="/images/denhikage-ss.png"><div class="innerImg" style="background-image: url('/images/denhikage-ss.png');"></div></a>
-	<a href="/images/layout-messy.PNG"><div class="innerImg" style="background-image: url('/images/layout-messy.PNG');"></div></a>
+	<a href="/images/layout-messy.PNG"><img width="300" src="/images/layout-messy.PNG" alt="fritzing schematic of arduino layout" /></a>
+	<a href="/images/denhikage_board.jpg"><img width="300" src="/images/denhikage_board.jpg" alt="somfy board wired to arduino shield"/></a>
 </div>
 
 ## Music Dashboard (Sonos)
@@ -101,10 +99,9 @@ Modified version of jishi's Node.js Sonos Web Controller. I primarily listen to 
 * Node.js: [http://nodejs.org](http://nodejs.org/)
 * Sonos Controller for Node.js: [https://github.com/jishi/node-sonos-web-controller](https://github.com/jishi/node-sonos-web-controller)
 
-Installing Node.js & have Node.js start the Sonos interface on boot, add this to your rc.local file:<br />
-
-<span class="mono">
-wget http://node-arm.herokuapp.com/node\_latest\_armhf.deb<br />
-sudo dpkg -i node\_latest\_armhf.deb<br />
+Installing Node.js & have Node.js start the Sonos interface on boot, add this to your rc.local file:
+```
+wget http://node-arm.herokuapp.com/node\_latest\_armhf.deb
+sudo dpkg -i node\_latest\_armhf.deb
 su pi -c 'node /var/www/sonos/server.js < /dev/null &'
-</span>
+```

@@ -2,12 +2,23 @@
 layout: content
 title: Progressive Web Apps
 tags: project code
-hasgithub: https://github.com/kairozu/pwamber/
+hasgithub: https://github.com/kairozu/Progressive-Web-Apps/
 ---
-I've been fascinated by Progressive Web Applications (PWA) lately. I've largely been using Angular to build things, but with every new PWA comes a few odds and ends that I've learned, and as such, I'll try to keep track of them here. The general repository for these PWA experiments is here: [https://github.com/kairozu/pwamber/](https://github.com/kairozu/pwamber).
+I've been fascinated by Progressive Web Applications (PWA) lately. I've largely been using Angular to build things, but with every new PWA comes a few odds and ends that I've learned, and as such, I'll try to keep track of them here. The general repository for these PWA experiments is here: [https://github.com/kairozu/Progressive-Web-Apps/](https://github.com/kairozu/Progressive-Web-Apps/).
+
+## Spike Train Calculator (October 2018)
+<img class="imageR" height="150" alt="weather" src="/images/spiketrain.png" />
+https://github.com/kairozu/Progressive-Web-Apps/ephys-calc
+
+Converts between inter-pulse intervals/train burst widths and frequency/number of pulses & plots an example waveform (also my first foray into JS/jQuery). Mostly useful for visualizing spike trains in discussions or double checking your math when hopping between ephys equipment.
+
+Once you begin entering values, the example waveform will not plot until all values have been entered. You can choose between calculating your waveform from the inter-pulse period and the train burst width, or from the # of pulses and the frequency of those pulses -- the alternate option will be displayed automatically.  Scientific notation is displayed on the right for reference if you're using a system that requires SN (AM Systems, yay).
+
+<div class="spacerClear"></div>
 
 ## Mathotron (October 2018)
-<img class="image_l" height="135" alt="mathotron" src="/images/mathotron.png" />
+<img class="imageL" height="160" alt="mathotron" src="/images/mathotron.png" />
+https://github.com/kairozu/Progressive-Web-Apps/mathotron
 
 Simple calculator that keeps a ticker tape history of mathematical operations. It's pretty simple and lacking in aesthetic quality, but I wanted to test hosting PWAs on GitHub Pages.
 

@@ -12,6 +12,8 @@ There are pros and cons of the Gear S2, but I like the round interface/bezel nav
 
 This watch face is programmed using the JavaScript/HTML5 web app method, and it features: current time +10 min, second time zone, day of the week + date, local weather, daily step count, and battery status. This is a collection of the resources I used & the issues I encountered: some solved, others circumvented, and a handful which remain a mystery.
 
+The AWatch watch face relies on the AWatch Config companion app: [https://github.com/kairozu/Gear-S2-AWConfig](https://github.com/kairozu/Gear-S2-AWConfig).
+
 ## Development Sandbox
 1. Download the Tizen SDK: [https://developer.tizen.org/development/tools/download](https://developer.tizen.org/development/tools/download)
 2. Register for Samsung dev certificates: [http://developer.samsung.com/gear/guide-registering-certificates](http://developer.samsung.com/gear/guide-registering-certificates)
@@ -38,9 +40,9 @@ This watch face is programmed using the JavaScript/HTML5 web app method, and it 
 
 ## Progress (Concept->Build 1->Build 2)
 <div class="flexBox">
-	<a href="/images/awatch_template.png"><div class="innerImg" style="background-image: url('/images/awatch_template.png');"></div></a>
-	<a href="/images/awatch_build1.png"><div class="innerImg" style="background-image: url('/images/awatch_build1.png');"></div></a>
-    <a href="/images/awatchface.png"><div class="innerImg" style="background-image: url('/images/awatchface.png');"></div></a>
+	<a href="/images/awatch_template.png"><img width="300" src="/images/awatch_template.png" alt="messy drawing of watch face ideas" /></a>
+	<a href="/images/awatch_build1.png"><img width="280" src="/images/awatch_build1.png" alt="first attempt at watch face layout" /></a>
+    <a href="/images/awatchface.png"><img width="280" src="/images/awatchface.png" alt="final watch face layout" /></a>
 </div>
 
 ## Current Frustrations
@@ -51,36 +53,45 @@ This watch face is programmed using the JavaScript/HTML5 web app method, and it 
 **Weather**  
 Without an easy way to call for weather data from the built in app, I'm pulling the current location and querying Weather Underground w/the latitude/longitude for current conditions.
 
-1. Get the current position: <span class="mono">navigator.geolocation .getCurrentPosition(success, failure, options);</span>
-2. Create a new <span class="mono">XMLHttpRequest</span> to grab the data from WUnderground: [http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml](http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml) (Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc)
-3. Parse out the data you want from the returned XML tags (<span class="mono">temp_f</span> and <span class="mono">weather</span> in my case).
-4. Create a routine to update as desired; since alarm services aren't currently available unless you have a Samsung Partner certificate (shaking my head at you, Samsung), in my <span class="mono">updateTime()</span> function I update the weather once an hour (if minutes <= 30 and weather hasn't already been checked that hour).
+1. Get the current position:
+```
+navigator.geolocation.getCurrentPosition(success, failure, options);
+```
+2. Create a new <code>XMLHttpRequest</code> to grab the data from WUnderground: [http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml](http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml) (Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc)
+3. Parse out the data you want from the returned XML tags (<code>temp_f</code> and <code>weather</code> in my case).
+4. Create a routine to update as desired; since alarm services aren't currently available unless you have a Samsung Partner certificate (shaking my head at you, Samsung), in my <code>updateTime()</code> function I update the weather once an hour (if minutes <= 30 and weather hasn't already been checked that hour).
 
 **Pedometer**  
 The HumanActivityMonitor API allows you query the total # of steps taken since the application (watch face widget in this case) was loaded, or the total # of steps taken FOR ALL TIME. I have no idea who decided why those were more important than "daily steps" which is something that the S-Health pedometer can do. There's a function to ask for differences in step count based on timestamps, but the documentation wasn't sufficient for me figuring out how to use that in my favor. End result: a dirty hack. Every night at midnight I save the total # of steps taken FOR ALLLLL TIMEEEE to local storage.
 
-1. I call the <span class="mono">AccumulativePedometerListener</span> whenever new steps are detected: <span class="mono">tizen.humanactivitymonitor. setAccumulativePedometerListener( onStepChange );</span>
-2. I grab the last saved total step count: <span class="mono">step_diff = localStorage[ 'com.dendriticspine .awatch.stepcount' ];</span>
-3. If <span class="mono">step_diff</span> is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage: <span class="mono">localStorage.setItem( 'com.dendriticspine .awatch.stepcount', step_ts );</span>
-4. I subtract the current total step count from <span class="mono">step_diff</span>.
-5. At midnight I save the current total step count to <span class="mono">step_diff</span> again.
+1. I call the <code>AccumulativePedometerListener</code> whenever new steps are detected & grab the last saved total step count:
+```
+tizen.humanactivitymonitor.setAccumulativePedometerListener(onStepChange);
+step_diff = localStorage['com.dendriticspine.awatch.stepcount'];
+```
+2. If <code>step_diff</code> is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage:
+```
+localStorage.setItem('com.dendriticspine.awatch.stepcount', step_ts);
+```
+3. I subtract the current total step count from <code>step_diff</code>.
+4. At midnight I save the current total step count to <code>step_diff</code> again.
 The end result is that for the first day, before midnight, the count is inaccurate. Once the first midnight occurs, and the proper "total # of steps taken since you've had the device" is saved, the daily step count should be accurate. This is really ugly, I know, I'd love a better way to accomplish this.
 
 **Battery**  
-Battery monitoring is straightforward, make the following calls and update your display accordingly in the <span class="mono">getBatteryState()</span> function:
+Battery monitoring is straightforward, make the following calls and update your display accordingly in the <code>getBatteryState()</code> function:
 
-<span class="mono">
-battery.addEventListener( 'chargingchange', getBatteryState );<br />
-battery.addEventListener( 'chargingtimechange', getBatteryState );<br />  
-battery.addEventListener( 'dischargingtimechange', getBatteryState );* <br /> 
-battery.addEventListener( 'levelchange', getBatteryState );
-</span>
+```
+battery.addEventListener('chargingchange', getBatteryState);
+battery.addEventListener('chargingtimechange', getBatteryState);  
+battery.addEventListener('dischargingtimechange', getBatteryState );
+battery.addEventListener('levelchange', getBatteryState);
+```
 
 **Time/Time Zones**  
 
-* Use <span class="mono">date = tizen.time.getCurrentDateTime()</span> to call the current date/time, and pull your desired info from the resulting date object.
-* Display a time other than the reported one, e.g. I want my watch to be 10 minutes fast: <span class="mono">date.setMinutes(date.getMinutes() + 10)</span>
-* Switch time zones: <span class="mono">date2 = date.toTimezone('Asia/Tokyo')</span>
+* Use <code>date = tizen.time.getCurrentDateTime()</code> to call the current date/time, and pull your desired info from the resulting date object.
+* Display a time other than the reported one, e.g. I want my watch to be 10 minutes fast: <code>date.setMinutes(date.getMinutes() + 10)</code>
+* Switch time zones: <code>date2 = date.toTimezone('Asia/Tokyo')</code>
 
 **Watch Ambient Mode**  
 The Watch Face has two different display states: “active” and “always-on.” The name “active state” is very self-explanatory. In the active state, the Watch Face displays in full color. On the other hand, the always-on state (aka "ambient mode") uses limited colors and brightness. Ambient mode can use up to 10 percent of the total screen pixels in low brightness, doesn't support anti-aliasing or "second" information (due to the lower screen refresh rates), and the background must be in black. Allowed colors are: cyan, magenta, yellow, red, green, blue, and white (no greyscale).  I use the canvas HTML element to draw an analog watch w/the day/date display. Right now I'm hiding/showing HTML elements to switch between the canvas layout and the regular HTML layout, which seems ugly, but works well enough.
@@ -94,12 +105,12 @@ Submitting an app to the Google Play Store is a painless and one might almost sa
 
 Update: After 7 days, my watch face widget was approved.. but the partner configuration app was denied with the report below. While the issue they point out is real, and I absolutely don't mind being held to their design quality standards, I'm absolutely floored that someone is actually going through QA for all of the submitted apps. THEY EVEN INCLUDED A CUSTOM VIDEO OF MY APP RUNNING ON A DEV KIT TO HIGHLIGHT THE ISSUE THEY WERE HAVING. Absolutely crazy!! No wonder it took 7 days!
 
-<img class="centerImg" src="/images/samsungdenied.png" />
+<a href="/images/samsungdenied.png"><img class="imageCenter" src="/images/samsungdenied.png" /></a>
 
-Update 2: I fixed the text formatting issue and re-submitted.. and waited another 7 days. This time it was rejected because configuration changes made from the AWConfig app aren't immediately reflected in the AWatch watchface. Unfortunately this is intentional; the watchface must be reloaded manually. I don't have partner-level API access (and lack the business license/desire needed to apply) so I cannot force the watchface to reload from within the AWConfig app (tizen.application.kill is partner-level). I don't want to query the filesystem for configuration changes from AWatch because that'd be an unreasonable and unnecessary drain on resources. I suppose I'll give them credit for conveying the issue without using words? Images below are screenshots from the video that Samsung sent me w/the rejection. I submitted a question through their "one on one developer support" (?) asking for recommendations. We'll see.
+Update 2: I fixed the text formatting issue and re-submitted.. and waited another 7 days. This time it was rejected because configuration changes made from the [AWConfig app](https://github.com/kairozu/Gear-S2-AWConfig) aren't immediately reflected in the AWatch watch face. Unfortunately this is intentional; the watch face must be reloaded manually. I don't have partner-level API access (and lack the business license/desire needed to apply) so I cannot force the watch face to reload from within the [AWConfig app](https://github.com/kairozu/Gear-S2-AWConfig) (tizen.application.kill is partner-level). I don't want to query the filesystem for configuration changes from AWatch because that'd be an unreasonable and unnecessary drain on resources. I suppose I'll give them credit for conveying the issue without using words? Images below are screenshots from the video that Samsung sent me w/the rejection. I submitted a question through their "one on one developer support" (?) asking for recommendations. We'll see.
 
-<img class="centerImg" src="/images/watch_failure.png" />
+<a href="/images/watch_failure.png"><img class="imageCenter" src="/images/watch_failure.png" /></a>
 
-<b>Update 3: Success! Both AWatch and AWConfig are both listed on the Samsung Gear Store. There are updates I'd like to make on both apps, but the lengthy process involved w/updating apps puts any minor updates I'd like to make at the absolute bottom of my todo list. </b>
+<span class="bold">Update 3: Success! Both AWatch and AWConfig are both listed on the Samsung Gear Store. There are updates I'd like to make on both apps, but the lengthy process involved w/updating apps puts any minor updates I'd like to make at the absolute bottom of my todo list. </span>
 
-Update 4: I pushed a few updates with additional functions (temperature unit display, 24 hour mode, retaining saved data in AWConfig), but unless some magnificent bug is discovered, I'm no longer working on this project. Pushing updates to the Samsung store is too frustrating, nearly every update was met with an initial rejection for absurd reasons (eg, 1: displayed weather data on my watchface doesn't match the weather data on the official weather app; this is because my data updates every hour from weather underground while their app only updates every 6 hours from weather.com, 2: displayed step count doesn't match SHealth step count for the first 24 hours; this is because they don't allow access to the SHealth daily step count!). Turnaround time between submission and first rejection was usually ~7 days, plus re-submission and certification adding another ~7 days. 2 weeks for a simple update that had no problems to begin with makes for a miserable experience.
+Update 4: I pushed a few updates with additional functions (temperature unit display, 24 hour mode, retaining saved data in AWConfig), but unless some magnificent bug is discovered, I'm no longer working on this project. Pushing updates to the Samsung store is too frustrating, nearly every update was met with an initial rejection for absurd reasons (eg, 1: displayed weather data on my watch face doesn't match the weather data on the official weather app; this is because my data updates every hour from weather underground while their app only updates every 6 hours from weather.com, 2: displayed step count doesn't match SHealth step count for the first 24 hours; this is because they don't allow access to the SHealth daily step count!). Turnaround time between submission and first rejection was usually ~7 days, plus re-submission and certification adding another ~7 days. 2 weeks for a simple update that had no problems to begin with makes for a miserable experience.

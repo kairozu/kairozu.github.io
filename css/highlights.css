@@ -1,7 +1,8 @@
 .highlight {
   background-color: #efefef;
-  padding: 10px 10px 10px 15px;
+  padding: 5px 5px 5px 10px;
   margin: 20px 0 20px 0;
+  border-radius: 5px;
   overflow: auto; }
 
 code { font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; color: #717171; }

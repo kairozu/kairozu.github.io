@@ -54,10 +54,10 @@
 
         </div>
         <div class="fcMainList">
-            {% for p in site.posts limit 15 %}
+            {% for p in site.posts limit 6 %}
                 <span class="larger"><span class="light">{{ p.date | date: "%Y.%m" }}</span> <a href="{{ p.url }}">{{ p.title }}</a></span>
                 <p>
-                    {{ p.excerpt | remove: 'Summary' | strip_html | truncatewords:75 }}
+                    {{ p.excerpt | strip_html | truncatewords:150 }}
                 </p>
             {% endfor %}
         </div>
