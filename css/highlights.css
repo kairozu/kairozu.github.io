@@ -1,15 +1,17 @@
 .highlight {
-  background-color: #efefef;
-  padding: 5px 5px 5px 10px;
-  margin: 20px 0 20px 0;
-  border-radius: 5px;
-  line-height: 1.5em;
-  overflow: auto; }
+    background-color: #efefef;
+    padding: 5px 5px 5px 10px;
+    margin: 20px 0 20px 0;
+    border-radius: 5px;
+    line-height: 1.5em;
+    overflow: auto; 
+}
 
 code { 
-  font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; 
-  color: #717171;
-  font-size: small; }
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; 
+    color: #717171;
+    font-size: small; 
+}
 
 .highlight .c { color: #5B507A } /* Comment MOD */
 .highlight .err { color: #717171 } /* Error MOD */

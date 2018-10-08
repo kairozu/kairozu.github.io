@@ -15,6 +15,13 @@ li p {
 th {
     text-align: left;
 }
+h1, h2, h3 {
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; 
+}
+h2 {
+    border-bottom: 1px solid #17242c;
+    padding-bottom: 3px;
+}
 code {
     word-wrap: break-word; /* old name */
     overflow-wrap: break-word;
@@ -50,6 +57,7 @@ a, a:focus, a:hover { color: #687768; }
 .xsmall { font-size: x-small; }
 .mono { font-family: monospace; }
 .text-align-center { text-align: center; }
+.anon { font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; }
 .bodyWrap { margin: 0 20px; }
 .bodyContainer {
     max-width: 1170px;
@@ -75,6 +83,7 @@ a, a:focus, a:hover { color: #687768; }
     font-weight: 600;
     font-size: larger; 
     text-align: center;
+    font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; 
 }
 .fcMain {
     max-width: 1170px;

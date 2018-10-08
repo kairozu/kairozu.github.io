@@ -7,6 +7,7 @@ tags: japanese code
 
 Word clouds are kinda cliche; trying to interpret word frequency -- or really any other functional information -- from a smoothie of words and color will only take you so far. That said, they're cool looking, so hey. These are a few of my favorites -- a brief introduction to generating word clouds using the story of ももたろう, a Kairozu word cloud shaped like an orange version of Kai the Koi, and a [JAXA](http://global.jaxa.jp/) [logo](https://commons.wikimedia.org/wiki/File:Jaxa_logo.svg) with words mined from the [@JAXA_jp](https://twitter.com/JAXA_jp) Twitter account.
 
+## ももたろう Word Cloud
 First, the most basic of word clouds using the story of [ももたろう](http://hukumusume.com/douwa/pc/jap/08/01.htm). The general order for creating these word clouds is as follows: (1) Load the text file with the story, (2) tokenize the text, (3) remove words I don't want to include, (4) indicate desired colors and/or shape, and then finally (5) create the word cloud. These steps are numbered in each code excerpt below.
 
 <a href="hhttps://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png"><img class="imageCenter" src="https://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png" alt="word cloud using words from momotaro"/></a>
@@ -52,6 +53,7 @@ image = wordcloud.to_image()
 image.show()                    # display generated wordcloud
 ```
 
+## Kairozu Word Cloud
 For the [Kairozu.com](https://kairozu.com) word cloud, I dumped sentences from Kairozu's first few chapters into a CSV file and ran that text through MeCab to pull out worthwhile bits of grammar (nouns, verbs, and adjectives). For more background on MeCab, check out: [Tokenization of Japanese Text](https://kairozu.github.io/updates/japanese-tokenization) and [Simple Japanese Text Analysis](https://kairozu.github.io/updates/simple-jp-text-analysis). This Python library does most of the word cloud heavy lifting: [https://github.com/amueller/word_cloud](https://github.com/amueller/word_cloud) (thanks Andreas Mueller!).
 
 <a href="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud.png"><img class="imageCenter" src="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud_small.png" alt="kairozu.com word cloud" /></a>
@@ -83,6 +85,7 @@ wordcloud = WordCloud(collocations=False, mask=mask, background_color="white", f
             relative_scaling=0.5, color_func=image_colors, random_state=3).generate(kaifull)
 ```
 
+## JAXA Word Cloud (Blue)
 The JAXA word cloud is my favorite.. in part because I learned so many new kanji + words. :) The source text for this was pulled from the [@JAXA_jp](https://twitter.com/jaxa_jp) Twitter feed. To recreate this, you'll need to make your own Twitter API keys.
 
 <ol>
@@ -125,7 +128,7 @@ Similar to the Kairozu word cloud, I tokenize the text with MeCab and keep desir
 def jaxa_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
     return "hsl(207, 100%%, %d%%)" % random.randint(20, 65)
 ```
-
+## JAXA Word Cloud (Highlights)
 <a href="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/jaxa_word_highlight.png"><img class="imageCenter" src="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/jaxa_word_highlight_small.png" alt="JAXA word cloud with highlights"/></a>
 
 <ul>
