@@ -3,7 +3,6 @@ layout: content
 title: Japanese Tokenization
 tags: japanese code 
 ---
-
 In English, words are separated by spaces, which makes word tokenization very easy -- just split the sentence on whitespace, e.g. string.split() in Python. Japanese sentences rarely involve such a convenient word delimiter, so tokenizing on words requires an extra step. This a quick introduction to word tokenization of Japanese sentences using Python and [MeCab](https://taku910.github.io/mecab/). These instructions apply to the Linux command line; if you're using MacOS, I suggest looking at [Homebrew Package Manager](https://brew.sh/) (use <code>brew</code> instead of <code>apt-get</code>), and for Windows, the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about).
 
 [MeCab](https://taku910.github.io/mecab/) is an open source morphological analysis engine that uses [conditional random fields](http://repository.upenn.edu/cgi/viewcontent.cgi?article=1162&context=cis_papers) to build probabilistic models for parameter estimation. If you’re curious about the technical details or advantages over HMMs/MEMMs/stochastic grammars, check out the linked paper.

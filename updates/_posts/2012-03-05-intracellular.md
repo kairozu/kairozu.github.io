@@ -9,6 +9,8 @@ The nervous system of Helix aspersa consists of a small number of large neurons 
 
 Glass microelectrodes are used for intracellular recording. 1.5mm diameter glass tubes are heated/pulled until they extend to a very fine point (less than 0.5um -- small enough that it can be inserted across the cell's plasma membrane without severe damage). The microelectrode is filled w/3M potassium chloride, which forms a conductive path through the electrode into the cell. This was done in a laboratory setting using a vibration isolation table ("air table") to protect the preparation from mechanical disturbances. Impaling the neuron with a microelectrode causes damage to the cell, often eliciting an erratic response of spontaneous activity and causing a depolarization in the cell membrane; hyperpolarizing DC current can be used to stabilize the cell if needed.
 
+<div class="spacerClear"></div>
+
 ## Equipment Used
 * A-M Systems Humbug Noise Eliminator, 110V, 60Hz
 * WPI Model 767-B Intra Electrometer

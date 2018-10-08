@@ -3,7 +3,6 @@ layout: content
 title: Simple JP Text Analysis
 tags: japanese code
 ---
-
 This is a quick tutorial on using Python to 1) load a simple text file with some Japanese text, 2) perform word tokenization on individual sentences using MeCab, 3) count the most frequently used nouns in the text, 4) perform a quick-and-dirty conversion of past-tense sentences to present-tense. The files mentioned below are also available in the [Japanese-Text-Analysis GitHub repo](https://github.com/kairozu/Japanese-Text-Analysis).
 
 We'll use a simplified version of the [Ant and the Grasshopper](http://read.gov/aesop/052.html), in the file [grasshopper.txt](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper.txt).

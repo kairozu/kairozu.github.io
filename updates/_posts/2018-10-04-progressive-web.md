@@ -6,6 +6,8 @@ hasgithub: https://github.com/kairozu/Progressive-Web-Apps/
 ---
 I've been fascinated by Progressive Web Applications (PWA) lately. I've largely been using Angular to build things, but with every new PWA comes a few odds and ends that I've learned, and as such, I'll try to keep track of them here. The general repository for these PWA experiments is here: [https://github.com/kairozu/Progressive-Web-Apps/](https://github.com/kairozu/Progressive-Web-Apps/).
 
+<div class="spacerClear"></div>
+
 ## Mathotron (October 2018)
 <img class="imageL" height="160" alt="mathotron" src="/images/mathotron.png" />
 <div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/kairozu/Progressive-Web-Apps/mathotron">https://github.com/kairozu/Progressive-Web-Apps/mathotron</a></div>

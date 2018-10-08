@@ -3,7 +3,6 @@ layout: content
 title: NLTK Basics
 tags: japanese code
 ---
-
 NLTK, or the Natural Language Toolkit, is a Python-based series of libraries and other tools for symbolic and statistical natural language processing. This is a short introduction to some of the basic functions and how they apply with Japanese text. All code snippets below are combined into a single file for download here: [japanese_nltk_basics.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/nltk-basics/japanese_nltk_basics.py).
 
 The online book [Natural Language Processing with Python](http://www.nltk.org/book/) is a wonderful overview of NLTK (in English), and the author of the [Japanese translation](https://www.oreilly.co.jp/books/9784873114705/), [Masato Hagiwara](http://masatohagiwara.net/), has written an excellent addition to [Japanese-specific applications](http://www.nltk.org/book-jp/ch12.html).

@@ -8,6 +8,8 @@ tags: project science code
 ---
 Most commercial water/fluid reward systems used in research settings cost a few hundred dollars (or more) and aren't easily modified / are difficult to integrate with existing hardware. This is a series of fairly quick hacks, but they do the job well and won't cost you >$100.. much less if you already have some of the components sitting around. Using a peristaltic pump is preferred, as the motor never actually comes into contact with the fluid itself. There are three different versions here -- the one I personally use is built with a Raspberry Pi, the L293D quadruple half-H driver from TI, and a peristaltic pump from Adafruit. The other version uses an Arduino with a SeeedStudio motor shield, but any motor shield made for the Arduino would probably do fine. You could also build an Arduino-based version using an L293D.
 
+<div class="spacerClear"></div>
+
 ## Components/Languages
 * Peristaltic Liquid Pump (12VDC / 300mA) with Silicone Tubing (max flow 100mL/min): [http://www.adafruit.com/products/1150](http://www.adafruit.com/products/1150)
 * 12VDC Adapter (old D-Link wall adapter in my case) to power the motor

@@ -3,7 +3,6 @@ layout: content
 title: Cleaning Japanese Text
 tags: japanese code
 ---
-
 Mining text sources from the web yields all sorts of textual oddities that'll destroy any morphological analysis and word-tokenization attempts. I remove residual formatting tags and other non-text data, and then try to dismiss text which falls outside of a normal sentence structure (contact information, headlines, etc). The files mentioned below are also available in the [jp-text-cleaning GitHub repo](https://github.com/kairozu/Japanese-Text-Analysis/tree/master/jp-text-cleaning).
 
 ## HTML Tags

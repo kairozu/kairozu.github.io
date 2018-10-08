@@ -20,9 +20,7 @@
                         {% else %}
                             <span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
                         {% endif %}
-                        <a href="{{ production_url }}{{ p.url }}">
-                            {{ p.title }}
-                        </a>
+                        <a href="{{ production_url }}{{ p.url }}">{{ p.title }}</a>
                     </li>
                 {% endfor %}
             </ul>

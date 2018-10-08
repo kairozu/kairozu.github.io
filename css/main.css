@@ -11,6 +11,11 @@ body.mainContent {
     background: #dbe0e1;
     color: #17242c;
 }
+h2 {
+    margin-block-start: 1em;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #618891;
+}
 li { margin: 5px 0; }
 li p { margin: 0; }
 th { text-align: left; }
@@ -18,9 +23,7 @@ p > code {
     word-wrap: break-word; /* old name */
     overflow-wrap: break-word;
 }
-.snugTop {
-    margin-top: 0;
-}
+.snugTop { margin-top: 2px; }
 .divResponsive {
     min-height: .01%;
     overflow-y: hidden;

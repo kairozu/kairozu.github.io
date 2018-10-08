@@ -8,6 +8,8 @@ tags: project code science japanese update
 ---
 These are various snippets of projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Use them at your own risk.. most of them are one off novelties or attempts at doing something a certain way (that may or may not have worked), or even more terrifying, an attempt to learn/figure something out.
 
+<div class="spacerClear"></div>
+
 ## WaniAnki-Python
 <i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/WaniAnki-Python](https://github.com/kairozu/WaniAnki-Python)
 

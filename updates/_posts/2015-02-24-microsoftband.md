@@ -10,6 +10,8 @@ This is a summary of the various utilities I made for interacting with the Micro
 
 The Microsoft Band isn't a perfect device, but I find it to be comfortable and non-intrusive. The haptic alerts are great, I use the run tracking whenever I'm not racing against a PR, I like the structured workouts, and the constant heart rate/skin temperature readings are really interesting to me. The battery life is sufficient for my usage patterns (usually lasts about 3 days w/o watch mode, just over a day w/watch mode), and it's not a fragile piece of hardware. 
 
+<div class="spacerClear"></div>
+
 ## Android App (BandStat)
 <a href="/images/bandstat.png"><img class="imageL" height="160" alt="bandstat" src="/images/bandstat.png" /></a>
 

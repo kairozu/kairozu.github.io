@@ -14,6 +14,8 @@ This watch face is programmed using the JavaScript/HTML5 web app method, and it 
 
 The AWatch watch face relies on the AWatch Config companion app: [https://github.com/kairozu/Gear-S2-AWConfig](https://github.com/kairozu/Gear-S2-AWConfig).
 
+<div class="spacerClear"></div>
+
 ## Development Sandbox
 1. Download the Tizen SDK: [https://developer.tizen.org/development/tools/download](https://developer.tizen.org/development/tools/download)
 2. Register for Samsung dev certificates: [http://developer.samsung.com/gear/guide-registering-certificates](http://developer.samsung.com/gear/guide-registering-certificates)

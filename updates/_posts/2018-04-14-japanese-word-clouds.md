@@ -4,7 +4,6 @@ title: Word Clouds in Japanese
 hasgithub: https://github.com/kairozu/Japanese-Word-Cloud
 tags: japanese code
 ---
-
 Word clouds are kinda cliche; trying to interpret word frequency -- or really any other functional information -- from a smoothie of words and color will only take you so far. That said, they're cool looking, so hey. These are a few of my favorites -- a brief introduction to generating word clouds using the story of ももたろう, a Kairozu word cloud shaped like an orange version of Kai the Koi, and a [JAXA](http://global.jaxa.jp/) [logo](https://commons.wikimedia.org/wiki/File:Jaxa_logo.svg) with words mined from the [@JAXA_jp](https://twitter.com/JAXA_jp) Twitter account.
 
 ## ももたろう Word Cloud
