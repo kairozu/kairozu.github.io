@@ -22,12 +22,12 @@ The extension is open source; you can download the code and modify it how you se
 2. Click "Developer Mode" in the top right
 3. Select "Load Unpacked Extension"
 4. Navigate to & select the Elo-Live-Score folder on your drive
-5. Load the page: https://projects.fivethirtyeight.com/2018-nfl-forecasting-game/results/
+5. Load the page: [https://projects.fivethirtyeight.com/2018-nfl-forecasting-game/results/](https://projects.fivethirtyeight.com/2018-nfl-forecasting-game/results/)
 
 Other live-update text sources of NFL data:
-- http://www.nfl.com/liveupdate/scorestrip/ss.xml
-- http://www.nfl.com/liveupdate/scores/scores.json
-- http://www.nfl.com/liveupdate/scorestrip/ss.xml
-- http://www.nfl.com/liveupdate/scorestrip/ss.json
+- [http://www.nfl.com/liveupdate/scorestrip/ss.xml](http://www.nfl.com/liveupdate/scorestrip/ss.xml)
+- [http://www.nfl.com/liveupdate/scores/scores.json](http://www.nfl.com/liveupdate/scores/scores.json)
+- [http://www.nfl.com/liveupdate/scorestrip/ss.xml](http://www.nfl.com/liveupdate/scorestrip/ss.xml)
+- [http://www.nfl.com/liveupdate/scorestrip/ss.json](http://www.nfl.com/liveupdate/scorestrip/ss.json)
 
-This guy does some cool open source work with NFL data: http://blog.burntsushi.net/nfl-live-statistics-with-python/
+This guy does some cool open source work with NFL data: [http://blog.burntsushi.net/nfl-live-statistics-with-python/](http://blog.burntsushi.net/nfl-live-statistics-with-python/)
