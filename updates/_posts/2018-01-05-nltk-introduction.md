@@ -40,7 +40,7 @@ print(dir(jeita))                   # methods available in the JEITA corpus
 
 The part-of-speech tags are returned as a tuple with the word itself -- the pronunciation of the word, its unconjugated form, and the part-of-speech tags are separated by tab (<code>\t</code>) breaks. Part-of-speech tags can be found at the bottom of this post: [Japanese Tokenization](https://kairozu.github.io/updates/japanese-tokenization). The table below is expanded for easier reading:
 
-<div>
+<div class="divResponsive">
 <table>
     <tr><td>('から',&nbsp;&nbsp;</td><td>&nbsp;'カラ&nbsp;</td><td>&nbsp;\t&nbsp;</td><td>から </td><td>&nbsp;\t&nbsp;</td><td>助詞</td><td>格助詞&nbsp;</td><td>一般'),</td><td>      </td><td>   </td><td>        </td></tr>
     <tr><td>('まけ',</td><td>'マケ</td><td>\t</td><td>まける&nbsp;&nbsp;</td><td>\t</td><td>動詞</td><td>自立</td><td>\t     </td><td>一段   </td><td>\t&nbsp;&nbsp;</td><td>連用形'), </td></tr>

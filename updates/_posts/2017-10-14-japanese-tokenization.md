@@ -133,7 +133,7 @@ The character type (<code>%t</code>) is the third column, and describes whether 
 
 The numerical IDs describing parts of speech (<code>%h</code>) and the first few values in the representation of features (<code>%H</code>) indicate which grammar category below best describes the word/grammar component (common grammar elements are in bold in the table below). The representation of features, starting from the left, includes: original form, part of speech, part of speech sub-categories 1/2/3, conjugated form, inflection, reading, and pronunciation. Reading and pronunciation are given in kana.
 
-<div>
+<div class="divResponsive">
 <table>
 <thead>
 <tr><th>Part of Speech EN</th><th></th><th></th><th></th><th>Part of Speech JP</th><th></th><th></th><th></th><th>PoS ID #&nbsp;&nbsp;</th><th>Examples</th></tr>

@@ -15,8 +15,18 @@ li p {
 th {
     text-align: left;
 }
-
-
+code {
+    word-wrap: break-word; /* old name */
+    overflow-wrap: break-word;
+}
+.divResponsive {
+    min-height: .01%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0;
+}
 img { border-radius: 5px; }
 a, a:link, a:visited {
     text-decoration: none;
@@ -117,6 +127,10 @@ div.space-table {
 @media all and (max-width: 756px) {
     .fcMain { flex-wrap: wrap; }
     .fcMain div { flex: 0 1 100%; }
+    .table-responsive {
+        width: 100%;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
 }
 
 @media all and (max-width: 456px) {

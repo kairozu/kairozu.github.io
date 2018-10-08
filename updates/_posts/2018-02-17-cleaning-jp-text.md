@@ -51,7 +51,7 @@ Now I have a text file, [article_clean.txt](https://github.com/kairozu/Japanese-
 
 I use [DecodeUnicode](http://www.decodeunicode.org) and [Unicode Table](https://unicode-table.com) for Unicode reference, and this [Library of Congress Site](https://memory.loc.gov/diglib/codetables/9.1.html) also has a table with 13,478 kanji character encodings. Using the unicode ranges for regex purposes is useful -- after some initial processing I tend to throw out every sentence with special characters. It takes too much time to go through these oddball sentences one by one, and they're decent indicators for imperfect sentence structures or otherwise undesirable text for eventual analysis.
 
-<div>
+<div class="divResponsive">
 <table class="smaller">
 <tbody>
 <tr><td>Japanese Space</td><td>\u3000</td></tr>

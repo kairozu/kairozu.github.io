@@ -160,7 +160,7 @@ wordcloud.recolor(color_func=grouped_color_func)
 
 I picked words I thought were interesting, some of which were new to me. I learned all sorts of things about JAXA missions while looking a few of these up. :)
 
-<div>
+<div class="divResponsive">
 <table class="smaller">
     <tr><td>きぼう</td><td>きぼう</td><td>Kibo! The Japanese Experiment Module (JEM) is a human-rated space facility & JAXA contribution to the ISS.</td><td><a href="http://iss.jaxa.jp/en/kibo/">http://iss.jaxa.jp/en/kibo/</a></td></tr>
     <tr><td>宇宙科学研究所</td><td>うちゅうかがくけんきゅうしょ</td><td>Institute of Space and Astronautical Science (ISAS), a division of JAXA.</td><td><a href="http://www.isas.jaxa.jp/en/">http://www.isas.jaxa.jp/en/</a></td></tr>
