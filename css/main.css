@@ -18,10 +18,6 @@ th {
 h1, h2, h3 {
     font-family: 'Anonymous Pro', 'Courier New', Courier, monospace; 
 }
-h2 {
-    border-bottom: 1px solid #17242c;
-    padding-bottom: 3px;
-}
 code {
     word-wrap: break-word; /* old name */
     overflow-wrap: break-word;
