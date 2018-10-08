@@ -2,9 +2,13 @@
 layout: content
 title: Simple Japanese Games
 hasgithub: https://github.com/kairozu/Simple-JP-Games
+hasimg: /images/counters.png
+imgwidth: 240
 tags: japanese project code
 ---
 A collection of JavaScript-based web tools for studying Japanese hiragana, katakana, particles, and counters. The former two are easily modified for other a/b-style sets of data. The tool for particles presents a sentence in Japanese with a particle missing, an English translation to clarify the meaning of the sentence, and four options for appropriate particles. The counter tool shows a set of 1-10 items and asks for the Japanese translation. 
+
+<div class="spacerClear"></div>
 
 ## ひらがな と カタカナ
 Arrow keys or W/A/S/D keys can be used to direct the center character to the matching "outer" character. If the answer is correct, a new question will be presented; if the answer is incorrect, the incorrect options will disappear to help identify the correct character. For every 20 points that the score increases, the level will increase, which introduces an additional 5 characters. Clicking "reset" will reset the level/score/streak. Clicking "mode" will swap between romaji/hiragana (or katakana) as the center character. Clicking "level" will increase the # of available characters (max: 10), sidestepping the score-based progression.
