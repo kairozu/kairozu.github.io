@@ -9,7 +9,7 @@ I've been fascinated by Progressive Web Applications (PWA) lately. I've largely 
 <div class="spacerClear"></div>
 
 ## 助数詞 (October 2018)
-<img class="imageL" height="160" alt="josuushi screenshot" src="/images/josuushi.png" />
+<img class="imageL" height="160" alt="josuushi screenshot" src="/images/josuushi.jpg" />
 <div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/kairozu/Progressive-Web-Apps/tree/master/josuushi">https://github.com/kairozu/Progressive-Web-Apps/tree/master/josuushi</a></div>
 <div class="listItem"><i class="fas fa-paper-plane fa-fw"></i> <a href="https://kairozu.github.io/sandbox/josuushi">https://kairozu.github.io/sandbox/josuushi</a></div>
 
