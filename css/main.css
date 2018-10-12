@@ -28,11 +28,11 @@ p > code {
     min-height: .01%;
     overflow-y: hidden;
     overflow-x: auto;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-bottom: 20px;
     border: 0;
 }
-img { border-radius: 5px; }
+img { border-radius: 2px; }
 a, a:link, a:visited {
     text-decoration: none;
     color: #455d67;
@@ -62,7 +62,7 @@ a, a:focus, a:hover { color: #687768; }
 .listDate {
     font-size: x-small;
     padding: 2px 4px;
-    border-radius: 5px;
+    border-radius: 2px;
     background: #c3ccce;
     margin-left: 6px;
     vertical-align: top;
