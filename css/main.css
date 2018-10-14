@@ -8,7 +8,7 @@ html, body {
     line-height: 1.4;
 }
 body.mainContent {
-    background: #dbe0e1;
+    background: #fcfdfd;
     color: #17242c;
 }
 h2 {
@@ -46,7 +46,7 @@ a, a:link, a:visited {
     word-break: break-all;
     word-break: break-word;
 }
-a, a:focus, a:hover { color: #687768; }
+a, a:focus, a:hover { color: #989898; }
 .bold { font-weight: 600; }
 .italics { font-style: italic; }
 .larger { font-size: larger; }
