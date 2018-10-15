@@ -27,8 +27,7 @@
 	.fontName { font-size: 2.8em; }
 	.fontEmail { font-size: 1.8em; }
 	.fontFolders { font-size: 1.4em; 
-				   line-height: 1.8em;
-				   font-weight: bold; }
+				   line-height: 1.8em; }
 	.fontSocial { font-size: 1.8em; margin-left: 12px; }
 	#socialIcons { margin-top: 10px; }
 	</style>
@@ -39,10 +38,8 @@
         <span class="fontEmail">amber@kairozu.com</span><br />
         <br />
         <span class="fontFolders">
-			<table>
-				<tr><td><i class="far fa-folder-open fa-fw"></i></td><td><a href="{{ site.contentlist[0].url }}">{{ site.contentlist[0].title }}/</a></td></tr>
-				<tr><td><i class="fas fa-language fa-fw"></i></td><td><a href="https://kairozu.com">回路図</a></td></tr>
-			</table>
+			<a href="{{ site.contentlist[0].url }}"><i class="far fa-folder-open fa-fw"></i> {{ site.contentlist[0].title }}/</a><br />
+			<a href="https://kairozu.com"><i class="fas fa-language fa-fw"></i> 回路図</a>
         </span>
         <br />
         <div id="socialIcons">
