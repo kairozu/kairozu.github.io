@@ -8,7 +8,7 @@ html, body {
     line-height: 1.4;
 }
 body.mainContent {
-    background: #d9e2e6;
+    background: #e5ebed;
     color: #17242c;
 }
 h2 {
@@ -36,7 +36,6 @@ img { border-radius: 2px; }
 a, a:link, a:visited {
     text-decoration: none;
     color: #455d67;
-    font-weight: 500;
     -webkit-transition: 200ms color ease-in-out;
     -moz-transition: 200ms color ease-in-out;
     -o-transition: 200ms color ease-in-out;
