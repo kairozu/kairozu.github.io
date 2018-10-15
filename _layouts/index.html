@@ -31,7 +31,6 @@
 				   font-family: 'Anonymous Pro', monospace; }
 	.fontSocial { font-size: 1.8em; margin-left: 12px; }
 	#socialIcons { margin-top: 10px; }
-	a, a:link, a:visited { font-weight: 400; }
 	</style>
 </head>
 <body>
@@ -40,8 +39,8 @@
         <span class="fontEmail">amber@kairozu.com</span><br />
         <br />
         <div class="fontFolders">
-			<a href="{{ site.contentlist[0].url }}"><i class="far fa-folder-open fa-fw"></i> <span class="bold">{{ site.contentlist[0].title }}</span></a><br />
-			<a href="https://kairozu.com"><i class="fas fa-language fa-fw"></i> <span class="bold">Kairozu</span></a>
+			<a href="{{ site.contentlist[0].url }}"><i class="far fa-folder-open fa-fw"></i> {{ site.contentlist[0].title }}</a><br />
+			<a href="https://kairozu.com"><i class="fas fa-language fa-fw"></i> Kairozu</a>
 		</div>
         <br />
         <div id="socialIcons">

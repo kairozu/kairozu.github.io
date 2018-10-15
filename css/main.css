@@ -35,7 +35,6 @@ p > code {
 img { border-radius: 2px; }
 a, a:link, a:visited {
     text-decoration: none;
-    font-weight: 600;
     color: #455d67;
     -webkit-transition: 200ms color ease-in-out;
     -moz-transition: 200ms color ease-in-out;
