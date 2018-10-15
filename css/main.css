@@ -46,7 +46,7 @@ a, a:link, a:visited {
     word-break: break-all;
     word-break: break-word;
 }
-a, a:focus, a:hover { color: #687768; }
+a, a:focus, a:hover { color: #718a82; }
 .bold { font-weight: 600; }
 .italics { font-style: italic; }
 .larger { font-size: larger; }
