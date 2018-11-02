@@ -53,13 +53,13 @@ image.show()                    # display generated wordcloud
 ```
 
 ## Kairozu Word Cloud
-For the [Kairozu.com](https://kairozu.com) word cloud, I dumped sentences from Kairozu's first few chapters into a CSV file and ran that text through MeCab to pull out worthwhile bits of grammar (nouns, verbs, and adjectives). For more background on MeCab, check out: [Tokenization of Japanese Text](https://kairozu.github.io/updates/japanese-tokenization) and [Simple Japanese Text Analysis](https://kairozu.github.io/updates/simple-jp-text-analysis). This Python library does most of the word cloud heavy lifting: [https://github.com/amueller/word_cloud](https://github.com/amueller/word_cloud) (thanks Andreas Mueller!).
+For the [Kairozu](https://nihongo.kairozu.com) word cloud, I dumped sentences from Kairozu's first few chapters into a CSV file and ran that text through MeCab to pull out worthwhile bits of grammar (nouns, verbs, and adjectives). For more background on MeCab, check out: [Tokenization of Japanese Text](https://kairozu.github.io/updates/japanese-tokenization) and [Simple Japanese Text Analysis](https://kairozu.github.io/updates/simple-jp-text-analysis). This Python library does most of the word cloud heavy lifting: [https://github.com/amueller/word_cloud](https://github.com/amueller/word_cloud) (thanks Andreas Mueller!).
 
-<a href="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud.png"><img class="imageCenter" src="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud_small.png" alt="kairozu.com word cloud" /></a>
+<a href="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud.png"><img class="imageCenter" src="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud_small.png" alt="kairozu word cloud" /></a>
 
 <ul>
 <li>Kairozu Word Cloud Code: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/kairozu_wordcloud.py">kairozu_wordcloud.py</a></li>
-<li>Source Text: Sentences & practices from <a href="https://kairozu.com">Kairozu.com</a></li>
+<li>Source Text: Sentences & practices from <a href="https://nihongo.kairozu.com">Kairozu</a></li>
 <li>Color/Mask Image: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/kaikoiorange.jpg">orangekaithekoi.jpg</a></li>
 <li>Font (Google Noto CJKjp-Light): <a href="https://www.google.com/get/noto/">https://www.google.com/get/noto/</a></li>
 <li>Options: Colors via ImageColorGenerator, Shape via Image Mask, High Resolution</li>
