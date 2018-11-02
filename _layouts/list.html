@@ -55,7 +55,7 @@
             {% for p in site.posts limit:7 %}
                 <span class="larger"><a href="{{ p.url }}">{{ p.title }}</a> <span class="listDate">{{ p.date | date: "%B %Y" }}</span></span>
                 <p class="snugTop">
-                    {{ p.excerpt | strip_html | truncatewords:150 }}
+                    {{ p.excerpt | strip_html | truncatewords:100 }}
                 </p>
             {% endfor %}
         </div>
