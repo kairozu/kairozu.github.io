@@ -88,7 +88,9 @@ $ python manage.py migrate
 ```
 
 ## Configure Gunicorn, NGINX, & Supervisor
-NGINX configuration file (<code>/etc/nginx/sites-available/projectname</code>) -- some of the referenced files below will only be available after configuring Certbot in the next step.
+NGINX configuration file -- some of the referenced files below will only be available after configuring Certbot in the next step. NGINX serves media files (images, CSS, etc) directly from the file system.
+
+<code>/etc/nginx/sites-available/projectname</code>
 ```
 upstream app_server {
     server unix:/opt/kairozu/run/gunicorn.sock fail_timeout=0;
@@ -146,7 +148,9 @@ $ sudo ln -s /etc/nginx/sites-available/projectname /etc/nginx/sites-enabled/pro
 $ sudo rm /etc/nginx/sites-enabled/default
 ```
 
-Gunicorn configuration file (<code>/opt/projectname/bin/gunicorn_start</code>).
+Gunicorn configuration file. Gunicorn creates a Unix socket and serves responses to NGINX via the WSGI protocol.
+
+<code>/opt/projectname/bin/gunicorn_start</code>
 ```
 #!/bin/bash
 NAME="projectname"
@@ -180,7 +184,9 @@ $ chmod u+x gunicorn_start
 $ mkdir /opt/projectname/run
 ```
 
-Supervisor configuration file (<code>/etc/supervisor/conf.d/kairozu.conf</code>) -- after creating this file, run <code>chown root:root /etc/supervisor/conf.d/kairozu.conf</code> to change the owner to root.
+Supervisor configuration file -- after creating this file, run <code>chown root:root /etc/supervisor/conf.d/kairozu.conf</code> to change the owner to root.
+
+<code>/etc/supervisor/conf.d/kairozu.conf</code>
 ```
 [program:projectname]
 command=/opt/projectname/bin/gunicorn_start
