@@ -102,8 +102,8 @@ Modified version of jishi's Node.js Sonos Web Controller. I primarily listen to 
 * Sonos Controller for Node.js: [https://github.com/jishi/node-sonos-web-controller](https://github.com/jishi/node-sonos-web-controller)
 
 Installing Node.js & have Node.js start the Sonos interface on boot, add this to your rc.local file:
-```
-wget http://node-arm.herokuapp.com/node\_latest\_armhf.deb
-sudo dpkg -i node\_latest\_armhf.deb
-su pi -c 'node /var/www/sonos/server.js < /dev/null &'
+```terminal
+$ wget http://node-arm.herokuapp.com/node\_latest\_armhf.deb
+$ sudo dpkg -i node\_latest\_armhf.deb
+$ su pi -c 'node /var/www/sonos/server.js < /dev/null &'
 ```
