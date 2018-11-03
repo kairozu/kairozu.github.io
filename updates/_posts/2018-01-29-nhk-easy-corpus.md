@@ -15,7 +15,7 @@ I sourced an NHK Easy archive from 2012-Current through a few different methods:
 </ul>
 
 This is the SQL statement for [Google BigQuery](https://cloud.google.com/bigquery/) if you want to download your own version of the second source. Note that this was 50.7 GB processed (which easily falls into the free tier for BigQuery, but be aware that BigQuery is not an otherwise free service). The results can be downloaded as a CSV file.
-```
+```sql
 #standardSQL SELECT author, created_utc, url, title, selftext FROM `fh-bigquery.reddit_posts.201*` 
 WHERE subreddit = 'NHKEasyNews' AND author = 'NHKEasyNewsBot'
 ```
@@ -27,7 +27,7 @@ The current URL format (as of February 24th, 2018) for NHK Easy articles is:
 
 This JSON file maintains an updated list of new NHK Easy articles: [http://www3.nhk.or.jp/news/easy/news-list.json](http://www3.nhk.or.jp/news/easy/news-list.json) -- this is where I pull article IDs from.
 
-```
+```python
 # there are a few different ways to pull a file via http with python, but wget is quick and dirty
 import wget
 

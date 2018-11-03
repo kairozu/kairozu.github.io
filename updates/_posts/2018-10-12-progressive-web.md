@@ -39,7 +39,7 @@ The following counters are included:
 
 If you're testing an Angular app locally, serving the production code w/<a href="https://www.npmjs.com/package/http-server">http-server</a> is especially useful for debugging PWA cache issues:
 
-```
+```terminal
 $ npm install http-server
 $ ng build --prod
 $ http-server -c-1 dist/<appname>/

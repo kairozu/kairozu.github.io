@@ -56,7 +56,7 @@ The AWatch watch face relies on the AWatch Config companion app: [https://github
 Without an easy way to call for weather data from the built in app, I'm pulling the current location and querying Weather Underground w/the latitude/longitude for current conditions.
 
 1. Get the current position:
-```
+```js
 navigator.geolocation.getCurrentPosition(success, failure, options);
 ```
 2. Create a new <code>XMLHttpRequest</code> to grab the data from WUnderground: [http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml](http://api.wunderground.com/api/your-api-key-here/conditions/q/latitude,longitude.xml) (Note: you'll need to apply for your own API key; the free version has a limited # of requests per minute/hour/month iirc)
@@ -67,12 +67,12 @@ navigator.geolocation.getCurrentPosition(success, failure, options);
 The HumanActivityMonitor API allows you query the total # of steps taken since the application (watch face widget in this case) was loaded, or the total # of steps taken FOR ALL TIME. I have no idea who decided why those were more important than "daily steps" which is something that the S-Health pedometer can do. There's a function to ask for differences in step count based on timestamps, but the documentation wasn't sufficient for me figuring out how to use that in my favor. End result: a dirty hack. Every night at midnight I save the total # of steps taken FOR ALLLLL TIMEEEE to local storage.
 
 1. I call the <code>AccumulativePedometerListener</code> whenever new steps are detected & grab the last saved total step count:
-```
+```js
 tizen.humanactivitymonitor.setAccumulativePedometerListener(onStepChange);
 step_diff = localStorage['com.dendriticspine.awatch.stepcount'];
 ```
 2. If <code>step_diff</code> is 0, that means it's probably the first time the watch face has been loaded, so I save the current total step count to local storage:
-```
+```js
 localStorage.setItem('com.dendriticspine.awatch.stepcount', step_ts);
 ```
 3. I subtract the current total step count from <code>step_diff</code>.
@@ -82,7 +82,7 @@ The end result is that for the first day, before midnight, the count is inaccura
 **Battery**  
 Battery monitoring is straightforward, make the following calls and update your display accordingly in the <code>getBatteryState()</code> function:
 
-```
+```js
 battery.addEventListener('chargingchange', getBatteryState);
 battery.addEventListener('chargingtimechange', getBatteryState);  
 battery.addEventListener('dischargingtimechange', getBatteryState );

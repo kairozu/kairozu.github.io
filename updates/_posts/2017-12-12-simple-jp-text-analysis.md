@@ -19,7 +19,7 @@ We'll use a simplified version of the [Ant and the Grasshopper](http://read.gov/
 ```
 
 And the following Python script: [grasshopper_analysis.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_analysis.py).
-```
+```python
 import MeCab
 from collections import Counter                             # for counting most common elements
 
@@ -66,7 +66,7 @@ print(verb_counts)                                          # print the 3 most c
 
 Running [grasshopper_analysis.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_analysis.py) from the command line will (should?) print a breakdown of the example sentence「今日はいい天気ですね」and a list of the 3 most common nouns, adjectives, and verbs.
 
-```
+```python
 $ python3 ./grasshopper_analysis.py
 今日	キョウ	今日	名詞-副詞可能
 は	ハ	は	助詞-係助詞
@@ -90,7 +90,7 @@ Looking at the bottom three lines of text above:
 
 Next, [grasshopper_past_present.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_past_present.py) will print all of the sentences which are in present tense, followed by the sentences in past-tense, followed by the sentences in past-tense converted into present-tense. Changing 'した' to 'す' is a pretty messy strategy for changing past-tense to present, but in this case we only have one edge case with a negative-past sentence (〜ませんでした).
 
-```
+```python
 import MeCab, re                                                    # regex library (for finding tense)
 
 # load MeCab and the mecab-ipadic-neologd dictionary
@@ -136,7 +136,7 @@ for past_sentence in list(past):
 print("\nGrasshopper and the Ant sentences, past-to-present:")
 [print(x) for x in new_present]                                     # "for every x in new_present, print x"
 ```
-```
+```terminal
 $ python3 ./grasshopper_past_present.py
 Grasshopper and the Ant sentences in present-tense:
 どうしてですか。

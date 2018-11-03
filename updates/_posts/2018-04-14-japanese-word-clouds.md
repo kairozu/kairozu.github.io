@@ -18,7 +18,7 @@ First, the most basic of word clouds using the story of [ももたろう](http:/
 <li>Options: Basic Word Cloud, Stopwords</li>
 </ul>
 
-```
+```python
 import MeCab
 from os import path
 from wordcloud import WordCloud, STOPWORDS
@@ -65,7 +65,7 @@ For the [Kairozu](https://nihongo.kairozu.com) word cloud, I dumped sentences fr
 <li>Options: Colors via ImageColorGenerator, Shape via Image Mask, High Resolution</li>
 </ul>
 
-```
+```python
 # (4) generate the colors used in the word cloud from orange Kai the Koi
 kai_coloring = imread(path.join(d, 'kaikoiorange.jpg'))
 image_colors = ImageColorGenerator(kai_coloring)    # generate image colors
@@ -110,7 +110,7 @@ The JAXA word cloud is my favorite.. in part because I learned so many new kanji
 
 [Tweepy](http://www.tweepy.org/) is a Python library for accessing the Twitter API. The code below pulls full tweets from the account [@JAXA_jp](https://twitter.com/jaxa_jp), discards all retweets, and then removes URLs and references to YouTube.
 
-```
+```python
 # tweet_mode='extended' pulls the full text of a tweet (the default is truncated after 140)
 for status in tweepy.Cursor(api.user_timeline, screen_name='@jaxa_jp', tweet_mode='extended').items():
     if (not status.retweeted) and ('RT @' not in status._json['full_text']):    # remove retweets
@@ -122,7 +122,7 @@ for status in tweepy.Cursor(api.user_timeline, screen_name='@jaxa_jp', tweet_mod
 
 Similar to the Kairozu word cloud, I tokenize the text with MeCab and keep desired parts of speech -- adjectives, verbs, and nouns in this case. I used the [JAXA logo from Wikipedia](https://commons.wikimedia.org/wiki/File:Jaxa_logo.svg) for the mask (shape) of the word cloud and the function below to vary the shades of blue used to color individual words. The following will return a HSL color value between HSL(207, 100%, 20%) -- a darker blue, and HSL(207, 100%, 65%) -- a lighter blue. The JAXA blue that I pulled from the SVG logo was HSL(207, 100%, 35%). The other settings for generating the word cloud are largely the same as those above.
 
-```
+```python
 # (4) word-cloud color range
 def jaxa_color_func(word, font_size, position, orientation, random_state=None, **kwargs):
     return "hsl(207, 100%%, %d%%)" % random.randint(20, 65)
@@ -138,7 +138,7 @@ def jaxa_color_func(word, font_size, position, orientation, random_state=None, *
 
 Building on the previous code for the blue JAXA word cloud, this will highlight the listed words with the indicated shade of red (#d92425). <code>SimpleGroupedColorFunc()</code> takes two arguments; a dictionary with words to highlight and the color to highlight them with, and a default color for all other words.
 
-```
+```python
 # (4) create additional version with red highlight for defined words (aka words I liked)
 class SimpleGroupedColorFunc(object):
     def __init__(self, color_to_words, default_color):

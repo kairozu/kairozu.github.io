@@ -53,7 +53,7 @@ Most browsers and platforms don't preferentially break lines on standard Japanes
     </div>
 </div>
 
-```
+```html
 <div style="word-break:keep-all;">
 回路図とは電子回路、空気圧機器、油圧機器などの回路を記述するために用いられる図のことである。実体配線図と異なり、回路図での位置と実際に配置する場所は無関係であり、一種のグラフである。
 </div>
@@ -81,7 +81,7 @@ I tried using [zero-width spaces](https://unicode-table.com/en/200B/) to separat
     </div>
 </div>
 
-```
+```html
 <div style="word-break:keep-all;">
 回路図&#8203;とは&#8203;電子回路、&#8203;空気圧機器、&#8203;油圧機器&#8203;などの&#8203;回路&#8203;を&#8203;記述する&#8203;ために&#8203;用いられる&#8203;図のこと&#8203;で&#8203;ある。&#8203;実体配線図&#8203;と&#8203;異なり、&#8203;回路図&#8203;で&#8203;の&#8203;位置&#8203;と&#8203;実際&#8203;に&#8203;配置する&#8203;場所&#8203;は&#8203;無関係&#8203;で&#8203;あり、&#8203;一種&#8203;の&#8203;グラフ&#8203;で&#8203;ある。
 </div>
@@ -108,7 +108,7 @@ The HTML [word break tag](https://www.w3schools.com/tags/tag_wbr.asp) (<code>&lt
     </div>
 </div>
 
-```
+```html
 <div style="word-break:keep-all;">
 回路図<wbr>とは<wbr>電子回路、<wbr>空気圧機器、<wbr>油圧機器<wbr>などの<wbr>回路<wbr>を<wbr>記述する<wbr>ために<wbr>用いられる<wbr>図のこと<wbr>で<wbr>ある。<wbr>実体配線図<wbr>と<wbr>異なり、<wbr>回路図<wbr>で<wbr>の<wbr>位置<wbr>と<wbr>実際<wbr>に<wbr>配置する<wbr>場所<wbr>は<wbr>無関係<wbr>で<wbr>あり、<wbr>一種<wbr>の<wbr>グラフ<wbr>で<wbr>ある。
 </div>
@@ -134,7 +134,7 @@ The first 8 chapters of Kairozu separate words with spaces for easier reading --
     </div>
 </div>
 
-```
+```html
 <div style="word-break:keep-all;">
 回路図　とは　電子回路、　空気圧機器、　油圧機器　などの　回路　を　記述する　ために　用いられる　図のこと　で　ある。　実体配線図　と　異なり、　回路図　で　の　位置　と　実際　に　配置する　場所　は　無関係　で　あり、　一種　の　グラフ　で　ある。
 </div>
@@ -161,7 +161,7 @@ All browsers <span class="italics">will</span> break text on regular [latin spac
     </div>
 </div>
 
-```
+```html
 <div style="word-break:keep-all;">
 回路図 とは 電子回路、 空気圧機器、 油圧機器 などの 回路 を 記述する ために 用いられる 図のこと で ある。 実体配線図 と 異なり、 回路図 で の 位置 と 実際 に 配置する 場所 は 無関係 で あり、 一種 の グラフ で ある。
 </div>
@@ -187,7 +187,7 @@ My eventual solution was to replace all <a href="https://unicode-table.com/en/30
     </div>
 </div>
 
-```
+```html
 <div style="word-break:keep-all; word-spacing: 0.76em;">
 回路図 とは 電子回路､ 空気圧機器､ 油圧機器 などの 回路 を 記述する ために 用いられる 図のこと で ある｡ 実体配線図 と 異なり､ 回路図 で の 位置 と 実際 に 配置する 場所 は 無関係 で あり､ 一種 の グラフ で ある｡
 </div>
@@ -200,7 +200,7 @@ This seems to work well with most text sizes; the following examples alternate b
 <h3 style="word-break:keep-all;">いぬ　は　いちばん　すきな　どうぶつ　です。</h3>
 <h3 style="word-break:keep-all; word-spacing: 0.76em;">いぬ は いちばん すきな どうぶつ です。</h3>
 
-```
+```html
 <h1 style="word-break:keep-all;">いぬ　は　くろい　です。</h1>
 <h1 style="word-break:keep-all; word-spacing: 0.76em;">いぬ は くろい です。</h1>
 <h3 style="word-break:keep-all;">いぬ　は　いちばん　すきな　どうぶつ　です。</h3>
@@ -228,7 +228,7 @@ While this doesn't achieve the same degree of spacing, it does seem to be univer
     </div>
 </div>
 
-```
+```html
 <div style="word-break:keep-all; font-family:monospace;">
 回路図 とは 電子回路､ 空気圧機器､ 油圧機器 などの 回路 を 記述する ために 用いられる 図のこと で ある｡ 実体配線図 と 異なり､ 回路図 で の 位置 と 実際 に 配置する 場所 は 無関係 で あり､ 一種 の グラフ で ある｡
 </div>

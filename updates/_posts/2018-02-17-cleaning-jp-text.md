@@ -10,7 +10,7 @@ I find it easiest to remove most HTML tags with a dedicated parser like [Beautif
 
 In the file [article.html](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/jp-text-cleaning/article.html), my desired text is inside the "newsarticle" div. The text itself is also littered with other HTML tags. The script below removes most of the HTML with BeautifulSoup before stripping out excess whitespace and line breaks. There are a few different regex options for removing residual HTML tags; I use a catch-all for anything that's between angle brackets. [Regex101](https://regex101.com/) is a good site for testing patterns with various text examples (make sure to choose a language on the left).
 
-```
+```python
 from bs4 import BeautifulSoup
 import re
 
@@ -89,7 +89,7 @@ Next, in [extract_sentences.py](https://github.com/kairozu/Japanese-Text-Analysi
 <li>Dismiss sentences which have fewer than 4 characters, with more than a single set of parentheses/corner quotes, or with weird characters.</li>
 </ul>
 
-```
+```python
 from spring_clean import punctuation, clean_text_check
 
 sentence_collection = []            # hold the new list of sentences

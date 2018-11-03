@@ -8,24 +8,24 @@ In English, words are separated by spaces, which makes word tokenization very ea
 [MeCab](https://taku910.github.io/mecab/) is an open source morphological analysis engine that uses [conditional random fields](http://repository.upenn.edu/cgi/viewcontent.cgi?article=1162&context=cis_papers) to build probabilistic models for parameter estimation. If you’re curious about the technical details or advantages over HMMs/MEMMs/stochastic grammars, check out the linked paper.
 
 Install [MeCab](https://taku910.github.io/mecab/) and [Git](https://git-scm.com/downloads):
-```
+```terminal
 $ sudo apt-get install mecab mecab-ipadic libmecab-dev mecab-ipadic-utf8 git
 ```
 
 Install [mecab-ipadic-neologd](https://github.com/neologd/mecab-ipadic-neologd) (system dictionary w/neologisms pulled from language resources on the web):
-```
+```terminal
 $ git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
 $ cd mecab-ipadic-neologd
 $ sudo ./bin/install-mecab-ipadic-neologd -n
 ```
 
 Install the [Python wrapper for MeCab](https://github.com/SamuraiT/mecab-python3):
-```
+```terminal
 $ pip3 install mecab-python3
 ```
 
 To check if MeCab is working properly, run <code>mecab</code> from the command line, and then enter a Japanese sentence at the blank prompt which follows (and hit enter).
-```
+```terminal
 $ mecab
 今日はいい天気ですね。
 今日	名詞,副詞可能,*,*,*,*,今日,キョウ,キョー
@@ -39,7 +39,7 @@ $ mecab
 
 Specify the mecab-ipadic-neologd dictionary with <code>-d</code> on the command line (the path may vary -- try looking in <code>/usr/local/lib/mecab/dic</code> or <code>/usr/lib/x86_64-linux-gnu/mecab/dic</code>). The following example illustrates the benefit of using mecab-ipadic-neologd; the Prime Minister’s name (安倍晋三), along with his wife’s (安倍昭恵), are properly identified and not split up into component kanji when tokenizing the sentence “Shinzo Abe and Akie Abe live in Tokyo.”
 
-```
+```terminal
 $ mecab
 安倍晋三と安倍昭恵は東京に住んでいる。
 安倍	名詞,固有名詞,人名,姓,*,*,安倍,アベ,アベ
@@ -56,7 +56,7 @@ $ mecab
 いる	動詞,非自立,*,*,一段,基本形,いる,イル,イル
 。	記号,句点,*,*,*,*,。,。,。
 ```
-```
+```terminal
 $ mecab -d /usr/lib/x86_64-linux-gnu/mecab/dic/mecab-ipadic-neologd
 安倍晋三と安倍昭恵は東京に住んでいる。
 安倍晋三	名詞,固有名詞,一般,*,*,*,安倍晋三,アベシンゾウ,アベシンゾー
@@ -79,7 +79,7 @@ Change MeCab’s output with <code>mecab -O [style]</code>:
 <li>show all information: <code>-O dump</code></li>
 </ul>
 
-```
+```terminal
 $ mecab -O chasen
 今日はいい天気ですね。
 今日	キョウ	今日	名詞-副詞可能
@@ -90,17 +90,17 @@ $ mecab -O chasen
 ね	ネ	ね	助詞-終助詞
 。	。	。	記号-句点
 ```
-```
+```terminal
 $ mecab -O yomi
 今日はいい天気ですね。
 キョウハイイテンキデスネ。
 ```
-```
+```terminal
 $ mecab -O wakati
 今日はいい天気ですね。
 今日　は　いい　天気　です　ね　。
 ```
-```
+```terminal
 $ mecab -O dump
 今日はいい天気ですね。
 0	BOS	BOS/EOS,*,*,*,*,*,*,* 0 0 0 0 0 0 2 1 0.000 0.000 0.000 0
@@ -116,7 +116,7 @@ $ mecab -O dump
 Change the output format to focus on specific information. Let’s look at the word/grammar component (<code>%m</code>), the part of speech numerical ID (<code>%h</code>), the character type (<code>%t</code>), and the CSV representation of features (part of speech, utilization, reading,
  etc) (<code>%H</code>), each separated with a tab character (<code>\t</code>) for readability.
 
-```
+```terminal
 $ mecab -F"%m\t%h\t%t\t%H\n" -E"EOS\n"
 今日はいい天気ですね。
 今日	67	2	名詞,副詞可能,*,*,*,*,今日,キョウ,キョー
