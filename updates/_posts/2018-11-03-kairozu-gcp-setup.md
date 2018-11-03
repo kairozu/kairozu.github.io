@@ -7,11 +7,10 @@ This is a quick step-by-step for moving your Django project onto a Google Cloud 
 
 1. Create the f1-micro instance on Google Cloud Platform.
 2. Update system and install software.
-3. Configure GitHub access and clone GitHub repository.
-4. Configure Django and PostreSQL.
-5. Configure Gunicorn, NGINX, and Supervisor.
-6. Install, set up, and configure Certbot.
-7. Import data from other database.
+3. Configure GitHub access, clone your repository, and run Django migrations.
+4. Configure Gunicorn, the NGINX web server, and Supervisor.
+5. Install, set up, and configure Certbot.
+6. Import previous data, perform other odds & ends, and run the server!
 
 ## Create f1-micro Instance on Google Cloud Platform
 Create an account to use the <a href="https://console.cloud.google.com">Google Cloud Console</a>. Once you've logged in and created a project, in the Navigation Menu, click through "Compute Engine", "VM Instances", and then "Create Instance" at the top of the screen. Choose a name, a region, and a zone, and then under "Machine Type" select "micro (1 shared vCPU)" -- leave the other options as default. Under "Firewall" select both "Allow HTTP traffic" and "Allow HTTPS traffic" and then click "Create" at the bottom of the page.
