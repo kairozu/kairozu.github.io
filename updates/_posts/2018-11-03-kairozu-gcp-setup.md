@@ -88,7 +88,7 @@ $ python manage.py migrate
 ```
 
 ## Configure Gunicorn, NGINX, & Supervisor
-NGINX configuration file: <code>/etc/nginx/sites-available/projectname</code>  (some of the referenced files below will only be available after configuring Certbot in the next step).
+NGINX configuration file (<code>/etc/nginx/sites-available/projectname</code>) -- some of the referenced files below will only be available after configuring Certbot in the next step.
 ```
 upstream app_server {
     server unix:/opt/kairozu/run/gunicorn.sock fail_timeout=0;
@@ -146,7 +146,7 @@ $ sudo ln -s /etc/nginx/sites-available/projectname /etc/nginx/sites-enabled/pro
 $ sudo rm /etc/nginx/sites-enabled/default
 ```
 
-Gunicorn configuration file: <code>/opt/projectname/bin/gunicorn_start</code>. Make this file executable after creating it with <code>chmod u+x gunicorn_start</code>, and create a directory for the Unix socket file with: <code>mkdir /opt/projectname/run</code>.
+Gunicorn configuration file (<code>/opt/projectname/bin/gunicorn_start</code>).
 ```
 #!/bin/bash
 NAME="projectname"
@@ -174,7 +174,13 @@ exec ../bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
   --log-file=-
 ```
 
-Supervisor configuration file: <code>/etc/supervisor/conf.d/kairozu.conf</code>. After creating this file, <code>chown root:root /etc/supervisor/conf.d/kairozu.conf</code> to change the owner to root.
+Make this file executable and create a directory for the Unix socket file:
+```
+$ chmod u+x gunicorn_start
+$ mkdir /opt/projectname/run
+```
+
+Supervisor configuration file (<code>/etc/supervisor/conf.d/kairozu.conf</code>) -- after creating this file, run <code>chown root:root /etc/supervisor/conf.d/kairozu.conf</code> to change the owner to root.
 ```
 [program:projectname]
 command=/opt/projectname/bin/gunicorn_start
