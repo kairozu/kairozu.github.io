@@ -132,6 +132,22 @@ div.space-table {
     line-height: 1.6em;
 }
 
+.sideNote {
+    font-size: x-small;
+    padding: 10px 12px;
+    border-radius: 2px;
+    background: #c3ccce;
+    margin-right: 50px;
+    margin-bottom: 14px;
+    margin-top: 4px;
+}
+
+.footText {
+    text-align: center;
+    font-size: x-small;
+    padding: 50px;
+}
+
 .imageR { float: right; margin: 0px 0 10px 20px; }
 .imageL { float: left; margin: 0px 20px 10px 0; }
 .imageCenter { 
@@ -140,6 +156,7 @@ div.space-table {
     display: block; }
 
 @media all and (max-width: 756px) {
+    .sideNote { margin-right: 0; }
     .fcMain { flex-wrap: wrap; }
     .fcMain div { flex: 0 1 100%; }
     .table-responsive {
