@@ -13,7 +13,9 @@ These are various snippets of both technical and creative projects ranging from 
 ## Snoopy Cross-stitch
 <img class="imageL" height="135" alt="snoopy" src="/images/snoopy_cs.jpg" />
 
-I think I prefer crochet over cross-stitch as something to do with my hands while I'm doing something else -- CS is definitely not a background activity, there's a lot of square counting. It's interesting for doing path optimization though (where to start, which colors to do first, etc to avoid as many overlaps/tie-offs as possible), and the relation to pixel art is pretty obvious (check out the [Pixel Art Park](https://pixelartpark.com/) event in Tokyo if you get a chance). I followed some Snoopy patterns from a kit sold by [Tokyo Pixel](http://tokyopixel.jp/).
+I think I prefer crochet over cross-stitch as something to do with my hands while I'm doing something else -- cross-stitch is definitely not a background activity, there's a lot of square counting. That said, it's interesting for doing path optimization (where to start, which colors to do first, etc to avoid as many overlaps/tie-offs as possible), and the relation to pixel art is pretty obvious (check out the [Pixel Art Park](https://pixelartpark.com/) event in Tokyo if you get a chance). 
+
+I followed some Snoopy patterns from a kit sold by [Tokyo Pixel](http://tokyopixel.jp/).
 
 <div class="spacerClear"></div>
 
