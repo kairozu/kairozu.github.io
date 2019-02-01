@@ -6,7 +6,14 @@ hasimg: /images/randomprojects.png
 imgwidth: 240
 tags: project code science japanese update
 ---
-These are various snippets of projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Use them at your own risk.. most of them are one off novelties or attempts at doing something a certain way (that may or may not have worked), or even more terrifying, an attempt to learn/figure something out.
+These are various snippets of both technical and creative projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Most are one-off novelties, attempts at doing something a certain way (that may or may not have worked), or learn-as-I-go adventures.
+
+<div class="spacerClear"></div>
+
+## Snoopy Cross-stitch
+<img class="imageL" height="135" alt="snoopy" src="/images/snoopy_cs.jpg" />
+
+I think I prefer crochet over cross-stitch as something to do with my hands while I'm doing something else -- CS is definitely not a background activity, there's a lot of square counting. It's interesting for doing path optimization though (where to start, which colors to do first, etc to avoid as many overlaps/tie-offs as possible), and the relation to pixel art is pretty obvious (check out the [Pixel Art Park](https://pixelartpark.com/) event in Tokyo if you get a chance). I followed some Snoopy patterns from a kit sold by [Tokyo Pixel](http://tokyopixel.jp/).
 
 <div class="spacerClear"></div>
 
@@ -16,7 +23,7 @@ These are various snippets of projects ranging from completed smaller projects t
 Python scripts to parse WaniKani kanji & vocabulary JSON dumps into Anki decks w/kanji stroke orders. See WaniKani's API documentation for pulling kanji/vocabulary data: [https://www.wanikani.com/api](https://www.wanikani.com/api) (a WaniKani account API key is required). WaniKani is great and you should support them with a subscription. This is for extra practice, especially with regard to writing kanji w/a stroke order reference. Please don't use this to avoid supporting WaniKani.
 
 ## Spike Train Calculator
-<img class="imageR" height="150" alt="weather" src="/images/spiketrain.png" />
+<img class="imageR" height="150" alt="spike-train" src="/images/spiketrain.png" />
 <i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Ephys-Stimulation](https://github.com/kairozu/Ephys-Stimulation)
 
 Converts between inter-pulse intervals/train burst widths and frequency/number of pulses & plots an example waveform (also my first foray into JS/jQuery). Mostly useful for visualizing spike trains in discussions or double checking your math when hopping between ephys equipment.
@@ -31,7 +38,7 @@ Once you begin entering values, the example waveform will not plot until all val
 Did you also forget the word combination for your master 643DWD lock? Maybe these words will jog your memory! This generates all combinations of letters (both backward and forward) and screens them for being actual dictionary words. I'm sad to say that I had indeed set the lock to a dictionary word, and that yes, this actually worked for me.
 
 ## Chrome NewTab Color Extension
-<img class="imageL" height="135" alt="weather" src="/images/newtab_chromestore.png" />
+<img class="imageL" height="135" alt="newtab" src="/images/newtab_chromestore.png" />
 <i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/NewTab-Color-Void](https://github.com/kairozu/NewTab-Color-Void)
 
 NewTab Color Void is a bare-bones Chrome extension that replaces the default new tab window with a single-color (customizable in options) screen. Requires no permissions from the user; doesn't have access to browsing information, Chrome tabs, or anything else.
@@ -47,7 +54,7 @@ I have years upon years of data collected from FitBits, Nike+ Watches, Microsoft
 (file contains header row which is discarded) & plots data for viz purposes. Easy to add other data (sleep, miles run, etc).
 
 ## Woodstock Amigurumi
-<img class="imageR" height="130" alt="weather" src="/images/woodstock.png" />
+<img class="imageR" height="130" alt="woodstock" src="/images/woodstock.png" />
 
 It took a few lopsided scarves and squares to pick up the muscle memory for crochet, but it's like riding a bike after that. I didn't use a pattern for Woodstock, and his legs are more like a friendship bracelet than real crochet, but I'm pretty happy with how he turned out. There are some really crazy Amigurumi creations out there, but the return on time investment for crochet (to me) is rough unless you're looking to do something with your hands while otherwise occupied.
 
@@ -56,7 +63,7 @@ June Gilbank's channel on YouTube has a lot of great tutorials that range from (
 <div class="spacerClear"></div>
 
 ## TuckerDavis Cable Tester
-<img class="imageL" height="150" alt="weather" src="/images/tdtcabletester.jpg" />
+<img class="imageL" height="150" alt="tdt test" src="/images/tdtcabletester.jpg" />
 <i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Tucker-Davis-Cable-Tester](https://github.com/kairozu/Tucker-Davis-Cable-Tester)
 
 Extremely quick active/passive cable tester for TDT cables – useful when you have animals that view $1k+ cables as a fine delicacy. Project could be vastly improved without the overkill of a DAQ board that I used, but it was what I had sitting around at the time. Requires an Arduino Mega and a current LabVIEW installation.
@@ -64,7 +71,7 @@ Extremely quick active/passive cable tester for TDT cables – useful when you h
 <div class="spacerClear"></div>
 
 ## TuckerDavis Data Extractor
-<img class="imageR" height="170" alt="weather" src="/images/tdtextract_1.png" />
+<img class="imageR" height="170" alt="tdt extract" src="/images/tdtextract_1.png" />
 <i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/TDT-Extraction-Sandbox-GUI](https://github.com/kairozu/TDT-Extraction-Sandbox-GUI)
 
 Data extraction tools / GUI in MATLAB for wrangling neuro/electrophys data stored in TDT (TuckerDavis Technologies) tank format.
