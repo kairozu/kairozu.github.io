@@ -8,13 +8,13 @@ html, body {
     line-height: 1.4;
 }
 body.mainContent {
-    background: #ffffff;
-    color: #1c1c1c;
+    background: #e5ebed;
+    color: #17242c;
 }
 h2 {
     margin-block-start: 1em;
     padding-bottom: 2px;
-    border-bottom: 1px solid #1c1c1c;
+    border-bottom: 1px solid #618891;
 }
 li { margin: 5px 0; }
 li p { margin: 0; }
