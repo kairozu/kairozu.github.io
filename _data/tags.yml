@@ -8,6 +8,8 @@ project:
   name: Project
 science:
   name: Science
+space:
+  name: Space
 travel:
   name: Travel
 update:
