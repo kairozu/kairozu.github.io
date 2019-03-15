@@ -9,7 +9,7 @@ Word clouds are kinda cliche; trying to interpret word frequency -- or really an
 ## ももたろう Word Cloud
 First, the most basic of word clouds using the story of [ももたろう](http://hukumusume.com/douwa/pc/jap/08/01.htm). The general order for creating these word clouds is as follows: (1) Load the text file with the story, (2) tokenize the text, (3) remove words I don't want to include, (4) indicate desired colors and/or shape, and then finally (5) create the word cloud. These steps are numbered in each code excerpt below.
 
-<a href="hhttps://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png"><img class="imageCenter" src="https://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png" alt="word cloud using words from momotaro"/></a>
+<a href="https://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png"><img class="imageCenter" src="https://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png" alt="word cloud using words from momotaro"/></a>
 
 <ul>
 <li>Momotaro Word Cloud Code: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/momotaro_wordcloud.py">momotaro_wordcloud.py</a></li>
