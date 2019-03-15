@@ -17,7 +17,7 @@ Physical therapy (PT) is often tedious and lacking in fun, which means most peop
 
 <div class="spacerClear"></div>
 
-<a href="/images/neurogame-diagram.png"><img class="imageCenter" src="/images/neurogame-diagram.png" width=500 alt="general NG operation"/></a>
+<a href="/images/neurogame-diagram.png"><img class="imageCenter" src="/images/neurogame-diagram.png" width="500" alt="general NG operation"/></a>
 
 <div class="spacerClear"></div>
 
