@@ -3,7 +3,7 @@ layout: content
 title: EMG Controlled Game
 hasgithub: https://github.com/kairozu/NeuroGame-EMG-Game
 hasimg: /images/neurogame.png
-imgwidth: 240
+imgwidth: 200
 tags: project code
 ---
 <span class="italics">This writeup comes long after the fact, and the GitHub repo is just an archive of the old project code.</span> 
@@ -17,7 +17,7 @@ Physical therapy (PT) is often tedious and lacking in fun, which means most peop
 
 <div class="spacerClear"></div>
 
-<a href="/images/neurogame-diagram.png"><img class="imageCenter" src="/images/neurogame-diagram.png" alt="general NG operation"/></a>
+<a href="/images/neurogame-diagram.png"><img class="imageCenter" src="/images/neurogame-diagram.png" width=500 alt="general NG operation"/></a>
 
 <div class="spacerClear"></div>
 
@@ -33,7 +33,7 @@ The sEMG signals were initially acquired using the first generation USB/serial <
 Wavelets are functions that provide an orthonormal basis for functions in the L<sup>2</sup> space. The use of wavelets is akin to the use of sines and cosines to represent L<sup>2</sup> functions in Fourier analysis. The discrete wavelet transform iteratively transforms a signal of interest into multi-resolution subsets of coefficients. I used a discrete wavelet transform on the raw EMG signal during maximum voluntary contraction to generate the detail coefficients. Most functions, smooth or otherwise, have sparse representation in a wavelet basis, which is ideal for feature detection in time-varying signals. I applied soft thresholding using a universal threshold on these coefficients (x*sqrt(2log(N))), where x is a robust estimator of the standard deviation of the finest level detail coefficients. Then I used the standardized median absolute deviation (x = MAD(B<sub>j-1</sub>)) to complete the threshold. Applying the inverse discrete wavelet transform to the thresholded coefficients produces excellent feature discrimination from EMG signals recorded in both healthy individuals, as well as traditionally more difficult-to-analyze signals seen in those with motor deficits. In healthy subjects, feature detection is often feasible from the raw signal alone, but this becomes impossible with noisy/co-contracting muscles in patients with motor deficits. This calibration process iterates 3 times during the period where maximum voluntary contractions are performed prior to game-play.  
 
 <div class="flexBox">
-	<a href="/images/mvc-healthy.png"><img width="300" src="/images/mvc-healthy.png" alt="max voluntary contraction healthy" /></a>
-	<a href="/images/mvc-stroke.png"><img width="300" src="/images/mvc-stroke.png" alt="max voluntary contraction post-stroke"/></a>
+	<a href="/images/mvc-healthy.png"><img width="400" src="/images/mvc-healthy.png" alt="max voluntary contraction healthy" /></a>
+	<a href="/images/mvc-stroke.png"><img width="400" src="/images/mvc-stroke.png" alt="max voluntary contraction post-stroke"/></a>
 </div>
 
