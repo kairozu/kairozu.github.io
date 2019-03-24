@@ -6,11 +6,11 @@ hasgithub: https://github.com/kairozu/Kairozu-Backup
 imgwidth: 240
 tags: japanese project code
 ---
-<span class="italics">Note: Kairozu is no longer live, but the source is available <a href="https://github.com/kairozu/Kairozu-Backup">here</a>. I've made full database dumps available to previous users and helped them set up their own instances. Thanks everyone for playing with my language-learning system!</span>
-
 I find Socratic and programmed methods of inquiry to be particularly effective when it comes to retaining information -- my two favorite examples are <a href="https://www.amazon.com/Sidmans-Neuroanatomy-Programmed-Learning-Lippincott/dp/0781765684/">Sidman's Neuroanatomy: A Programmed Learning Tool</a> and <a href="https://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/">The Little Schemer</a>. After completing the former for a class in college, the process really struck me as a potentially amazing way to learn a language. If I give someone a list of vocabulary words in a new language, and then teach them how to say “the dog is black” and then “the cat is black”, chances are good they’ll be able to say “the bird is black” on their own -- if they can say the bird is black, they can probably also say “the turtle is green.”
 
 Kairozu introduces grammatical constructs using these small, logical steps, which are organized by chapter around groups of new vocabulary words. I tried to minimize wordy grammar explanations and maximize immediate application of small grammar templates, which are then built upon word by word (or particle by particle). The lessons are an attempt to organize the grammar into an easily-referenced format.
+
+<span class="italics">Note: Kairozu is no longer live, but the source is available <a href="https://github.com/kairozu/Kairozu-Backup">here</a>. I've made full database dumps available to previous users and helped them set up their own instances. Thanks everyone for playing with my language-learning system!</span>
 
 <div class="spacerClear"></div>
 
