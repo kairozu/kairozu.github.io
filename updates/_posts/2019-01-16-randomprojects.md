@@ -6,7 +6,7 @@ hasimg: /images/randomprojects.png
 imgwidth: 240
 tags: project code science japanese update
 ---
-These are various snippets of both technical and creative projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Most are one-off novelties, attempts at doing something a certain way (that may or may not have worked), or learn-as-I-go adventures.
+These are various snippets of technical, creative, and culinary projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Most are one-off novelties, attempts at doing something a certain way (that may or may not have worked), random arts and crafts, small notes that don't fit elsewhere, or learn-as-I-go adventures.
 
 <div class="spacerClear"></div>
 
