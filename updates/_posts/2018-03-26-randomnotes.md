@@ -11,6 +11,14 @@ dd if=/dev/zero of=/dev/sda bs=512 count=1
 efibootmgr -b 0000 -B
 ```
 
+## DRV2065L + Precision Microdrives
+SCL = A5 = pin closer to FTDI connect = green
+SDA = A4 = pin closer to cpu = yellow
+- Connect Vin to the power supply, 3-5V is fine
+- Connect GND to common power/data ground
+- Connect the SCL pin to the I2C clock SCL (A5) pin on the Arduino (UNO & 328 based Arduino = A5, Mega = digital 21, Leonardo/Micro = digital 3)
+- Connect the SDA pin to the I2C data SDA (A4) pin on the Arduino (UNO & 328 based Arduino =  A4, Mega = digital 20, Leonardo/Micro = digital 2)
+
 ## Python Slicing Summary
 ```python
 # a[start:end:step] # from start, but not past end, by step
@@ -41,3 +49,28 @@ alphabet[1::-1]     # the first two items, reversed (ba)
 alphabet[:-3:-1]    # the last two items, reversed (zy)
 alphabet[-3::-1]    # everything except the last two items, reversed (x-a)
 ```
+
+## Authenticate on GitHub with a secondary user
+- Create a dedicated SSH config with IdentityFile and IdentitiesOnly
+- Update the origin URL of every repo to use the SSH config: github-user:user/repo
+
+```
+~/.ssh/config:
+
+Host github.com-username1
+        HostName github.com
+        User git
+        IdentitiesOnly yes
+        IdentityFile ~/.ssh/username1_rsa
+
+Host github.com-username2
+        HostName github.com
+        User git
+        IdentitiesOnly yes
+        IdentityFile ~/.ssh/username2_rsa
+```
+
+## Superior Hard Boiled Eggs
+Lower your eggs straight from the fridge into already-boiling water. If boiling, lower the heat to a simmer. Cook the eggs for 11.5 minutes for hard or 6 minutes for soft. Shock them in ice water immediately. Let them chill in that water for at least 15 minutes, or in the fridge overnight. Peel under cool running water.
+
+
