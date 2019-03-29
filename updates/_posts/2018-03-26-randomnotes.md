@@ -12,7 +12,7 @@ efibootmgr -b 0000 -B
 ```
 
 ## DRV2065L + Precision Microdrives
-SCL = A5 = pin closer to FTDI connect = green
+SCL = A5 = pin closer to FTDI connect = green<br />
 SDA = A4 = pin closer to cpu = yellow
 - Connect Vin to the power supply, 3-5V is fine
 - Connect GND to common power/data ground

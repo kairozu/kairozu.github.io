@@ -6,7 +6,9 @@ hasimg: /images/randomprojects.png
 imgwidth: 240
 tags: project code science japanese update
 ---
-These are various snippets of technical, creative, and culinary projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Most are one-off novelties, attempts at doing something a certain way (that may or may not have worked), random arts and crafts, small notes that don't fit elsewhere, or learn-as-I-go adventures.
+These are various snippets of technical, creative, and culinary projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Most are one-off novelties, attempts at doing something a certain way (that may or may not have worked), random arts and crafts, small notes that don't fit elsewhere, or things that I'm learning as I go.
+
+For random notes that have no real basis as a "project" there's also my Random Notes page here: [https://kairozu.github.io/updates/randomnotes](https://kairozu.github.io/updates/randomnotes).
 
 <div class="spacerClear"></div>
 
