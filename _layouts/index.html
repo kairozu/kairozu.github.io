@@ -1,50 +1,266 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>{{ page.title }}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <link rel="icon" type="image/png" href="images/icons/b-icon-96.png" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" type="text/css" rel="stylesheet" />
-	<style>
-	body {
-		background-color: #e5ebed;
-		background-image: linear-gradient(315deg, #e5ebed 0%, #455d67 94%);
-		margin: 0;
-	}
-	#contactInfo {
-		color: #17242c;
-		position: fixed;
-		padding: 30px;
-		font-family: 'Dosis', sans-serif;
-		bottom: 0;
-		right: 0;
-		text-align: right;
-	}
-	.light { font-weight: 200; }
-	.fontName { font-size: 2.8em; }
-	.fontEmail { font-size: 1.8em; }
-	.fontFolders { font-size: 1.4em; 
-				   line-height: 1.6em;
-				   font-family: 'Anonymous Pro', monospace; }
-	.fontSocial { font-size: 1.8em; margin-left: 12px; }
-	#socialIcons { margin-top: 10px; }
-	</style>
-</head>
-<body>
-    <div id="contactInfo">
-		<span class="fontName">Amber <span class="light">S.</span> <span class="bold">Fechko</span></span><br />
-		<span class="fontEmail light">アンバー・フェチュコ</span><br />
-        <span class="fontEmail">amber@kairozu.com</span><br />
-        <br />
-        <div class="fontFolders">
-			<a href="{{ site.contentlist[0].url }}"><i class="far fa-folder-open fa-fw"></i> {{ site.contentlist[0].title }}</a><br />
-		</div>
-        <br />
-        <div id="socialIcons">
-            <a class="fontSocial" href="https://twitter.com/kairozukigou"><i class="fab fa-twitter fa-fw"></i></a><a class="fontSocial" href="https://mastodon.social/@kairozu"><i class="fab fa-mastodon fa-fw"></i></a><a class="fontSocial" href="https://instagram.com/kairozu"><i class="fab fa-instagram fa-fw"></i></a><a class="fontSocial" href="https://github.com/kairozu"><i class="fab fa-github fa-fw"></i></a><a class="fontSocial" href="https://www.goodreads.com/kairozu"><i class="fas fa-book fa-fw"></i></a>
+    <head>
+        <title>{{ page.title }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+        <link rel="icon" type="image/png" href="images/icons/b-icon-96.png" />
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Noto+Sans+TC:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <style>
+        html {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -ms-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%; }
+
+        *, *:before, *:after {
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            -webkit-box-sizing: inherit;
+            -moz-box-sizing: inherit;
+            box-sizing: inherit; }
+
+        body {
+            background-color: #e3e3e2;
+            color: #1A2123;
+            margin: 20px;
+            font-family: 'Anonymous Pro', monospace;
+            overflow: scroll !important; }
+
+        #body-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .fc-general-col {
+            display: flex;
+            flex-direction: column;
+        }
+        .fc-general-col-center {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .fc-general-row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .fc-flex-20 { flex: 0 1 20%; min-width: 150px; }
+        .fc-flex-60 { flex: 0 1 60%; min-width: 280px; }
+        .box {
+            min-height: 150px;
+            border: none;
+            box-sizing: border-box;
+            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+        }
+        .box-fixed {
+            min-height: 150px;
+            border: none;
+            position: relative;
+            box-sizing: border-box;
+            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+        }
+        .bg-grey { background-color: #CBD4C7; }
+        .grey { color: #CBD4C7; }
+        .bg-black { background-color: #1A2123; }
+        .black { color: #1A2123; }
+        .bg-white { background-color: white; }
+        .white { color: white; }
+        .bg-green { background-color: #A6D513; }
+        .green { color: #A6D513; }
+        .bg-darkgrey { background-color: #576062; }
+        .darkgrey { color: #576062; }
+        .loves-box {
+            padding: 10px;
+            font-size: 0.8em;
+        }
+        .align-right { text-align: right; }
+        .align-center { text-align: center; }
+        .fs1-6 {
+            font-size: 1.6em;
+        }
+        .dot-line {
+            border: none;
+            border-top: 15px dotted;
+            margin: 0 10px;
+        }
+        .font-social {
+            font-size: 1.8em;
+        }
+        a, a:link, a:visited  {
+            text-decoration: none;
+            color: #ffffff;
+            -webkit-transition: 200ms color ease-in-out;
+            -moz-transition: 200ms color ease-in-out;
+            -o-transition: 200ms color ease-in-out;
+            transition: 200ms color ease-in-out; }
+        a, a:focus, a:hover { color: #A6D513; }
+        a.alt, a.alt:link, a.alt:visited  {
+            text-decoration: none;
+            color: #ffffff;
+            -webkit-transition: 200ms color ease-in-out;
+            -moz-transition: 200ms color ease-in-out;
+            -o-transition: 200ms color ease-in-out;
+            transition: 200ms color ease-in-out; }
+        a.alt, a.alt:focus, a.alt:hover { color: #1A2123; }
+        a.dark, a.dark:link, a.dark:visited  {
+            text-decoration: none;
+            color: #1A2123;
+            -webkit-transition: 200ms color ease-in-out;
+            -moz-transition: 200ms color ease-in-out;
+            -o-transition: 200ms color ease-in-out;
+            transition: 200ms color ease-in-out; }
+        a.dark, a.dark:focus, a.dark:hover { color: #ffffff; }
+        .bottom-center {
+            position: absolute;
+            bottom: 15px;
+            width: 100%;
+        }
+        .plant {
+            position: absolute;
+            bottom: -5px;
+            left: 85px;
+        }
+        .rain {
+            position: absolute;
+            bottom: 5px;
+            left: 150px;
+        }
+        .circuit img {
+            position: absolute;
+            left: 0px;
+            top: 5px;
+            -webkit-transition: opacity 200ms ease-in-out;
+            -moz-transition: opacity 200ms ease-in-out;
+            -o-transition: opacity 200ms ease-in-out;
+            transition: opacity 200ms ease-in-out;
+        }
+        .satellite img {
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            -webkit-transition: opacity 200ms ease-in-out;
+            -moz-transition: opacity 200ms ease-in-out;
+            -o-transition: opacity 200ms ease-in-out;
+            transition: opacity 200ms ease-in-out; 
+        }
+        #circuit-project:hover div img.top { opacity: 0; }
+        #sat-updates:hover div img.top { opacity: 0; }
+        .projects {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.1em;
+        }
+        .updates {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 1.1em;
+        }
+        #name, #jname, #email {
+            margin-right: 20px;
+            color: #1A2123;
+        }
+        #name {
+            font-size: 2em;
+        }
+        #jname {
+            font-size: 1.2em;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        #email {
+            font-size: 1.4em;
+        }
+        @media all and (max-width: 800px) {
+            .fc-flex-20 { flex: 0 1 50%; }
+            .fc-flex-60 { flex: 0 1 100%; }
+        }
+        @media all and (max-width: 340px) {
+            .fc-flex-20 { flex: 0 1 100%; }
+            .fc-flex-60 { flex: 0 1 100%; }
+        }
+    </style>
+    <body>
+    <div id="body-container">
+        <div class="fc-general-col">
+            <div class="fc-general-row">
+                <div class="fc-flex-20">
+                    <a id="circuit-project" class="dark" href="">
+                        <div class="bg-grey box-fixed circuit">
+                            <img class="bottom" src="images/circuit-left-white.svg" height="120px" />
+                            <img class="top" src="images/circuit-left.svg" height="120px" />
+                            <div class="projects">
+                                projects
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="fc-flex-20">
+                    <div class="bg-white fc-general-col-center box">
+                        <div class="dot-line green"></div>
+                    </div>
+                </div>
+                <div class="fc-flex-60">
+                    <div class="fc-general-col-center bg-green box align-right">
+                            <div id="name">Amber S Fechko</div>
+                            <div id="jname">アンバー・フェチュコ</div>
+                            <div id="email">amber@kairozu.com</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fc-general-row">
+                <div class="fc-flex-20">
+                    <div class="bg-green box"></div>
+                </div>
+                <div class="fc-flex-20">
+                    <div class="bg-black fc-general-col-center box align-center grey loves-box">
+                        <i class="fas fa-heart fa-2x darkgrey"></i>
+                        <br />
+                        <div><a href="{{site.url}}{{site.baseurl}}/tags/code">code</a>, <a href="{{site.url}}{{site.baseurl}}/tags/science">neuroscience</a>, <a href="{{ site.contentlist[0].url }}">running</a>, <a href="{{site.url}}{{site.baseurl}}/tags/space">space</a>, <a href="{{site.url}}{{site.baseurl}}/tags/project">hobby electronics</a>, <a href="{{site.url}}{{site.baseurl}}/tags/project">building things</a>, <a href="{{ site.contentlist[0].url }}">green tea</a></div>
+                    </div>
+                </div>
+                <div class="fc-flex-60">
+                    <div class="bg-grey box-fixed">
+                        <img class="plant" src="images/plant.svg" height="80px" />
+                        <div class="rain">雨降って地固まる。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fc-general-row">
+                <div class="fc-flex-20">
+                    <a id="sat-updates" href="{{ site.contentlist[0].url }}">
+                        <div class="bg-black box-fixed satellite">
+                            <img class="bottom" src="images/update-sat-on.svg" height="80px" />
+                            <img class="top" src="images/update-sat-off.svg" height="80px" />
+                            <div class="updates">
+								{{ site.contentlist[0].title }}
+							</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="fc-flex-20">
+                    <div class="bg-grey box"></div>
+                </div>
+                <div class="fc-flex-60">
+                    <div class="box-fixed bg-darkgrey">
+                        <div class="bottom-center">
+                            <div class="fc-general-row">
+                                <a class="alt font-social" href="https://twitter.com/kairozukigou"><i class="fab fa-twitter fa-fw"></i></a>
+                                <a class="alt font-social" href="https://mastodon.social/@kairozu"><i class="fab fa-mastodon fa-fw"></i></a>
+                                <a class="alt font-social" href="https://instagram.com/kairozu"><i class="fab fa-instagram fa-fw"></i></a>
+                                <a class="alt font-social" href="https://github.com/kairozu"><i class="fab fa-github fa-fw"></i></a>
+                                <a class="alt font-social" href="https://www.goodreads.com/kairozu"><i class="fas fa-book fa-fw"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
