@@ -8,13 +8,13 @@ html, body {
     line-height: 1.4;
 }
 body.mainContent {
-    background: #e5ebed;
-    color: #17242c;
+    background: #e3e3e2;
+    color: #576062;
 }
 h2 {
     margin-block-start: 1em;
     padding-bottom: 2px;
-    border-bottom: 1px solid #618891;
+    border-bottom: 1px solid #1A2123;
 }
 li { margin: 5px 0; }
 li p { margin: 0; }
@@ -35,7 +35,7 @@ p > code {
 img { border-radius: 2px; }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #455d67;
+    color: #1A2123;
     -webkit-transition: 200ms color ease-in-out;
     -moz-transition: 200ms color ease-in-out;
     -o-transition: 200ms color ease-in-out;
@@ -46,7 +46,7 @@ a, a:link, a:visited {
     word-break: break-all;
     word-break: break-word;
 }
-a, a:focus, a:hover { color: #718a82; }
+a, a:focus, a:hover { color: #A6D513; }
 .bold { font-weight: 600; }
 .italics { font-style: italic; }
 .larger { font-size: larger; }
@@ -63,7 +63,8 @@ a, a:focus, a:hover { color: #718a82; }
     font-size: x-small;
     padding: 2px 4px;
     border-radius: 2px;
-    background: #c3ccce;
+    background: #A6D513;
+    color: white;
     margin-left: 6px;
     vertical-align: top;
     line-height: 2.4;
@@ -136,7 +137,8 @@ div.space-table {
     font-size: x-small;
     padding: 10px 12px;
     border-radius: 2px;
-    background: #c3ccce;
+    background: #CBD4C7;
+    color: #1A2123;
     margin-right: 50px;
     margin-bottom: 14px;
     margin-top: 4px;
