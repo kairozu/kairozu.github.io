@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Random Notes
-tags: update code science japan japanese space travel project
+tags: update code science japan japanese space project
 ---
 I collect lots of one-off notes, sometimes technical (e.g. how to compress a series of files following a specific pattern), sometimes not (e.g. best way to hard boil eggs, or random insightful quote from random insightful person), and I've started collecting some of them here. 
 
