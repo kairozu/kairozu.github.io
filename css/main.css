@@ -35,7 +35,7 @@ p > code {
 img { border-radius: 2px; }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #1A2123;
+    color: #002B49;
     -webkit-transition: 200ms color ease-in-out;
     -moz-transition: 200ms color ease-in-out;
     -o-transition: 200ms color ease-in-out;
@@ -46,7 +46,7 @@ a, a:link, a:visited {
     word-break: break-all;
     word-break: break-word;
 }
-a, a:focus, a:hover { color: #A6D513; }
+a, a:focus, a:hover { color: #514162; }
 .bold { font-weight: 600; }
 .italics { font-style: italic; }
 .larger { font-size: larger; }
@@ -63,8 +63,8 @@ a, a:focus, a:hover { color: #A6D513; }
     font-size: x-small;
     padding: 2px 4px;
     border-radius: 2px;
-    background: #A6D513;
-    color: white;
+    background: #506D85;
+    color: #f2f5f8;
     margin-left: 6px;
     vertical-align: top;
     line-height: 2.4;
@@ -116,7 +116,7 @@ div.space-table {
 	font-size: smaller;
 	margin: 10px 0;
 	padding: 5px 10px;
-	border: 1px solid #aaa; 
+	border: 1px solid #98A4AE; 
 }
 
 .headerData {
@@ -137,8 +137,8 @@ div.space-table {
     font-size: x-small;
     padding: 10px 12px;
     border-radius: 2px;
-    background: #CBD4C7;
-    color: #1A2123;
+    background: #98A4AE;
+    color: #070a0d;
     margin-right: 50px;
     margin-bottom: 14px;
     margin-top: 4px;
