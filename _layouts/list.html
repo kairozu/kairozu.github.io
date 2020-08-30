@@ -22,6 +22,8 @@
                             <span class="fa-li"><i class="fas fa-language fa-fw"></i></span>
                         {% elsif p.tags[0] == 'japan' %}
                             <span class="fa-li"><i class="fas fa-sun fa-fw"></i></span>
+                        {% elsif p.tags[0] == 'security' %}
+                            <span class="fa-li"><i class="fas fa-lock fa-fw"></i></span>
                         {% else %}
                             <span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
                         {% endif %}
@@ -47,6 +49,8 @@
                             <span class="fa-li"><i class="fas fa-language fa-fw"></i></span>
                         {% elsif tag == 'japan' %}
                             <span class="fa-li"><i class="fas fa-sun fa-fw"></i></span>
+                        {% elsif p.tags[0] == 'security' %}
+                            <span class="fa-li"><i class="fas fa-lock fa-fw"></i></span>
                         {% else %}
                             <span class="fa-li"><i class="fas fa-edit fa-fw"></i></span>
                         {% endif %}
