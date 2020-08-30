@@ -12,3 +12,5 @@ space:
   name: Space
 update:
   name: Update
+security:
+  name: Security
