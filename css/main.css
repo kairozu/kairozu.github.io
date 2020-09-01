@@ -133,6 +133,10 @@ div.space-table {
     line-height: 1.6em;
 }
 
+#amberPixel {
+    padding-left: 20px;
+}
+
 .sideNote {
     font-size: x-small;
     padding: 10px 12px;
@@ -141,7 +145,7 @@ div.space-table {
     color: #070a0d;
     margin-right: 50px;
     margin-bottom: 14px;
-    margin-top: 4px;
+    margin-top: -4px;
 }
 
 .footText {
