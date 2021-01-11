@@ -41,3 +41,20 @@ My personal usage of Kairozu is largely in the Flashcards system. You can import
 	<a href="/images/flashcard-quick-ans.png"><img width="300" src="/images/flashcard-quick-ans.png" alt="flashcard quick answer" /></a>
     <a href="/images/flashcard-quick-text.png"><img width="300" src="/images/flashcard-quick-text.png" alt="flashcard text mode" /></a>
 </div>
+
+## Screenshots
+These are various screenshots from a number of pages on the previously hosted nihongo.kairozu.com.
+
+<div class="flexBox">
+	<a href="/images/nihongo_kai1.png"><img width="300" src="/images/nihongo_kai1.png" alt="front page" /></a>
+	<a href="/images/nihongo_kai2.png"><img width="300" src="/images/nihongo_kai2.png" alt="lesson1" /></a>
+    <a href="/images/nihongo_kai3.png"><img width="300" src="/images/nihongo_kai3.png" alt="lesson2" /></a>
+</div>
+
+<div class="spacerClear"></div>
+
+<div class="flexBox">
+	<a href="/images/nihongo_kai4.png"><img width="300" src="/images/nihongo_kai4.png" alt="hiragana practice" /></a>
+	<a href="/images/nihongo_kai5.png"><img width="300" src="/images/nihongo_kai5.png" alt="counter practice" /></a>
+    <a href="/images/nihongo_kai6.png"><img width="300" src="/images/nihongo_kai6.png" alt="lesson selection" /></a>
+</div>
