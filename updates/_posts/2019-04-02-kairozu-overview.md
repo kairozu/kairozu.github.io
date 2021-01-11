@@ -43,7 +43,7 @@ My personal usage of Kairozu is largely in the Flashcards system. You can import
 </div>
 
 ## Screenshots
-These are various screenshots from a number of pages on the previously hosted nihongo.kairozu.com.
+These are various screenshots from a number of pages within the kairozu system. Top->Bottom, Left->Right: front page, chapter 1 lesson 1, chapter 1 lesson 6, hiragana practice game, counter practice game, index of chapter content, chapter index of lessons, kana introduction, sentence practice interface.
 
 <div class="flexBox">
 	<a href="/images/nihongo_kai1.png"><img width="300" src="/images/nihongo_kai1.png" alt="front page" /></a>
