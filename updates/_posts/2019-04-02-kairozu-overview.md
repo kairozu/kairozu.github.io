@@ -58,3 +58,11 @@ These are various screenshots from a number of pages on the previously hosted ni
 	<a href="/images/nihongo_kai5.png"><img width="300" src="/images/nihongo_kai5.png" alt="counter practice" /></a>
     <a href="/images/nihongo_kai6.png"><img width="300" src="/images/nihongo_kai6.png" alt="lesson selection" /></a>
 </div>
+
+<div class="spacerClear"></div>
+
+<div class="flexBox">
+	<a href="/images/nihongo_kai7.png"><img width="300" src="/images/nihongo_kai7.png" alt="chapter index" /></a>
+	<a href="/images/nihongo_kai8.png"><img width="300" src="/images/nihongo_kai8.png" alt="kana" /></a>
+    <a href="/images/nihongo_kai9.png"><img width="300" src="/images/nihongo_kai9.png" alt="practice" /></a>
+</div>
