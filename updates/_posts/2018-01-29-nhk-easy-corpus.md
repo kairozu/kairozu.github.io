@@ -59,5 +59,3 @@ for key, value in nhkjson[0].items():
             except:
                 print("Failed to download article ID: " + x['article_id'])
 ```
-
-If you have a non-commercial interest in using the NHK Easy corpus I've built, I'm happy to share -- e-mail me at amber@kairozu.com and let me know what you'd be using it for.
