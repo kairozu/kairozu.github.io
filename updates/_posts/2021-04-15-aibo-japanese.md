@@ -1,7 +1,6 @@
 ---
 layout: content
 title: Japanese Aibo Commands
-hasimg: /images/kairozu-lesson.png
 tags: update code japan japanese project
 ---
 Note: The English given below is the English translation of the Japanese command, not the English version of the command -- I am unable to verify English commands.
