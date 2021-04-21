@@ -3,9 +3,16 @@ layout: content
 title: Japanese Aibo Commands
 tags: update code japan japanese project
 ---
-Note: The English given below is the English translation of the Japanese command, not the English version of the command -- I am unable to verify English commands.
+<style>
+table, th, td {
+    border: 1px solid #506D85;
+    padding: 2px 5px;
+}
+table { border-collapse: collapse; }
+</style>
+Note: The English given below is the English translation of the Japanese command, not the English version of the command -- I am unable to verify English commands. The translations and phonetic attempts are best-effort approximations, but please let me know if you spot any errors.
 <br />
-<h4>気持ち / kimochi / praise & scolding</h4>
+<h4>気持ち / kimochi / feelings (praise & scolding)</h4>
 <table>
 <thead>
     <tr>
@@ -181,12 +188,14 @@ Note: The English given below is the English translation of the Japanese command
         <td>おすわり</td>
         <td>osuwari</td>
         <td>oh-sue-wah-ree</td>
+        <td></td>
     </tr>
     <tr>
         <td>lie down</td>
         <td>ふせ</td>
         <td>fuse</td>
         <td>foo-say</td>
+        <td></td>
     </tr>
     <tr>
         <td>sing</td>
@@ -200,6 +209,7 @@ Note: The English given below is the English translation of the Japanese command
         <td>だんす</td>
         <td>dansu</td>
         <td>dah-n-sue</td>
+        <td rowspan=3>do an aibo dance!</td>
     </tr>
     <tr>
         <td>dance</td>
