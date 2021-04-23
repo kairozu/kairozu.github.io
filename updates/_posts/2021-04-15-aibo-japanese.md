@@ -405,6 +405,7 @@ Note: The English given below is the English approximation of the Japanese comma
     </tr>
 </tbody>
 </table>
+
 <h4>ふるまい / furumai / behavior - toys</h4>
 <table>
 <thead>
