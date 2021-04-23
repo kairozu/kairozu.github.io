@@ -447,6 +447,7 @@ Note: The English given below is the English approximation of the Japanese comma
         <td>honenagete</td>
         <td>hoe-nay-nah-gay-tay</td>
         <td rowspan=2>pick up aibone and throw it</td>
+    </tr>
     <tr>
         <td>throw aibone</td>
         <td>あいぼーんなげて</td>
