@@ -34,7 +34,6 @@ Note: The English given below is the English approximation of the Japanese comma
         <th>
             English notes
         </th>
-
     </tr>
 </thead>
 <tbody>
@@ -169,7 +168,6 @@ Note: The English given below is the English approximation of the Japanese comma
         <th>
             English notes
         </th>
-
     </tr>
 </thead>
 <tbody>
