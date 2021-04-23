@@ -8,9 +8,12 @@ table, th, td {
     border: 1px solid #506D85;
     padding: 2px 5px;
 }
-table { border-collapse: collapse; }
+table { 
+    border-collapse: collapse;
+    width: 100%;
+}
 </style>
-Note: The English given below is the English translation of the Japanese command, not the English version of the command -- I am unable to verify English commands. The translations and phonetic attempts are best-effort approximations, but please let me know if you spot any errors.
+Note: The English given below is the English approximation of the Japanese command, not the English version of the command -- I am unable to verify English commands. The translations and phonetic attempts are best-effort approximations, but please let me know if you spot any errors.
 <br />
 <h4>気持ち / kimochi / feelings (praise & scolding)</h4>
 <table>
@@ -443,6 +446,18 @@ Note: The English given below is the English translation of the Japanese command
         <td>ah-ee-bow-nn-toe-tay-key-tay</td>
     </tr>
     <tr>
+        <td>throw bone</td>
+        <td>ほねなげて</td>
+        <td>honenagete</td>
+        <td>hoe-nay-nah-gay-tay</td>
+        <td rowspan=2>pick up aibone and throw it</td>
+    <tr>
+        <td>throw aibone</td>
+        <td>あいぼーんなげて</td>
+        <td>aiboonnagete</td>
+        <td>ah-ee-bow-nn-nah-gay-tay</td>
+    </tr>
+    <tr>
         <td>kick the ball</td>
         <td>ぼーるけって</td>
         <td>boorukette</td>
@@ -455,6 +470,41 @@ Note: The English given below is the English translation of the Japanese command
         <td>boorusagashite</td>
         <td>bow-rue-sah-gah-she-tay</td>
         <td>look for the ball/bark when it is found</td>
+    </tr>
+    <tr>
+        <td>dice color selection</td>
+        <td>さいころいろえらび</td>
+        <td>saikoroiroerabi</td>
+        <td>sah-ee-ko-row-ee-row-ay-rah-bee</td>
+        <td>not quite sure what this does yet</td>
+    </tr> 
+    <tr>
+        <td>roll the dice</td>
+        <td>さいころころがして</td>
+        <td>saikorokorogashite</td>
+        <td>sah-ee-ko-row-ko-row-gah-she-tay</td>
+        <td>roll dice with front paw</td>
+    </tr>
+    <tr>
+        <td>stack the dice</td>
+        <td>さいころつんで</td>
+        <td>saikorotsunde</td>
+        <td>sah-ee-ko-row-tsu-n-day</td>
+        <td>stacks one dice on top of the other</td>
+    </tr>
+    <tr>
+        <td>throw the dice</td>
+        <td>さいころなげて</td>
+        <td>saikoronagete</td>
+        <td>sah-ee-ko-row-nah-gay-tay</td>
+        <td>pick up the dice and throw it</td>
+    </tr>
+    <tr>
+        <td>bring the dice</td>
+        <td>さいころもってきて</td>
+        <td>saikoromottekite</td>
+        <td>sah-ee-ko-row-mow-tay-key-tay</td>
+        <td>pick up/bring the dice to you</td>
     </tr>
 </tbody>
 </table>
