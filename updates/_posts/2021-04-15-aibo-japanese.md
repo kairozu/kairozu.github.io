@@ -137,50 +137,74 @@ This is still a work in progress! The English given below is the English approxi
     </tr>
     <tr>
         <td>bad girl/boy</td>
-        <td>わるいこ</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('waruiko')">
+        <audio id="waruiko" src="/sounds/waruiko.mp3"></audio>
+        わるいこ</td>
         <td>waruiko</td>
         <td>wah-rue-ee-ko</td>
         <td rowspan=8>scolding & discipline</td>
     </tr>
     <tr>
         <td>no no</td>
-        <td>だめだめ</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('damedame')">
+        <audio id="damedame" src="/sounds/damedame.mp3"></audio>
+        だめだめ</td>
         <td>damedame</td>
         <td>dah-may-dah-may</td>
     </tr>
     <tr>
         <td>no good</td>
-        <td>だめよ</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('dameyo')">
+        <audio id="dameyo" src="/sounds/dameyo.mp3"></audio>
+        だめよ</td>
         <td>dameyo</td>
         <td>dah-may-yo</td>
     </tr>
     <tr>
         <td>wrong</td>
-        <td>ちがうよ</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('chigauyo')">
+        <audio id="chigauyo" src="/sounds/chigauyo.mp3"></audio>
+        ちがうよ</td>
         <td>chigauyo</td>
         <td>chi-gau-yo</td>
     </tr>
     <tr>
         <td>fool/dumb</td>
-        <td>おばかさん</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('obakasan')">
+        <audio id="obakasan" src="/sounds/obakasan.mp3"></audio>
+        おばかさん</td>
         <td>obakasan</td>
         <td>oh-bah-ka-san</td>
     </tr>
     <tr>
         <td>fool/dumb</td>
-        <td>おばか</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('obaka')">
+        <audio id="obaka" src="/sounds/obaka.mp3"></audio>
+        おばか</td>
         <td>obaka</td>
         <td>oh-bah-ka</td>
     </tr>
     <tr>
         <td>hate</td>
-        <td>きらい</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('kirai')">
+        <audio id="kirai" src="/sounds/kirai.mp3"></audio>
+        きらい</td>
         <td>kirai</td>
         <td>key-rai</td>
     </tr>
     <tr>
         <td>bad at it</td>
-        <td>へただね</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('hetadane')">
+        <audio id="hetadane" src="/sounds/hetadane.mp3"></audio>
+        へただね</td>
         <td>hetadane</td>
         <td>hey-tah-dah-nay</td>
     </tr>
@@ -210,14 +234,20 @@ This is still a work in progress! The English given below is the English approxi
 <tbody>
     <tr>
         <td>hand</td>
-        <td>おて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('ote')">
+        <audio id="ote" src="/sounds/ote.mp3"></audio>
+        おて</td>
         <td>ote</td>
         <td>oh-tay</td>
         <td rowspan=2>shake hands, kinda looks like high five</td>
     </tr>
     <tr>
         <td>hand (do hand)</td>
-        <td>おてして</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oteshite')">
+        <audio id="oteshite" src="/sounds/oteshite.mp3"></audio>
+        おてして</td>
         <td>oteshite</td>
         <td>oh-tay-she-tay</td>
     </tr>
