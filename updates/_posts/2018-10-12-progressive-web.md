@@ -2,16 +2,16 @@
 layout: content
 title: Progressive Web Apps
 tags: project code
-hasgithub: https://github.com/kairozu/Progressive-Web-Apps/
+hasgithub: https://github.com/cryptogramber/Progressive-Web-Apps/
 ---
-I've been fascinated by Progressive Web Applications (PWA) lately. I've largely been using Angular to build things, but with every new PWA comes a few odds and ends that I've learned, and as such, I'll try to keep track of them here. The general repository for these PWA experiments is here: [https://github.com/kairozu/Progressive-Web-Apps/](https://github.com/kairozu/Progressive-Web-Apps/).
+I've been fascinated by Progressive Web Applications (PWA) lately. I've largely been using Angular to build things, but with every new PWA comes a few odds and ends that I've learned, and as such, I'll try to keep track of them here. The general repository for these PWA experiments is here: [https://github.com/cryptogramber/Progressive-Web-Apps/](https://github.com/cryptogramber/Progressive-Web-Apps/).
 
 <div class="spacerClear"></div>
 
 ## 助数詞 (October 2018)
 <img class="imageL" height="160" alt="josuushi screenshot" src="/images/josuushi.png" />
-<div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/kairozu/Progressive-Web-Apps/tree/master/josuushi">https://github.com/kairozu/Progressive-Web-Apps/tree/master/josuushi</a></div>
-<div class="listItem"><i class="fas fa-paper-plane fa-fw"></i> <a href="https://kairozu.github.io/sandbox/josuushi">https://kairozu.github.io/sandbox/josuushi</a></div>
+<div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/cryptogramber/Progressive-Web-Apps/tree/master/josuushi">https://github.com/cryptogramber/Progressive-Web-Apps/tree/master/josuushi</a></div>
+<div class="listItem"><i class="fas fa-paper-plane fa-fw"></i> <a href="https://cryptogramber.github.io/sandbox/josuushi">https://cryptogramber.github.io/sandbox/josuushi</a></div>
 
 Japanese counters are plentiful. There is an excellent Tofugu article which orders them by frequency/general usefulness here: <a href="https://www.tofugu.com/japanese/japanese-counters-list/">350 Japanese Counters Grouped By Usefulness</a>. This cycles through various things which can be counted -- dogs, people, pencils, envelopes, boxes, slices of pizza, etc -- and prompts the user for the number+counter word in Japanese (kana or kanji). The images are cached as a prefetch, so if the app is "installed" ("add to home screen"), it can be used offline. It requires a Japanese IME for input; in the future I'll probably adapt <a href="https://wanakana.com/">wanakana</a> as an Angular service.
 
@@ -49,8 +49,8 @@ $ http-server -c-1 dist/<appname>/
 
 ## Mathotron (October 2018)
 <img class="imageL" height="160" alt="mathotron screenshot" src="/images/mathotron.png" />
-<div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/kairozu/Progressive-Web-Apps/tree/master/mathotron">https://github.com/kairozu/Progressive-Web-Apps/tree/master/mathotron</a></div>
-<div class="listItem"><i class="fas fa-paper-plane fa-fw"></i> <a href="https://kairozu.github.io/sandbox/mathotron">https://kairozu.github.io/sandbox/mathotron</a></div>
+<div class="listItem"><i class="fab fa-github fa-fw"></i>  <a href="https://github.com/cryptogramber/Progressive-Web-Apps/tree/master/mathotron">https://github.com/cryptogramber/Progressive-Web-Apps/tree/master/mathotron</a></div>
+<div class="listItem"><i class="fas fa-paper-plane fa-fw"></i> <a href="https://cryptogramber.github.io/sandbox/mathotron">https://cryptogramber.github.io/sandbox/mathotron</a></div>
 
 Simple calculator that keeps a ticker tape history of mathematical operations. It's pretty simple and lacking in aesthetic quality, but I wanted to test hosting PWAs on GitHub Pages.
 

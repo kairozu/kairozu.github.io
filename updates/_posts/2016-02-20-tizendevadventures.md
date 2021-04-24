@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Tizen Dev Adventures
-hasgithub: https://github.com/kairozu/Gear-S2-AWatch
+hasgithub: https://github.com/cryptogramber/Gear-S2-AWatch
 hasimg: /images/awatchface.png
 imgwidth: 200
 tags: project code
@@ -12,7 +12,7 @@ There are pros and cons of the Gear S2, but I like the round interface/bezel nav
 
 This watch face is programmed using the JavaScript/HTML5 web app method, and it features: current time +10 min, second time zone, day of the week + date, local weather, daily step count, and battery status. This is a collection of the resources I used & the issues I encountered: some solved, others circumvented, and a handful which remain a mystery.
 
-The AWatch watch face relies on the AWatch Config companion app: [https://github.com/kairozu/Gear-S2-AWConfig](https://github.com/kairozu/Gear-S2-AWConfig).
+The AWatch watch face relies on the AWatch Config companion app: [https://github.com/cryptogramber/Gear-S2-AWConfig](https://github.com/cryptogramber/Gear-S2-AWConfig).
 
 <div class="spacerClear"></div>
 
@@ -109,7 +109,7 @@ Update: After 7 days, my watch face widget was approved.. but the partner config
 
 <a href="/images/samsungdenied.png"><img class="imageCenter" src="/images/samsungdenied.png" /></a>
 
-Update 2: I fixed the text formatting issue and re-submitted.. and waited another 7 days. This time it was rejected because configuration changes made from the [AWConfig app](https://github.com/kairozu/Gear-S2-AWConfig) aren't immediately reflected in the AWatch watch face. Unfortunately this is intentional; the watch face must be reloaded manually. I don't have partner-level API access (and lack the business license/desire needed to apply) so I cannot force the watch face to reload from within the [AWConfig app](https://github.com/kairozu/Gear-S2-AWConfig) (tizen.application.kill is partner-level). I don't want to query the filesystem for configuration changes from AWatch because that'd be an unreasonable and unnecessary drain on resources. I suppose I'll give them credit for conveying the issue without using words? Images below are screenshots from the video that Samsung sent me w/the rejection. I submitted a question through their "one on one developer support" (?) asking for recommendations. We'll see.
+Update 2: I fixed the text formatting issue and re-submitted.. and waited another 7 days. This time it was rejected because configuration changes made from the [AWConfig app](https://github.com/cryptogramber/Gear-S2-AWConfig) aren't immediately reflected in the AWatch watch face. Unfortunately this is intentional; the watch face must be reloaded manually. I don't have partner-level API access (and lack the business license/desire needed to apply) so I cannot force the watch face to reload from within the [AWConfig app](https://github.com/cryptogramber/Gear-S2-AWConfig) (tizen.application.kill is partner-level). I don't want to query the filesystem for configuration changes from AWatch because that'd be an unreasonable and unnecessary drain on resources. I suppose I'll give them credit for conveying the issue without using words? Images below are screenshots from the video that Samsung sent me w/the rejection. I submitted a question through their "one on one developer support" (?) asking for recommendations. We'll see.
 
 <a href="/images/watch_failure.png"><img class="imageCenter" src="/images/watch_failure.png" /></a>
 

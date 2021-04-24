@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Insect Flight Lab
-hasgithub: https://github.com/kairozu/Insect-Flight-Lab
+hasgithub: https://github.com/cryptogramber/Insect-Flight-Lab
 hasimg: /images/testing_torque.jpg
 imgwidth: 240
 tags: project science code

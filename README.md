@@ -1,2 +1,2 @@
-# kairozu.github.io
-Kairozu's Sandbox on the Web
+# cryptogramber.github.io
+Amber's Sandbox on the Web

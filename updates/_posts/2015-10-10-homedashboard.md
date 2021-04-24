@@ -1,12 +1,12 @@
 ---
 layout: content
 title: Home Control Dashboard
-hasgithub: https://github.com/kairozu/Home-Dashboard
+hasgithub: https://github.com/cryptogramber/Home-Dashboard
 hasimg: /images/homedash.png
 imgwidth: 240
 tags: project code
 ---
-Central control dashboard to consolidate my various "smart home" systems (Hue, Nest, Sonos, etc) -- building my own allows for a level of control on par with various commercial solutions, with the added bonus of being able to add my own elements and sensors in the future. Side bonus: I've learned lots (not all of which is good) about the things I have in my home. Each tab could be considered a separate project (and many of them are derivative of such -- links below under each section), but the central repository for the entire dashboard is here: [https://github.com/kairozu/Home-Dashboard](https://github.com/kairozu/Home-Dashboard).
+Central control dashboard to consolidate my various "smart home" systems (Hue, Nest, Sonos, etc) -- building my own allows for a level of control on par with various commercial solutions, with the added bonus of being able to add my own elements and sensors in the future. Side bonus: I've learned lots (not all of which is good) about the things I have in my home. Each tab could be considered a separate project (and many of them are derivative of such -- links below under each section), but the central repository for the entire dashboard is here: [https://github.com/cryptogramber/Home-Dashboard](https://github.com/cryptogramber/Home-Dashboard).
 
 <div class="spacerClear"></div>
 

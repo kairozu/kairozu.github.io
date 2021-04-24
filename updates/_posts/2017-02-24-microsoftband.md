@@ -1,7 +1,7 @@
 ---
 layout: content
 title: MS Band Utilities
-hasgithub: https://github.com/kairozu/Microsoft-Band-Utils
+hasgithub: https://github.com/cryptogramber/Microsoft-Band-Utils
 hasimg: /images/bandsandbox.png
 imgwidth: 240
 tags: project code
@@ -62,7 +62,7 @@ The accelerometer and gyroscope/angular velocity x/y/z orientation (image taken 
 The download/export option offered by Microsoft in their Health Dashboard doesn't give you the full set of data collected by the Microsoft Band. This is a quick (and dirty) program to download _everything_ (or what you choose) using their Health Cloud API. The code is really ugly, and it errs on the slow side to avoid server-side rate limiting, but it works.
 
 I also threw together (again, really ugly) some Python scripts to help parse/display the data:
-[https://github.com/kairozu/Microsoft-Band-Utils/tree/master/Band-Data-Analysis](https://github.com/kairozu/Microsoft-Band-Utils/tree/master/Band-Data-Analysis)
+[https://github.com/cryptogramber/Microsoft-Band-Utils/tree/master/Band-Data-Analysis](https://github.com/cryptogramber/Microsoft-Band-Utils/tree/master/Band-Data-Analysis)
 
 **Relevant Resources**
 * Microsoft Health Cloud: [https://developer.microsoftband.com/cloudAPI](https://developer.microsoftband.com/cloudAPI)
@@ -92,7 +92,7 @@ The **Application ID** (purple highlight below) is your *ClientId*, and the stri
 <a href="/images/vs_install_b.png"><img class="imageCenter" src="/images/vs_install_b.png" /></a>
 
 ### Download and Extract BandSandbox Code
-Download and unzip (right click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/kairozu/Microsoft-Band-Utils/archive/master.zip">https://github.com/kairozu/Microsoft-Band-Utils/archive/master.zip</a>
+Download and unzip (right click the downloaded file and select “Extract All…”) the current GitHub repository for MS-Band-DataSandbox: <a href="https://github.com/cryptogramber/Microsoft-Band-Utils/archive/master.zip">https://github.com/cryptogramber/Microsoft-Band-Utils/archive/master.zip</a>
 
 ### Download and Install Visual Studio Community
 Download and run the Visual Studio Community installer: <a href="https://www.visualstudio.com/vs/community/">https://www.visualstudio.com/vs/community/</a>

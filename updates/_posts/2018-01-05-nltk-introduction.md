@@ -3,7 +3,7 @@ layout: content
 title: NLTK Basics
 tags: japanese code
 ---
-NLTK, or the Natural Language Toolkit, is a Python-based series of libraries and other tools for symbolic and statistical natural language processing. This is a short introduction to some of the basic functions and how they apply with Japanese text. All code snippets below are combined into a single file for download here: [japanese_nltk_basics.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/nltk-basics/japanese_nltk_basics.py).
+NLTK, or the Natural Language Toolkit, is a Python-based series of libraries and other tools for symbolic and statistical natural language processing. This is a short introduction to some of the basic functions and how they apply with Japanese text. All code snippets below are combined into a single file for download here: [japanese_nltk_basics.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/nltk-basics/japanese_nltk_basics.py).
 
 The online book [Natural Language Processing with Python](http://www.nltk.org/book/) is a wonderful overview of NLTK (in English), and the author of the [Japanese translation](https://www.oreilly.co.jp/books/9784873114705/), [Masato Hagiwara](http://masatohagiwara.net/), has written an excellent addition to [Japanese-specific applications](http://www.nltk.org/book-jp/ch12.html).
 
@@ -37,7 +37,7 @@ print(jeita.tagged_words()[10:20])  # next ten words with their part-of-speech t
 print(dir(jeita))                   # methods available in the JEITA corpus
 ```
 
-The part-of-speech tags are returned as a tuple with the word itself -- the pronunciation of the word, its unconjugated form, and the part-of-speech tags are separated by tab (<code>\t</code>) breaks. Part-of-speech tags can be found at the bottom of this post: [Japanese Tokenization](https://kairozu.github.io/updates/japanese-tokenization). The table below is expanded for easier reading:
+The part-of-speech tags are returned as a tuple with the word itself -- the pronunciation of the word, its unconjugated form, and the part-of-speech tags are separated by tab (<code>\t</code>) breaks. Part-of-speech tags can be found at the bottom of this post: [Japanese Tokenization](https://cryptogramber.github.io/updates/japanese-tokenization). The table below is expanded for easier reading:
 
 <div class="divResponsive">
 <table>

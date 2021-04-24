@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Simple Japanese Games
-hasgithub: https://github.com/kairozu/Simple-JP-Games
+hasgithub: https://github.com/cryptogramber/Simple-JP-Games
 hasimg: /images/counters.png
 imgwidth: 240
 tags: japanese project code

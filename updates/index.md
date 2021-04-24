@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Kairozu Updates
+title: Updates
 indextype: updates
 ---
 Index list/page of everything in /updates/.

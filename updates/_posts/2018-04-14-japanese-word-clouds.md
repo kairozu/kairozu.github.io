@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Word Clouds in Japanese
-hasgithub: https://github.com/kairozu/Japanese-Word-Cloud
+hasgithub: https://github.com/cryptogramber/Japanese-Word-Cloud
 tags: japanese code
 ---
 Word clouds are kinda cliche; trying to interpret word frequency -- or really any other functional information -- from a smoothie of words and color will only take you so far. That said, they're cool looking, so hey. These are a few of my favorites -- a brief introduction to generating word clouds using the story of ももたろう, a Kairozu word cloud shaped like an orange version of Kai the Koi, and a [JAXA](http://global.jaxa.jp/) [logo](https://commons.wikimedia.org/wiki/File:Jaxa_logo.svg) with words mined from the [@JAXA_jp](https://twitter.com/JAXA_jp) Twitter account.
@@ -9,11 +9,11 @@ Word clouds are kinda cliche; trying to interpret word frequency -- or really an
 ## ももたろう Word Cloud
 First, the most basic of word clouds using the story of [ももたろう](http://hukumusume.com/douwa/pc/jap/08/01.htm). The general order for creating these word clouds is as follows: (1) Load the text file with the story, (2) tokenize the text, (3) remove words I don't want to include, (4) indicate desired colors and/or shape, and then finally (5) create the word cloud. These steps are numbered in each code excerpt below.
 
-<a href="https://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png"><img class="imageCenter" src="https://raw.githubusercontent.com/kairozu/Japanese-Word-Cloud/master/momo_word_cloud.png" alt="word cloud using words from momotaro"/></a>
+<a href="https://raw.githubusercontent.com/cryptogramber/Japanese-Word-Cloud/master/momo_word_cloud.png"><img class="imageCenter" src="https://raw.githubusercontent.com/cryptogramber/Japanese-Word-Cloud/master/momo_word_cloud.png" alt="word cloud using words from momotaro"/></a>
 
 <ul>
-<li>Momotaro Word Cloud Code: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/momotaro_wordcloud.py">momotaro_wordcloud.py</a></li>
-<li>Source Text: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/momotaro.txt">momotaro.txt</a></li>
+<li>Momotaro Word Cloud Code: <a href="https://github.com/cryptogramber/Japanese-Word-Cloud/blob/master/momotaro_wordcloud.py">momotaro_wordcloud.py</a></li>
+<li>Source Text: <a href="https://github.com/cryptogramber/Japanese-Word-Cloud/blob/master/momotaro.txt">momotaro.txt</a></li>
 <li>Font (Google Noto CJKjp-Light): <a href="https://www.google.com/get/noto/">https://www.google.com/get/noto/</a></li>
 <li>Options: Basic Word Cloud, Stopwords</li>
 </ul>
@@ -53,14 +53,14 @@ image.show()                    # display generated wordcloud
 ```
 
 ## Kairozu Word Cloud
-For the Kairozu word cloud, I dumped sentences from Kairozu's first few chapters into a CSV file and ran that text through MeCab to pull out worthwhile bits of grammar (nouns, verbs, and adjectives). For more background on MeCab, check out: [Tokenization of Japanese Text](https://kairozu.github.io/updates/japanese-tokenization) and [Simple Japanese Text Analysis](https://kairozu.github.io/updates/simple-jp-text-analysis). This Python library does most of the word cloud heavy lifting: [https://github.com/amueller/word_cloud](https://github.com/amueller/word_cloud) (thanks Andreas Mueller!).
+For the Kairozu word cloud, I dumped sentences from Kairozu's first few chapters into a CSV file and ran that text through MeCab to pull out worthwhile bits of grammar (nouns, verbs, and adjectives). For more background on MeCab, check out: [Tokenization of Japanese Text](https://cryptogramber.github.io/updates/japanese-tokenization) and [Simple Japanese Text Analysis](https://cryptogramber.github.io/updates/simple-jp-text-analysis). This Python library does most of the word cloud heavy lifting: [https://github.com/amueller/word_cloud](https://github.com/amueller/word_cloud) (thanks Andreas Mueller!).
 
-<a href="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud.png"><img class="imageCenter" src="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/kairozu_word_cloud_small.png" alt="kairozu word cloud" /></a>
+<a href="https://github.com/cryptogramber/Japanese-Word-Cloud/raw/master/kairozu_word_cloud.png"><img class="imageCenter" src="https://github.com/cryptogramber/Japanese-Word-Cloud/raw/master/kairozu_word_cloud_small.png" alt="kairozu word cloud" /></a>
 
 <ul>
-<li>Kairozu Word Cloud Code: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/kairozu_wordcloud.py">kairozu_wordcloud.py</a></li>
+<li>Kairozu Word Cloud Code: <a href="https://github.com/cryptogramber/Japanese-Word-Cloud/blob/master/kairozu_wordcloud.py">kairozu_wordcloud.py</a></li>
 <li>Source Text: Sentences & practices from Kairozu (my self-study language system, no longer online)</li>
-<li>Color/Mask Image: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/kaikoiorange.jpg">orangekaithekoi.jpg</a></li>
+<li>Color/Mask Image: <a href="https://github.com/cryptogramber/Japanese-Word-Cloud/blob/master/kaikoiorange.jpg">orangekaithekoi.jpg</a></li>
 <li>Font (Google Noto CJKjp-Light): <a href="https://www.google.com/get/noto/">https://www.google.com/get/noto/</a></li>
 <li>Options: Colors via ImageColorGenerator, Shape via Image Mask, High Resolution</li>
 </ul>
@@ -98,10 +98,10 @@ The JAXA word cloud is my favorite.. in part because I learned so many new kanji
 <li>For more information, see the Twitter API Docs: <a href="https://developer.twitter.com/en/docs/api-reference-index">Twitter API Reference Index</a></li>
 </ol>
 
-<a href="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/jaxa_word_blue.png"><img class="imageCenter" src="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/jaxa_word_blue_small.png" alt="JAXA word cloud blue" /></a>
+<a href="https://github.com/cryptogramber/Japanese-Word-Cloud/raw/master/jaxa_word_blue.png"><img class="imageCenter" src="https://github.com/cryptogramber/Japanese-Word-Cloud/raw/master/jaxa_word_blue_small.png" alt="JAXA word cloud blue" /></a>
 
 <ul>
-<li>JAXA Twitter Word Cloud Code: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/jaxa_wordcloud.py">jaxa_wordcloud.py</a> <span class="smaller">(first half generates the image above; latter half generates the image with red highlight words below)</span></li>
+<li>JAXA Twitter Word Cloud Code: <a href="https://github.com/cryptogramber/Japanese-Word-Cloud/blob/master/jaxa_wordcloud.py">jaxa_wordcloud.py</a> <span class="smaller">(first half generates the image above; latter half generates the image with red highlight words below)</span></li>
 <li>Source Text: <a href="https://twitter.com/JAXA_jp">@JAXA_jp Twitter</a></li>
 <li>Mask Image: <a href="https://commons.wikimedia.org/wiki/File:Jaxa_logo.svg">https://commons.wikimedia.org/wiki/File:Jaxa_logo.svg</a></li>
 <li>Font (Google Noto CJKjp-Light): <a href="https://www.google.com/get/noto/">https://www.google.com/get/noto/</a></li>
@@ -128,10 +128,10 @@ def jaxa_color_func(word, font_size, position, orientation, random_state=None, *
     return "hsl(207, 100%%, %d%%)" % random.randint(20, 65)
 ```
 ## JAXA Word Cloud (Highlights)
-<a href="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/jaxa_word_highlight.png"><img class="imageCenter" src="https://github.com/kairozu/Japanese-Word-Cloud/raw/master/jaxa_word_highlight_small.png" alt="JAXA word cloud with highlights"/></a>
+<a href="https://github.com/cryptogramber/Japanese-Word-Cloud/raw/master/jaxa_word_highlight.png"><img class="imageCenter" src="https://github.com/cryptogramber/Japanese-Word-Cloud/raw/master/jaxa_word_highlight_small.png" alt="JAXA word cloud with highlights"/></a>
 
 <ul>
-<li>JAXA Twitter Word Cloud Code w/Highlights: <a href="https://github.com/kairozu/Japanese-Word-Cloud/blob/master/jaxa_wordcloud.py">jaxa_wordcloud.py</a> <span class="smaller">(this code will create two versions -- the blue one shown previously, and this one with the red highlight words)</span></li>
+<li>JAXA Twitter Word Cloud Code w/Highlights: <a href="https://github.com/cryptogramber/Japanese-Word-Cloud/blob/master/jaxa_wordcloud.py">jaxa_wordcloud.py</a> <span class="smaller">(this code will create two versions -- the blue one shown previously, and this one with the red highlight words)</span></li>
 <li>Source text, mask image, font, etc are identical to those above.</li>
 <li>Options: Word Highlights!</li>
 </ul>
