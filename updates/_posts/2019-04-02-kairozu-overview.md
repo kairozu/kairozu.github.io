@@ -10,11 +10,11 @@ I find Socratic and programmed methods of inquiry to be particularly effective w
 
 I created a system to introduce grammatical constructs using these small, logical steps, which are organized by chapter around groups of new vocabulary words. I tried to minimize wordy grammar explanations and maximize immediate application of small grammar templates, which are then built upon word by word (or particle by particle). The lessons are an attempt to organize the grammar into an easily-referenced format.
 
-<span class="italics">Note: Kairozu is no longer public, but the source is available <a href="https://github.com/kairozu/Kairozu-Backup">here</a>. I've made full database dumps available to previous users and helped them set up their own instances. Thanks everyone for playing with my language-learning system!</span>
+<span class="italics">Note: Kairozu is no longer public, but the source is available <a href="https://github.com/cryptogramber/Kairozu-Backup">here</a>. I've made full database dumps available to previous users and helped them set up their own instances. Thanks everyone for playing with my language-learning system!</span>
 
 <div class="spacerClear"></div>
 
-I pulled data from a variety of Japanese language sources, e.g. <a href="https://kairozu.github.io/updates/nhk-easy-corpus">NHK Easy News (+a Google BigQuery of Reddit posts)</a> and <a href="https://cryptogramber.github.io/updates/japanese-wiki-corpus">Wikipedia</a>, and wrote a bunch of code to break down the most common words and grammatical constructs -- these are what the computer-generated sentences used in lesson practices and quizzes are drawn from. I've written about some of the basics for getting started with the analysis of Japanese text:
+I pulled data from a variety of Japanese language sources, e.g. <a href="https://cryptogramber.github.io/updates/nhk-easy-corpus">NHK Easy News (+a Google BigQuery of Reddit posts)</a> and <a href="https://cryptogramber.github.io/updates/japanese-wiki-corpus">Wikipedia</a>, and wrote a bunch of code to break down the most common words and grammatical constructs -- these are what the computer-generated sentences used in lesson practices and quizzes are drawn from. I've written about some of the basics for getting started with the analysis of Japanese text:
 <ul>
 <li><a href="https://cryptogramber.github.io/updates/japanese-tokenization">Japanese Tokenization</a></li>
 <li><a href="https://cryptogramber.github.io/updates/simple-jp-text-analysis">Simple Japanese Text Analysis</a></li>

@@ -1,14 +1,14 @@
 ---
 layout: content
 title: Random Projects
-project-github-link: https://github.com/kairozu/
+project-github-link: https://github.com/cryptogramber/
 hasimg: /images/randomprojects.png
 imgwidth: 240
 tags: project code science japanese update
 ---
 These are various snippets of technical, creative, and culinary projects ranging from completed smaller projects to abandoned larger ones (most recent listed first). Most are one-off novelties, attempts at doing something a certain way (that may or may not have worked), random arts and crafts, small notes that don't fit elsewhere, or things that I'm learning as I go.
 
-For random notes that have no real basis as a "project" there's also my Random Notes page (mostly technical snippets that I might want to reference in the future): [https://kairozu.github.io/updates/randomnotes](https://kairozu.github.io/updates/randomnotes).
+For random notes that have no real basis as a "project" there's also my Random Notes page (mostly technical snippets that I might want to reference in the future): [https://cryptogramber.github.io/updates/randomnotes](https://cryptogramber.github.io/updates/randomnotes).
 
 <div class="spacerClear"></div>
 
@@ -22,13 +22,13 @@ I followed some Snoopy patterns from a kit sold by [Tokyo Pixel](http://tokyopix
 <div class="spacerClear"></div>
 
 ## WaniAnki-Python
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/WaniAnki-Python](https://github.com/kairozu/WaniAnki-Python)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/WaniAnki-Python](https://github.com/cryptogramber/WaniAnki-Python)
 
 Python scripts to parse WaniKani kanji & vocabulary JSON dumps into Anki decks w/kanji stroke orders. See WaniKani's API documentation for pulling kanji/vocabulary data: [https://www.wanikani.com/api](https://www.wanikani.com/api) (a WaniKani account API key is required). WaniKani is great and you should support them with a subscription. This is for extra practice, especially with regard to writing kanji w/a stroke order reference. Please don't use this to avoid supporting WaniKani.
 
 ## Spike Train Calculator
 <img class="imageR" height="150" alt="spike-train" src="/images/spiketrain.png" />
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Ephys-Stimulation](https://github.com/kairozu/Ephys-Stimulation)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/Ephys-Stimulation](https://github.com/cryptogramber/Ephys-Stimulation)
 
 Converts between inter-pulse intervals/train burst widths and frequency/number of pulses & plots an example waveform (also my first foray into JS/jQuery). Mostly useful for visualizing spike trains in discussions or double checking your math when hopping between ephys equipment.
 
@@ -37,13 +37,13 @@ Once you begin entering values, the example waveform will not plot until all val
 <div class="spacerClear"></div>
 
 ## 4-Letter Word Generator
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Kairozu-Sandbox/blob/master/lockcombo.py](https://github.com/kairozu/Kairozu-Sandbox/blob/master/lockcombo.py)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/Kairozu-Sandbox/blob/master/lockcombo.py](https://github.com/cryptogramber/Kairozu-Sandbox/blob/master/lockcombo.py)
 
 Did you also forget the word combination for your master 643DWD lock? Maybe these words will jog your memory! This generates all combinations of letters (both backward and forward) and screens them for being actual dictionary words. I'm sad to say that I had indeed set the lock to a dictionary word, and that yes, this actually worked for me.
 
 ## Chrome NewTab Color Extension
 <img class="imageL" height="135" alt="newtab" src="/images/newtab_chromestore.png" />
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/NewTab-Color-Void](https://github.com/kairozu/NewTab-Color-Void)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/NewTab-Color-Void](https://github.com/cryptogramber/NewTab-Color-Void)
 
 NewTab Color Void is a bare-bones Chrome extension that replaces the default new tab window with a single-color (customizable in options) screen. Requires no permissions from the user; doesn't have access to browsing information, Chrome tabs, or anything else.
 
@@ -52,7 +52,7 @@ To install from Chrome Web Store: [https://chrome.google.com/webstore/detail/new
 <div class="spacerClear"></div>
 
 ## Matplotlib Step/Weight/Date Plot
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Kairozu-Sandbox/blob/master/stepcount_weight_vs_date.py](https://github.com/kairozu/Kairozu-Sandbox/blob/master/stepcount_weight_vs_date.py)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/Kairozu-Sandbox/blob/master/stepcount_weight_vs_date.py](https://github.com/cryptogramber/Kairozu-Sandbox/blob/master/stepcount_weight_vs_date.py)
 
 I have years upon years of data collected from FitBits, Nike+ Watches, Microsoft Bands, Garmin Forerunners, etc. Quick script to read dates, step counts, and weight from a CSV file named stepcounts.csv 
 (file contains header row which is discarded) & plots data for viz purposes. Easy to add other data (sleep, miles run, etc).
@@ -68,7 +68,7 @@ June Gilbank's channel on YouTube has a lot of great tutorials that range from (
 
 ## TuckerDavis Cable Tester
 <img class="imageL" height="150" alt="tdt test" src="/images/tdtcabletester.jpg" />
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Tucker-Davis-Cable-Tester](https://github.com/kairozu/Tucker-Davis-Cable-Tester)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/Tucker-Davis-Cable-Tester](https://github.com/cryptogramber/Tucker-Davis-Cable-Tester)
 
 Extremely quick active/passive cable tester for TDT cables – useful when you have animals that view $1k+ cables as a fine delicacy. Project could be vastly improved without the overkill of a DAQ board that I used, but it was what I had sitting around at the time. Requires an Arduino Mega and a current LabVIEW installation.
 
@@ -76,7 +76,7 @@ Extremely quick active/passive cable tester for TDT cables – useful when you h
 
 ## TuckerDavis Data Extractor
 <img class="imageR" height="170" alt="tdt extract" src="/images/tdtextract_1.png" />
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/TDT-Extraction-Sandbox-GUI](https://github.com/kairozu/TDT-Extraction-Sandbox-GUI)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/TDT-Extraction-Sandbox-GUI](https://github.com/cryptogramber/TDT-Extraction-Sandbox-GUI)
 
 Data extraction tools / GUI in MATLAB for wrangling neuro/electrophys data stored in TDT (TuckerDavis Technologies) tank format.
 
@@ -91,11 +91,11 @@ Instructions for Data Extraction
 <div class="spacerClear"></div>
 
 ## Silentium Est Aureum
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/Silentium-Est-Aureum](https://github.com/kairozu/Silentium-Est-Aureum)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/Silentium-Est-Aureum](https://github.com/cryptogramber/Silentium-Est-Aureum)
 
 AN EXPERIMENT AND WILL MOST CERTAINLY BREAK SOME WEBSITE SOMEWHERE, USE AT YOUR OWN RISK. This is a Chrome extension that replaces the word "Comments" with "Regrets" and gives a title warning on associated links. It is very basic, will replace text you don't necessarily want replaced, and ultimately should not be used if you don't know what you're doing. That said, it was a fun experiment. To install, either pack the extension yourself, or drag the .crx file into your chrome://extensions window.
 
 ## TDT + Mindstorms NXT Connection
-<i class="fab fa-github fa-fw"></i> [https://github.com/kairozu/TDT-NXT-Connection](https://github.com/kairozu/TDT-NXT-Connection)
+<i class="fab fa-github fa-fw"></i> [https://github.com/cryptogramber/TDT-NXT-Connection](https://github.com/cryptogramber/TDT-NXT-Connection)
 
 Uses lever inputs on a Mindstorms NXT brick (the "button" NXT input is a simple contact circuit; you can rig your own lever system by halving an NXT accessory cable and creating an open circuit lever with whatever components you have sitting around) to cue a Tucker Davis system epoch while recording neural data. Requires TDT OpenDeveloper. This is absolutely overkill -- I recommend using an Arduino (or similar) instead, unless you'll be using the NXT for something else as well (e.g. conveyor belt).
