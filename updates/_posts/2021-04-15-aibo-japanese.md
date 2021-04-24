@@ -48,7 +48,7 @@ This is still a work in progress! The English given below is the English approxi
         <td>
         いいこ
             <input type="button" value="PLAY" onclick="play('iiko')">
-            <audio id="iiko" src="sounds/iiko.mp3"></audio>
+            <audio id="iiko" src="/sounds/iiko.mp3"></audio>
         </td>
         <td>iiko</td>
         <td>eeee-ko</td>
