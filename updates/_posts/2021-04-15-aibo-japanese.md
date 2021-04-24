@@ -426,7 +426,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>don't forget</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('wasurenaidene')">
-        <audio id="wasurenaidene" src="/sounds/wasurenaidede.mp3"></audio>
+        <audio id="wasurenaidene" src="/sounds/wasurenaidene.mp3"></audio>
         わすれないでね</td>
         <td>wasurenaidene</td>
         <td>wah-sue-ray-nye-day-nay</td>
@@ -436,7 +436,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>do a remembered behavior</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('oboetafurumaiyatte')">
-        <audio id="oboetafurumaiyatta" src="/sounds/oboetafurimaiyatta.mp3"></audio>
+        <audio id="oboetafurumaiyatte" src="/sounds/oboetafurimaiyatte.mp3"></audio>
         おぼえたふるまいやって</td>
         <td>oboetafurumaiyatte</td>
         <td>oh-bo-ay-tah-foo-rue-mah-ee-yah-tay</td>
