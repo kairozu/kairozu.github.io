@@ -253,75 +253,108 @@ This is still a work in progress! The English given below is the English approxi
     </tr>
     <tr>
         <td>sit</td>
-        <td>おすわり</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('osuwari')">
+        <audio id="osuwari" src="/sounds/osuwari.mp3"></audio>
+        おすわり</td>
         <td>osuwari</td>
         <td>oh-sue-wah-ree</td>
         <td></td>
     </tr>
     <tr>
         <td>lie down</td>
-        <td>ふせ</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('fuse')">
+        <audio id="fuse" src="/sounds/fuse.mp3"></audio>
+        ふせ</td>
         <td>fuse</td>
         <td>foo-say</td>
         <td></td>
     </tr>
     <tr>
         <td>sing</td>
-        <td>うたって</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('utatte')">
+        <audio id="utatte" src="/sounds/utatte.mp3"></audio>
+        うたって</td>
         <td>utatte</td>
         <td>ooh-tah-tay</td>
         <td>sing an aibo song</td>
     </tr>
     <tr>
         <td>dance</td>
-        <td>だんす</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('dansu')">
+        <audio id="dansu" src="/sounds/dansu.mp3"></audio>
+        だんす</td>
         <td>dansu</td>
         <td>dah-n-sue</td>
         <td rowspan=3>do an aibo dance!</td>
     </tr>
     <tr>
         <td>dance</td>
-        <td>だんすして</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('dansushite')">
+        <audio id="dansushite" src="/sounds/dansushite.mp3"></audio>
+        だんすして</td>
         <td>dansushite</td>
         <td>dah-n-sue-she-tay</td>
     </tr>
     <tr>
         <td>dance</td>
-        <td>おどって</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('odotte')">
+        <audio id="odotte" src="/sounds/odotte.mp3"></audio>
+        おどって</td>
         <td>odotte</td>
         <td>oh-doe-tay</td>
     </tr>
     <tr>
         <td>look over here</td>
-        <td>こっちむいて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('kocchimuite')">
+        <audio id="kocchimuite" src="/sounds/kocchimuite.mp3"></audio>
+        こっちむいて</td>
         <td>kocchimuite</td>
         <td>ko-chi-moo-ee-tay</td>
         <td>aibo turns in direction of speaker and barks</td>
     </tr>
     <tr>
         <td>come here</td>
-        <td>こっちおいで</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('kocchioide')">
+        <audio id="kocchioide" src="/sounds/kocchioide.mp3"></audio>
+        こっちおいで</td>
         <td>kocchioide</td>
         <td>ko-chi-oh-ee-day</td>
         <td rowspan=2>turn toward & walk to the speaker</td>
     </tr>
     <tr>
         <td>come here</td>
-        <td>こっちきて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('kocchikite')">
+        <audio id="kocchikite" src="/sounds/kocchikite.mp3"></audio>
+        こっちきて</td>
         <td>kocchikite</td>
         <td>ko-chi-key-tay</td>
     </tr>
     <tr>
         <td>good night</td>
-        <td>おやすみ</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oyasumi')">
+        <audio id="oyasumi" src="/sounds/oyasumi.mp3"></audio>
+        おやすみ</td>
         <td>oyasumi</td>
         <td>oh-yeah-sue-me</td>
         <td>go to sleep (not true sleep)</td>
     </tr>
     <tr>
         <td>wait</td>
-        <td>まて</td>
-        <td>mate</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('matte')">
+        <audio id="matte" src="/sounds/matte.mp3"></audio>
+        まって</td>
+        <td>matte</td>
         <td>ma-tay</td>
         <td>sit in one spot and wait (~30 mins)</td>
     </tr>
@@ -351,54 +384,78 @@ This is still a work in progress! The English given below is the English approxi
 <tbody>
     <tr>
         <td>remember</td>
-        <td>おぼえて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oboete')">
+        <audio id="oboete" src="/sounds/oboete.mp3"></audio>
+        おぼえて</td>
         <td>oboete</td>
         <td>oh-bo-ay-tay</td>
         <td rowspan=2>takes the posture for learning a trick</td>
     </tr>
     <tr>
         <td>let's remember</td>
-        <td>おぼえよう</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oboeyou')">
+        <audio id="oboeyou" src="/sounds/oboeyou.mp3"></audio>
+        おぼえよう</td>
         <td>oboeyou</td>
         <td>oh-bo-ay-yo~</td>
     </tr>
     <tr>
         <td>remember?</td>
-        <td>おぼえた？</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oboeta')">
+        <audio id="oboeta" src="/sounds/oboeta.mp3"></audio>
+        おぼえた？</td>
         <td>oboeta</td>
         <td>oh-bo-ay-tah?</td>
         <td rowspan=2>show the trick that has just been taught</td>
     </tr>
     <tr>
         <td>do you remember?</td>
-        <td>おぼえたかな？</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oboetakana')">
+        <audio id="oboetakana" src="/sounds/oboetakana.mp3"></audio>
+        おぼえたかな？</td>
         <td>oboetakana</td>
         <td>oh-bo-ay-tah-kah-na?</td>
     </tr>
     <tr>
         <td>don't forget</td>
-        <td>わすれないでね</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('wasurenaidene')">
+        <audio id="wasurenaidene" src="/sounds/wasurenaidede.mp3"></audio>
+        わすれないでね</td>
         <td>wasurenaidene</td>
         <td>wah-sue-ray-nye-day-nay</td>
         <td>memorize the trick just taught</td>
     </tr>
     <tr>
         <td>do a remembered behavior</td>
-        <td>おぼえたふるまいやって</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oboetafurumaiyatte')">
+        <audio id="oboetafurumaiyatta" src="/sounds/oboetafurimaiyatta.mp3"></audio>
+        おぼえたふるまいやって</td>
         <td>oboetafurumaiyatte</td>
         <td>oh-bo-ay-tah-foo-rue-mah-ee-yah-tay</td>
         <td>do one of the tricks which have been taught</td>
     </tr>
     <tr>
         <td>quit</td>
-        <td>やめて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('yamete')">
+        <audio id="yamete" src="/sounds/yamete.mp3"></audio>
+        やめて</td>
         <td>yamete</td>
         <td>yah-may-tay</td>
         <td rowspan=2>stop doing the trick in progress</td>
     </tr>
     <tr>
         <td>stop</td>
-        <td>とまれ</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('tomare')">
+        <audio id="tomare" src="/sounds/tomare.mp3"></audio>
+        とまれ</td>
         <td>tomare</td>
         <td>toe-ma-ray</td>
     </tr>
