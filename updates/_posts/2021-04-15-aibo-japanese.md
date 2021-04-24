@@ -56,73 +56,82 @@ This is still a work in progress! The English given below is the English approxi
     </tr>
     <tr>
         <td>well-behaved</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('orikou')">
         <audio id="orikou" src="/sounds/orikou.mp3"></audio>
-        <td>おりこう</td>
+        おりこう</td>
         <td>orikou</td>
         <td>oh-ree-ko</td>
     </tr>
     <tr>
         <td>good job/there there</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('yoshiyoshi')">
         <audio id="yoshiyoshi" src="/sounds/yoshiyoshi.mp3"></audio>
-        <td>よしよし</td>
+        よしよし</td>
         <td>yoshiyoshi</td>
         <td>yo-sh-yo-sh</td>
     </tr>
     <tr>
         <td>amazing</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('sugoi')">
         <audio id="sugoi" src="/sounds/sugoi.mp3"></audio>
-        <td>すごい</td>
+        すごい</td>
         <td>sugoi</td>
         <td>sue-go-ee</td>
     </tr>
     <tr>
         <td>as expected (good)</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('sasugadane')">
         <audio id="sasugadane" src="/sounds/sasugadane.mp3"></audio>
-        <td>さすがだね</td>
+        さすがだね</td>
         <td>sasugadane</td>
         <td>saw-sue-gah-dah-nay</td>
     </tr>
     <tr>
         <td>thank you</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('arigatou')">
         <audio id="arigatou" src="/sounds/arigatou.mp3"></audio>
-        <td>ありがとう</td>
+        ありがとう</td>
         <td>arigatou</td>
         <td>ah-ree-gah-toe</td>
     </tr>
     <tr>
         <td>do your best</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('ganbare')">
         <audio id="ganbare" src="/sounds/ganbare.mp3"></audio>
-        <td>がんばれ</td>
+        がんばれ</td>
         <td>ganbare</td>
         <td>gah-n-bah-ray</td>
     </tr>
     <tr>
         <td>congrats</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('omedetou')">
         <audio id="omedetou" src="/sounds/omedetou.mp3"></audio>
-        <td>おめでとう</td>
+        おめでとう</td>
         <td>omedetou</td>
         <td>oh-may-day-toe</td>
     </tr>
     <tr>
         <td>well done</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('yokuyatta')">
         <audio id="yokuyatta" src="/sounds/yokuyatta.mp3"></audio>
-        <td>よくやった</td>
+        よくやった</td>
         <td>yokuyatta</td>
         <td>yo-ku-yah-tah</td>
     </tr>
     <tr>
         <td>love you</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('suki')">
         <audio id="suki" src="/sounds/suki.mp3"></audio>
-        <td>すき</td>
+        すき</td>
         <td>suki</td>
         <td>sue-key</td>
     </tr>
