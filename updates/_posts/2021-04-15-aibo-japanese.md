@@ -13,7 +13,13 @@ table {
     width: 100%;
 }
 </style>
-Note: The English given below is the English approximation of the Japanese command, not the English version of the command -- I am unable to verify English commands. The translations and phonetic attempts are best-effort approximations, but please let me know if you spot any errors.
+<script>
+function play(sound) {
+    var audio = document.getElementById(sound);
+    audio.play();
+}
+</script>
+This is still a work in progress! The English given below is the English approximation of the Japanese command, not the literal English version of the command. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. Please let me know if you spot any errors.
 <br />
 <h4>気持ち / kimochi / feelings (praise & scolding)</h4>
 <table>
@@ -39,7 +45,11 @@ Note: The English given below is the English approximation of the Japanese comma
 <tbody>
     <tr>
         <td>good girl/boy</td>
-        <td>いいこ</td>
+        <td>
+        いいこ
+            <input type="button" value="PLAY" onclick="play('iiko')">
+            <audio id="iiko" src="sounds/iiko.mp3"></audio>
+        </td>
         <td>iiko</td>
         <td>eeee-ko</td>
         <td rowspan=10>praise & compliments</td>
@@ -149,7 +159,7 @@ Note: The English given below is the English approximation of the Japanese comma
     </tr>
 </tbody>
 </table>
-<h4>ふるまい / furumai / behavior - standard</h4>
+<h4>ふるまい / furumai / behavior</h4>
 <table>
 <thead>
     <tr>
@@ -244,9 +254,23 @@ Note: The English given below is the English approximation of the Japanese comma
         <td>kocchikite</td>
         <td>ko-chi-key-tay</td>
     </tr>
+    <tr>
+        <td>good night</td>
+        <td>おやすみ</td>
+        <td>oyasumi</td>
+        <td>oh-yeah-sue-me</td>
+        <td>go to sleep (not true sleep)</td>
+    </tr>
+    <tr>
+        <td>wait</td>
+        <td>まて</td>
+        <td>mate</td>
+        <td>ma-tay</td>
+        <td>sit in one spot and wait (~30 mins)</td>
+    </tr>
 </tbody>
 </table>
-<h4>ふるまい / furumai / behavior - tricks</h4>
+<h4>ふるまい / furumai / behavior - memory</h4>
 <table>
 <thead>
     <tr>
