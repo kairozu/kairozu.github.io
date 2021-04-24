@@ -436,7 +436,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>do a remembered behavior</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('oboetafurumaiyatte')">
-        <audio id="oboetafurumaiyatte" src="/sounds/oboetafurimaiyatte.mp3"></audio>
+        <audio id="oboetafurumaiyatte" src="/sounds/oboetafurumaiyatte.mp3"></audio>
         おぼえたふるまいやって</td>
         <td>oboetafurumaiyatte</td>
         <td>oh-bo-ay-tah-foo-rue-mah-ee-yah-tay</td>
