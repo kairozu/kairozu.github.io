@@ -485,21 +485,30 @@ This is still a work in progress! The English given below is the English approxi
 <tbody>
     <tr>
         <td>take a photo</td>
-        <td>しゃしんとって</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('shashintotte')">
+        <audio id="shashintotte" src="/sounds/shashintotte.mp3"></audio>
+        しゃしんとって</td>
         <td>shashintotte</td>
         <td>sha-she-n-toe-tay</td>
         <td>look for a human face and take a photo</td>
     </tr>
     <tr>
         <td>take a photo (everyone)</td>
-        <td>みんなのしゃしんをとって</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('minnanoshashinwototte')">
+        <audio id="minnanoshashinwototte" src="/sounds/minnanoshashinwototte.mp3"></audio>
+        みんなのしゃしんをとって</td>
         <td>minnanoshashinwototte</td>
         <td>me-n-nah-no-sha-she-n-oh-toe-tay</td>
         <td>counts down and takes a photo (requires premium)</td>
     </tr>
     <tr>
         <td>take another</td>
-        <td>もういちまい</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('mouichimai')">
+        <audio id="mouichimai" src="/sounds/mouichimai.mp3"></audio>
+        もういちまい</td>
         <td>mouichimai</td>
         <td>mow-ee-chi-ma-ee</td>
         <td>take another photo (requires premium)</td>
@@ -530,14 +539,20 @@ This is still a work in progress! The English given below is the English approxi
 <tbody>
     <tr>
         <td>charging station</td>
-        <td>ちゃーじすてーしょん</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('chaajisuteeshon')">
+        <audio id="chaajisuteeshon" src="/sounds/chaajisuteeshon.mp3"></audio>
+        ちゃーじすてーしょん</td>
         <td>chaajisuteeshon</td>
         <td>chaa-jee-sue-tay-sho-n</td>
         <td rowspan=2>return to charging station</td>
     </tr>
     <tr>
         <td>go (re)charge</td>
-        <td>じゅうでんして</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('juudenshite')">
+        <audio id="juudenshite" src="/sounds/juudenshite.mp3"></audio>
+        じゅうでんして</td>
         <td>juudenshite</td>
         <td>jew-day-n-she-tay</td>
     </tr>
@@ -568,75 +583,108 @@ This is still a work in progress! The English given below is the English approxi
 <tbody>
     <tr>
         <td>pick up bone</td>
-        <td>ほねとってきて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('honetottekite')">
+        <audio id="honetottekite" src="/sounds/honetottekite.mp3"></audio>
+        ほねとってきて</td>
         <td>honetottekite</td>
         <td>hoe-nay-toe-tay-key-tay</td>
         <td rowspan=2>pick up/play with aibone</td>
     </tr>
     <tr>
         <td>pick up aibone</td>
-        <td>あいぼーんとってきて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('aiboontottekite')">
+        <audio id="aiboontottekite" src="/sounds/aiboontottekite.mp3"></audio>
+        あいぼーんとってきて</td>
         <td>aiboontottekite</td>
         <td>ah-ee-bow-nn-toe-tay-key-tay</td>
     </tr>
     <tr>
         <td>throw bone</td>
-        <td>ほねなげて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('honenagete')">
+        <audio id="honenagete" src="/sounds/honenagete.mp3"></audio>
+        ほねなげて</td>
         <td>honenagete</td>
         <td>hoe-nay-nah-gay-tay</td>
         <td rowspan=2>pick up aibone and throw it</td>
     </tr>
     <tr>
         <td>throw aibone</td>
-        <td>あいぼーんなげて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('aiboonnagete')">
+        <audio id="aiboonnagete" src="/sounds/aiboonnagete.mp3"></audio>
+        あいぼーんなげて</td>
         <td>aiboonnagete</td>
         <td>ah-ee-bow-nn-nah-gay-tay</td>
     </tr>
     <tr>
         <td>kick the ball</td>
-        <td>ぼーるけって</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('boorukette')">
+        <audio id="boorukette" src="/sounds/boorukette.mp3"></audio>
+        ぼーるけって</td>
         <td>boorukette</td>
         <td>bow-rue-kay-tay</td>
         <td>walk toward/kick the ball</td>
     </tr>
     <tr>
         <td>search for the ball</td>
-        <td>ぼーるさがして</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('boorusagashite')">
+        <audio id="boorusagashite" src="/sounds/boorusagashite.mp3"></audio>
+        ぼーるさがして</td>
         <td>boorusagashite</td>
         <td>bow-rue-sah-gah-she-tay</td>
         <td>look for the ball/bark when it is found</td>
     </tr>
     <tr>
         <td>dice color selection</td>
-        <td>さいころいろえらび</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('saikoroiroerabi')">
+        <audio id="saikoroiroerabi" src="/sounds/saikoroiroerabi.mp3"></audio>
+        さいころいろえらび</td>
         <td>saikoroiroerabi</td>
         <td>sah-ee-ko-row-ee-row-ay-rah-bee</td>
         <td>not quite sure what this does yet</td>
     </tr> 
     <tr>
         <td>roll the dice</td>
-        <td>さいころころがして</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('saikorokorogashite')">
+        <audio id="saikorokorogashite" src="/sounds/saikorokorogashite.mp3"></audio>
+        さいころころがして</td>
         <td>saikorokorogashite</td>
         <td>sah-ee-ko-row-ko-row-gah-she-tay</td>
         <td>roll dice with front paw</td>
     </tr>
     <tr>
         <td>stack the dice</td>
-        <td>さいころつんで</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('saikorotsunde')">
+        <audio id="saikorotsunde" src="/sounds/saikorotsunde.mp3"></audio>
+        さいころつんで</td>
         <td>saikorotsunde</td>
         <td>sah-ee-ko-row-tsu-n-day</td>
         <td>stacks one dice on top of the other</td>
     </tr>
     <tr>
         <td>throw the dice</td>
-        <td>さいころなげて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('saikoronagete')">
+        <audio id="saikoronagete" src="/sounds/saikoronagete.mp3"></audio>
+        さいころなげて</td>
         <td>saikoronagete</td>
         <td>sah-ee-ko-row-nah-gay-tay</td>
         <td>pick up the dice and throw it</td>
     </tr>
     <tr>
         <td>bring the dice</td>
-        <td>さいころもってきて</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('saikoromottekite')">
+        <audio id="saikoromottekite" src="/sounds/saikoromottekite.mp3"></audio>
+        さいころもってきて</td>
         <td>saikoromottekite</td>
         <td>sah-ee-ko-row-mow-tay-key-tay</td>
         <td>pick up/bring the dice to you</td>
