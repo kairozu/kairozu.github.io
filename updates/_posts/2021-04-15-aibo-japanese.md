@@ -19,7 +19,7 @@ function play(sound) {
     audio.play();
 }
 </script>
-This is still a work in progress! The English given below is the English approximation of the Japanese command, not the literal English version of the command. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. Please let me know if you spot any errors.
+This is still a work in progress! The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. Please let me know if you spot any errors.
 <br /><br />
 To Do: add ~50 more commands, verify commands which do/don't require cloud access, verify commands which do/don't require premium access
 <br />
