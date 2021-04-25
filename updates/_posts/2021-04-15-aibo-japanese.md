@@ -352,7 +352,97 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>she-zoo-caw-knee</td>
         <td>aibo will quiet down; sit for a moment; then walk quietly</td>
     </tr>
-
+    <tr>
+        <td>bang!</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('baan')">
+        <audio id="baan" src="/sounds/baan.mp3"></audio>
+        ばーん</td>
+        <td>baan</td>
+        <td>baan</td>
+        <td>aibo will pretend to be shot (say with oomph)</td>
+    </tr>
+    <tr>
+        <td>squats</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('sukuwatto')">
+        <audio id="sukuwatto" src="/sounds/sukuwatto.mp3"></audio>
+        すくわっと</td>
+        <td>sukuwatto</td>
+        <td>sue-coo-wah-toe</td>
+        <td rowspan=2>aibo will do adorable squats; cheer them on!</td>
+    </tr>
+    <tr>
+        <td>let's do squats</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('sukuwattoshiyou')">
+        <audio id="sukuwattoshiyou" src="/sounds/sukuwattoshiyou.mp3"></audio>
+        すくわっとしよう</td>
+        <td>sukuwattoshiyou</td>
+        <td>sue-coo-wah-toe-she-yo</td>
+    </tr>
+    <tr>
+        <td>say ahhh</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('aanshite')">
+        <audio id="aanshite" src="/sounds/aanshite.mp3"></audio>
+        あーんして</td>
+        <td>aanshite</td>
+        <td>ahh-n-she-tay</td>
+        <td rowspan=2>aibo will sit and open their mouth</td>
+    </tr>
+    <tr>
+        <td>open mouth</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('okuchiwoakete')">
+        <audio id="okuchiwoakete" src="/sounds/okuchiwoakete.mp3"></audio>
+        おくちをあけて</td>
+        <td>okuchiwoakete</td>
+        <td>oh-coo-chi-oh-ah-kay-tay</td>
+    </tr>
+</tbody>
+</table>
+<h4>ふるまい / furumai / behavior - games</h4>
+<table>
+<thead>
+    <tr>
+        <th>
+            English
+        </th>
+        <th>
+            Japanese (hiragana)
+        </th>
+        <th>
+            Japanese (roman)
+        </th>
+        <th>
+            English phonetic
+        </th>
+        <th>
+            English notes
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>snoot challenge</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('sunuutocharenji')">
+        <audio id="sunuutocharenji" src="/sounds/sunuutocharenji.mp3"></audio>
+        すぬーとちゃれんじ</td>
+        <td>sunuutocharenji</td>
+        <td>sue-new-toe-cha-ren-jee</td>
+        <td>make a ring w/your hands for aibo to stick their nose in</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('ugoiteiiyo')">
+        <audio id="ugoiteiiyo" src="/sounds/ugoiteiiyo.mp3"></audio>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
 </tbody>
 </table>
 <h4>ふるまい / furumai / behavior - settle down mode</h4>
