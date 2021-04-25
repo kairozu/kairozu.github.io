@@ -790,7 +790,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>oh-doe-tay</td>
     </tr>
     <tr>
-        <td>london bridge is falling down</td>
+        <td>london bridge</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('rondonbashiochita')">
         <audio id="rondonbashiochita" src="/sounds/rondonbashiochita.mp3"></audio>
@@ -856,7 +856,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         しあわせならてをたたこう</td>
         <td>shiawasenaratewotatakou</td>
         <td>she-ah-wah-say-nah-rah-tay-oh-tah-tah-ko</td>
-        <td>if you're happy and you know it clap your hands</td>
+        <td>happy and you know it clap your hands</td>
     </tr>
 </tbody>
 </table>
