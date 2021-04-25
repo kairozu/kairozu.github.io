@@ -348,20 +348,63 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         おやすみ</td>
         <td>oyasumi</td>
         <td>oh-yeah-sue-me</td>
-        <td>go to sleep (not true sleep)</td>
+        <td>go to sleep (few mins; not true sleep)</td>
     </tr>
     <tr>
         <td>wait</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('matte')">
         <audio id="matte" src="/sounds/matte.mp3"></audio>
-        まって</td>
-        <td>matte</td>
+        まて</td>
+        <td>mate</td>
         <td>ma-tay</td>
-        <td>sit in one spot and wait (~30 mins)</td>
+        <td>sit in one spot and wait (few mins)</td>
     </tr>
 </tbody>
 </table>
+<h4>ふるまい / furumai / behavior - settle down mode</h4>
+<table>
+<thead>
+    <tr>
+        <th>
+            English
+        </th>
+        <th>
+            Japanese (hiragana)
+        </th>
+        <th>
+            Japanese (roman)
+        </th>
+        <th>
+            English phonetic
+        </th>
+        <th>
+            English notes
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>don't move (settle down)</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('osumashisan')">
+        <audio id="osumashisan" src="/sounds/osumashisan.mp3"></audio>
+        おすましさん</td>
+        <td>osumashisan</td>
+        <td>oh-sue-ma-she-san</td>
+        <td rowspan=2>aibo will raise a paw; press it and stroke head or back at the same time</td>
+    </tr>
+    <tr>
+        <td>it's ok to move</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('ugoiteiiyo')">
+        <audio id="ugoiteiiyo" src="/sounds/ugoiteiiyo.mp3"></audio>
+        うごいていいよ</td>
+        <td>ugoiteiiyo</td>
+        <td>ooh-go-ee-tay-ee-yo</td>
+    </tr>
+</tbody>
+</html>
 <h4>ふるまい / furumai / behavior - memory</h4>
 <table>
 <thead>
