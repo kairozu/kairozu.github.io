@@ -274,44 +274,6 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td></td>
     </tr>
     <tr>
-        <td>sing</td>
-        <td>
-        <input type="button" value="&#9658;" onclick="play('utatte')">
-        <audio id="utatte" src="/sounds/utatte.mp3"></audio>
-        うたって</td>
-        <td>utatte</td>
-        <td>ooh-tah-tay</td>
-        <td>sing an aibo song</td>
-    </tr>
-    <tr>
-        <td>dance</td>
-        <td>
-        <input type="button" value="&#9658;" onclick="play('dansu')">
-        <audio id="dansu" src="/sounds/dansu.mp3"></audio>
-        だんす</td>
-        <td>dansu</td>
-        <td>dah-n-sue</td>
-        <td rowspan=3>do an aibo dance!</td>
-    </tr>
-    <tr>
-        <td>dance</td>
-        <td>
-        <input type="button" value="&#9658;" onclick="play('dansushite')">
-        <audio id="dansushite" src="/sounds/dansushite.mp3"></audio>
-        だんすして</td>
-        <td>dansushite</td>
-        <td>dah-n-sue-she-tay</td>
-    </tr>
-    <tr>
-        <td>dance</td>
-        <td>
-        <input type="button" value="&#9658;" onclick="play('odotte')">
-        <audio id="odotte" src="/sounds/odotte.mp3"></audio>
-        おどって</td>
-        <td>odotte</td>
-        <td>oh-doe-tay</td>
-    </tr>
-    <tr>
         <td>look over here</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('kocchimuite')">
@@ -360,6 +322,17 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>ma-tay</td>
         <td>sit in one spot and wait (few mins)</td>
     </tr>
+    <tr>
+        <td>be quiet</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('shizukani')">
+        <audio id="shizukani" src="/sounds/shizukani.mp3"></audio>
+        しずかに</td>
+        <td>shizukani</td>
+        <td>she-zoo-caw-knee</td>
+        <td>aibo will quiet down; sit for a moment; then walk quietly</td>
+    </tr>
+
 </tbody>
 </table>
 <h4>ふるまい / furumai / behavior - settle down mode</h4>
@@ -733,6 +706,137 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>saikoromottekite</td>
         <td>sah-ee-ko-row-mow-tay-key-tay</td>
         <td>pick up/bring the dice to you</td>
+    </tr>
+</tbody>
+</table>
+<h4>ふるまい / furumai / behavior - song & dance</h4>
+<table>
+<thead>
+    <tr>
+        <th>
+            English
+        </th>
+        <th>
+            Japanese (hiragana)
+        </th>
+        <th>
+            Japanese (roman)
+        </th>
+        <th>
+            English phonetic
+        </th>
+        <th>
+            English notes
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>sing</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('utatte')">
+        <audio id="utatte" src="/sounds/utatte.mp3"></audio>
+        うたって</td>
+        <td>utatte</td>
+        <td>ooh-tah-tay</td>
+        <td>sing an aibo song</td>
+    </tr>
+    <tr>
+        <td>dance</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('dansu')">
+        <audio id="dansu" src="/sounds/dansu.mp3"></audio>
+        だんす</td>
+        <td>dansu</td>
+        <td>dah-n-sue</td>
+        <td rowspan=3>do an aibo dance!</td>
+    </tr>
+    <tr>
+        <td>dance</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('dansushite')">
+        <audio id="dansushite" src="/sounds/dansushite.mp3"></audio>
+        だんすして</td>
+        <td>dansushite</td>
+        <td>dah-n-sue-she-tay</td>
+    </tr>
+    <tr>
+        <td>dance</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('odotte')">
+        <audio id="odotte" src="/sounds/odotte.mp3"></audio>
+        おどって</td>
+        <td>odotte</td>
+        <td>oh-doe-tay</td>
+    </tr>
+    <tr>
+        <td>london bridge is falling down</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('rondonbashiochita')">
+        <audio id="rondonbashiochita" src="/sounds/rondonbashiochita.mp3"></audio>
+        ろんどんばしおちた</td>
+        <td>rondonbashiochita</td>
+        <td>row-n-doe-n-bah-she-oh-chi-tah</td>
+        <td>london bridge is falling down song & dance</td>
+    </tr>
+    <tr>
+        <td>flower waltz</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('hananowarutsu')">
+        <audio id="hananowarutsu" src="/sounds/hananowarutsu.mp3"></audio>
+        はなのわるつ</td>
+        <td>hananowarutsu</td>
+        <td>hah-nah-no-wah-rue-tsu</td>
+        <td>flower waltz from The Nutcracker</td>
+    </tr>
+    <tr>
+        <td>calisthenics</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('rajiotaisou')">
+        <audio id="rajiotaisou" src="/sounds/rajiotaisou.mp3"></audio>
+        らじおたいそう</td>
+        <td>rajiotaisou</td>
+        <td>rah-jee-oh-tie-so</td>
+        <td>gentle song & calisthenics movements</td>
+    </tr>
+    <tr>
+        <td>very cute aibo</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('tottemokawaiiaibo')">
+        <audio id="tottemokawaiiaibo" src="/sounds/tottemokawaiiaibo.mp3"></audio>
+        とってもかわいいあいぼ</td>
+        <td>tottemokawaiiaibo</td>
+        <td>toe-tay-mo-kah-wah-ee-aibo</td>
+        <td>does a cute aibo dance (aren't they all cute?)</td>
+    </tr>
+    <tr>
+        <td>happy birthday</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('happiibaasudee')">
+        <audio id="happiibaasudee" src="/sounds/happiibaasudee.mp3"></audio>
+        はっぴーばーすでー</td>
+        <td>happiibaasudee</td>
+        <td>hah-pee-bah-sue-day</td>
+        <td rowspan=2>happy birthday song</td>
+    </tr>
+    <tr>
+        <td>happy birthday</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('otanjoubiomedetou')">
+        <audio id="otanjoubiomedetou" src="/sounds/otanjoubiomedetou.mp3"></audio>
+        おたんじょうびおめでとう</td>
+        <td>otanjoubiomedetou</td>
+        <td>oh-tan-joe-bee-oh-meh-deh-toe</td>
+    </tr>
+    <tr>
+        <td>happy and you know it</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('shiawasenarate')">
+        <audio id="shiawasenarate" src="/sounds/shiawasenarate.mp3"></audio>
+        しあわせならてをたたこう</td>
+        <td>shiawasenaratewotatakou</td>
+        <td>she-ah-wah-say-nah-rah-tay-oh-tah-tah-ko</td>
+        <td>if you're happy and you know it clap your hands</td>
     </tr>
 </tbody>
 </table>
