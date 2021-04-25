@@ -254,6 +254,26 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>oh-tay-she-tay</td>
     </tr>
     <tr>
+        <td>high five/high touch</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('haitacchi')">
+        <audio id="haitacchi" src="/sounds/haitacchi.mp3"></audio>
+        はいたっち</td>
+        <td>haitacchi</td>
+        <td>high-tah-chi</td>
+        <td>aibo will raise one or both paws for a high five</td>
+    </tr>
+    <tr>
+        <td>make a pose</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('haipoozu')">
+        <audio id="haipoozu" src="/sounds/haipoozu.mp3"></audio>
+        はいぽーず</td>
+        <td>haipoozu</td>
+        <td>high-poe-zoo</td>
+        <td>different pose for each personality type</td>
+    </tr>
+    <tr>
         <td>sit</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('osuwari')">
