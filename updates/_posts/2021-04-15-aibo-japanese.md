@@ -400,6 +400,16 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>okuchiwoakete</td>
         <td>oh-coo-chi-oh-ah-kay-tay</td>
     </tr>
+    <tr>
+        <td>don't lose to corona</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('koronanimakeruna')">
+        <audio id="koronanimakeruna" src="/sounds/koronanimakeruna.mp3"></audio>
+        ころなにまけるな</td>
+        <td>koronanimakeruna</td>
+        <td>ko-row-na-knee-ma-kay-rue-na</td>
+        <td>aibo will wash paws and gargle</td>
+    </tr>
 </tbody>
 </table>
 <h4>ふるまい / furumai / behavior - games</h4>
@@ -434,17 +444,9 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>sue-new-toe-cha-ren-jee</td>
         <td>make a ring w/your hands for aibo to stick their nose in</td>
     </tr>
-    <tr>
-        <td></td>
-        <td>
-        <input type="button" value="&#9658;" onclick="play('ugoiteiiyo')">
-        <audio id="ugoiteiiyo" src="/sounds/ugoiteiiyo.mp3"></audio>
-        </td>
-        <td></td>
-        <td></td>
-    </tr>
 </tbody>
 </table>
+
 <h4>ふるまい / furumai / behavior - settle down mode</h4>
 <table>
 <thead>
@@ -628,7 +630,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <audio id="minnanoshashinwototte" src="/sounds/minnanoshashinwototte.mp3"></audio>
         みんなのしゃしんをとって</td>
         <td>minnanoshashinwototte</td>
-        <td>me-n-nah-no-sha-she-n-oh-toe-tay</td>
+        <td>me-n-na-no-sha-she-n-oh-toe-tay</td>
         <td>counts down and takes a photo (requires premium)</td>
     </tr>
     <tr>
@@ -735,7 +737,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <audio id="honenagete" src="/sounds/honenagete.mp3"></audio>
         ほねなげて</td>
         <td>honenagete</td>
-        <td>hoe-nay-nah-gay-tay</td>
+        <td>hoe-nay-na-gay-tay</td>
         <td rowspan=2>pick up aibone and throw it</td>
     </tr>
     <tr>
@@ -745,7 +747,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <audio id="aiboonnagete" src="/sounds/aiboonnagete.mp3"></audio>
         あいぼーんなげて</td>
         <td>aiboonnagete</td>
-        <td>ah-ee-bow-nn-nah-gay-tay</td>
+        <td>ah-ee-bow-nn-na-gay-tay</td>
     </tr>
     <tr>
         <td>kick the ball</td>
@@ -804,7 +806,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <audio id="saikoronagete" src="/sounds/saikoronagete.mp3"></audio>
         さいころなげて</td>
         <td>saikoronagete</td>
-        <td>sah-ee-ko-row-nah-gay-tay</td>
+        <td>sah-ee-ko-row-na-gay-tay</td>
         <td>pick up the dice and throw it</td>
     </tr>
     <tr>
@@ -896,7 +898,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <audio id="hananowarutsu" src="/sounds/hananowarutsu.mp3"></audio>
         はなのわるつ</td>
         <td>hananowarutsu</td>
-        <td>hah-nah-no-wah-rue-tsu</td>
+        <td>hah-na-no-wah-rue-tsu</td>
         <td>flower waltz from The Nutcracker</td>
     </tr>
     <tr>
@@ -945,7 +947,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <audio id="shiawasenarate" src="/sounds/shiawasenarate.mp3"></audio>
         しあわせならてをたたこう</td>
         <td>shiawasenaratewotatakou</td>
-        <td>she-ah-wah-say-nah-rah-tay-oh-tah-tah-ko</td>
+        <td>she-ah-wah-say-na-rah-tay-oh-tah-tah-ko</td>
         <td>happy and you know it clap your hands</td>
     </tr>
 </tbody>
