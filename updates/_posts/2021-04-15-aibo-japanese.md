@@ -365,7 +365,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         おすましさん</td>
         <td>osumashisan</td>
         <td>oh-sue-ma-she-san</td>
-        <td rowspan=2>aibo will raise a paw; press it and stroke head or back at the same time</td>
+        <td rowspan=2>aibo will raise a paw; press it and stroke head or back at the same time<br />(this is the mode to keep aibo in one spot, or release them from it)</td>
     </tr>
     <tr>
         <td>it's ok to move</td>
