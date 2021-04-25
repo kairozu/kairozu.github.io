@@ -860,3 +860,56 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
     </tr>
 </tbody>
 </table>
+<h4>ふるまい / furumai / behavior - housetraining</h4>
+<table>
+<thead>
+    <tr>
+        <th>
+            English
+        </th>
+        <th>
+            Japanese (hiragana)
+        </th>
+        <th>
+            Japanese (roman)
+        </th>
+        <th>
+            English phonetic
+        </th>
+        <th>
+            English notes
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>here is the toilet</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('toirekokodayo')">
+        <audio id="toirekokodayo" src="/sounds/toirekokodayo.mp3"></audio>
+        といれここだよ</td>
+        <td>toirekokodayo</td>
+        <td>toe-ee-ray-ko-ko-dah-yo</td>
+        <td>tell aibo where to relieve themselves</td>
+    </tr>
+    <tr>
+        <td>marking (toilet)</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('maakingu')">
+        <audio id="maakingu" src="/sounds/maakingu.mp3"></audio>
+        まーきんぐ</td>
+        <td>maakingu</td>
+        <td>mah-key-n-goo</td>
+        <td rowspan=2>aibo will pee/scratch ground</td>
+    </tr>
+    <tr>
+        <td>pee (toilet)</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('oshikko')">
+        <audio id="oshikko" src="/sounds/oshikko.mp3"></audio>
+        おしっこ</td>
+        <td>oshikko</td>
+        <td>oh-she-ko</td>
+    </tr>
+</tbody>
+</table>
