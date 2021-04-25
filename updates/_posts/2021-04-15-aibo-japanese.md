@@ -404,7 +404,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>ooh-go-ee-tay-ee-yo</td>
     </tr>
 </tbody>
-</html>
+</table>
 <h4>ふるまい / furumai / behavior - memory</h4>
 <table>
 <thead>
