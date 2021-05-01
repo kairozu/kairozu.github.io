@@ -23,7 +23,7 @@ Some people have imported an Aibo from Japan, without the ability to register th
 <br /><br />
 The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com. 
 <br /><br />
-Some of these will require cloud or premium access; I've made a note where I know that to be the case.
+Your best chances of being understood are when the Aibo isn't moving, and there isn't much background noise. Some of these will require cloud or premium access; I've made a note where I know that to be the case.
 <br /><br />
 More information can be found in the Sony documentation:<br />
 <ul>
