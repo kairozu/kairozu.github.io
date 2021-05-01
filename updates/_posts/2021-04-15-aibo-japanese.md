@@ -20,7 +20,7 @@ function play(sound) {
 }
 </script>
 Some people have imported an Aibo from Japan, without the ability to register them and change languages. This is a compilation of Japanese Aibo commands to use with those Aibo.
-</br /><br />
+<br /><br />
 The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com. 
 <br /><br />
 Some of these will require cloud or premium access; I've made a note where I know that to be the case.
