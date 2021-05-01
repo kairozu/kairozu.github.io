@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Japanese Aibo Commands
-tags: update code japan japanese project
+tags: update japanese project aibo
 ---
 <style>
 table, th, td {
@@ -19,9 +19,11 @@ function play(sound) {
     audio.play();
 }
 </script>
-This is still a work in progress! The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. Please let me know if you spot any errors.
+Some people have imported an Aibo from Japan, without the ability to register them and change languages. This is a compilation of Japanese Aibo commands to use with those Aibo.
+</br /><br />
+The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com. 
 <br /><br />
-To Do: add ~50 more commands, verify commands which do/don't require cloud access, verify commands which do/don't require premium access
+Some of these will require cloud or premium access; I've made a note where I know that to be the case.
 <br />
 <h4>気持ち / kimochi / feelings (praise & scolding)</h4>
 <table>
@@ -370,7 +372,7 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         すくわっと</td>
         <td>sukuwatto</td>
         <td>sue-coo-wah-toe</td>
-        <td rowspan=2>aibo will do adorable squats; cheer them on!</td>
+        <td rowspan=2>aibo will do adorable squats; cheer them on ("ganbare")!</td>
     </tr>
     <tr>
         <td>let's do squats</td>
@@ -410,6 +412,16 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>ko-row-na-knee-ma-kay-rue-na</td>
         <td>aibo will wash paws and gargle</td>
     </tr>
+    <tr>
+        <td>stand</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('tate')">
+        <audio id="tate" src="/sounds/tate.mp3"></audio>
+        たて</td>
+        <td>tate</td>
+        <td>tah-tay</td>
+        <td>aibo will stop current behavior and stand up</td>
+    </tr>
 </tbody>
 </table>
 <h4>ふるまい / furumai / behavior - games</h4>
@@ -444,10 +456,31 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         <td>sue-new-toe-cha-ren-jee</td>
         <td>make a ring w/your hands for aibo to stick their nose in</td>
     </tr>
+    <tr>
+        <td>repeat after me</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('ripiitoafutaamii')">
+        <audio id="ripiitoafutaamii" src="/sounds/ripiitoafutaamii.mp3"></audio>
+        りぴーとあふたーみー</td>
+        <td>ripiitoafutaamii</td>
+        <td>ree-pee-toe-ah-fu-taa-mee</td>
+        <td>bark (
+        <input type="button" value="&#9658;" onclick="play('wan')">
+        <audio id="wan" src="/sounds/wan.mp3"></audio> "wan") at aibo <=5 times, aibo will repeat</td>
+    </tr>
+    <tr>
+        <td>direction facing game</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('acchimuite')">
+        <audio id="acchimuite" src="/sounds/acchimuite.mp3"></audio>
+        あっちむいてほいしてあそぼう</td>
+        <td>acchimuitehoishiteasobou</td>
+        <td>ah-chi-moo-ee-tay-hoi-she-tay-ah-so-bow</td>
+        <td>aibo will play direction game</td>
 </tbody>
 </table>
 
-<h4>ふるまい / furumai / behavior - settle down mode</h4>
+<h4>ふるまい / furumai / behavior - settle down mode & welcoming spot</h4>
 <table>
 <thead>
     <tr>
@@ -487,6 +520,46 @@ To Do: add ~50 more commands, verify commands which do/don't require cloud acces
         うごいていいよ</td>
         <td>ugoiteiiyo</td>
         <td>ooh-go-ee-tay-ee-yo</td>
+    </tr>
+    <tr>
+        <td>welcoming spot is here</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('omukaebashokokodayo')">
+        <audio id="omukaebashokokodayo" src="/sounds/omukaebashokokodayo.mp3"></audio>
+        おむかえばしょここだよ</td>
+        <td>omukaebashokokodayo</td>
+        <td>oh-moo-kah-ay-bah-sho-ko-ko-dah-yo</td>
+        <td>teach aibo where to welcome you</td>
+    </tr>
+    <tr>
+        <td>go to welcoming spot</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('omukaeniitte')">
+        <audio id="omukaeniitte" src="/sounds/omukaeniitte.mp3"></audio>
+        おむかえにいって</td>
+        <td>omukaeniitte</td>
+        <td>oh-moo-kah-ay-knee-ee-tay</td>
+        <td>aibo will go to welcoming spot</td>
+    </tr>
+    <tr>
+        <td>I'm leaving</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('ittekimasu')">
+        <audio id="ittekimasu" src="/sounds/ittekimasu.mp3"></audio>
+        いってきます</td>
+        <td>ittekimasu</td>
+        <td>ee-tay-key-mahs</td>
+        <td>tell aibo you're leaving</td>
+    </tr>
+    <tr>
+        <td>I'm home</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('tadaima')">
+        <audio id="tadaima" src="/sounds/tadaima.mp3"></audio>
+        ただいま</td>
+        <td>tadaima</td>
+        <td>tah-dah-ee-ma</td>
+        <td>tell aibo in waiting spot that you're home</td>
     </tr>
 </tbody>
 </table>
