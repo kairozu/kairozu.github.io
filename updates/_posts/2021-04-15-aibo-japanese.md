@@ -518,7 +518,7 @@ More information can be found in the Sony documentation:<br />
         おすましさん</td>
         <td>osumashisan</td>
         <td>oh-sue-ma-she-san</td>
-        <td rowspan=2>aibo will raise a paw; press it and stroke head or back at the same time<br />(this is the mode to keep aibo in one spot, or release them from it)</td>
+        <td rowspan=2>aibo will raise a paw; press it and stroke head or back at the same time (this is the mode to keep aibo in one spot, or release them from it)</td>
     </tr>
     <tr>
         <td>it's ok to move</td>
