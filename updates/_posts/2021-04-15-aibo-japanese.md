@@ -484,6 +484,7 @@ More information can be found in the Sony documentation:<br />
         <td>acchimuitehoishiteasobou</td>
         <td>ah-chi-moo-ee-tay-hoi-she-tay-ah-so-bow</td>
         <td>aibo will play direction game</td>
+    </tr>
 </tbody>
 </table>
 
