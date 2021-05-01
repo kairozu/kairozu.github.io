@@ -29,7 +29,7 @@ More information can be found in the Sony documentation:<br />
 <ul>
 <li>Aibo's Behavior/Tricks (<a href="https://aibo.sony.jp/store/contents/">Japanese</a> / <a href="https://us.aibo.com/contents/">English</a>)</li>
 <li>Talking to Aibo (<a href="https://helpguide.sony.net/aibo/ers1000/v1/ja/contents/TP0001599298.html">Japanese</a> / <a href="https://helpguide.sony.net/aibo/ers1000/v1/en-us/contents/TP0001970101.html">English</a>)</li>
-<li>
+<li>Settle-down Mode (<a href="https://aibo.sony.jp/feature/osumashi.html">Japanese</a> / <a href="https://us.aibo.com/feature/settledown.html">English</a>)</li>
 </ul>
 <br />
 <h4>気持ち / kimochi / feelings (praise & scolding)</h4>
