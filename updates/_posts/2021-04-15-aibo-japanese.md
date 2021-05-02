@@ -514,6 +514,16 @@ More information can be found in the Sony documentation:<br />
         <td>go-rue-foo-she-yo</td>
         <td>play golf with aibone + pink ball</td>
     </tr>
+    <tr>
+        <td>let's play catch</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('kyacchiboorushiyou')">
+        <audio id="kyacchiboorushiyou" src="/sounds/kyacchiboorushiyou.mp3"></audio>
+        きゃっちぼーるしよう</td>
+        <td>kyacchiboorushiyou</td>
+        <td>kya-chi-bow-rue-she-yo</td>
+        <td>roll the ball to aibo, they will kick it back</td>
+    </tr>
 </tbody>
 </table>
 
