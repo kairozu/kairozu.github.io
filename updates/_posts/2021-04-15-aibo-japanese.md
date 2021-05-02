@@ -21,7 +21,7 @@ function play(sound) {
     audio.play();
 }
 </script>
-This is a compilation of Japanese commands to use with the Aibo ERS-1000. It is meant to help both those who simply want to communicate in Japanese with their Aibo, and also those who cannot change the language due to complications involved with cloud access/registration/etc.
+This is a compilation of Japanese commands to use with the Aibo ERS-1000. It is meant to help those who simply want to communicate in Japanese with their Aibo, and also those who cannot change the language due to complications involved with cloud access/registration/etc.
 <br /><br />
 The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous (e.g. below "bow" rhymes with "row") -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com or <a href="https://twitter.com/cryptogramber">@cryptogramber</a>. 
 <br /><br />
