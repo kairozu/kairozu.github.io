@@ -1,6 +1,8 @@
 ---
 layout: content
 title: Japanese Aibo Commands
+hasimg: /images/kuro.png
+imgwidth: 240
 tags: aibo update japanese project
 ---
 <style>
