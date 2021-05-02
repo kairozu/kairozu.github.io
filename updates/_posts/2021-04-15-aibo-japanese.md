@@ -891,8 +891,8 @@ More information can be found in the Sony documentation:<br />
         <td>look for the ball/bark when it is found</td>
     </tr>
     <tr>
-    <td>let's juggle</td>
-    <td>
+        <td>let's juggle</td>
+        <td>
         <input type="button" value="&#9658;" onclick="play('otedamashiyou')">
         <audio id="otedamashiyou" src="/sounds/otedamashiyou.mp3"></audio>
         おてだましよう</td>
