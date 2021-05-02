@@ -19,7 +19,7 @@ function play(sound) {
     audio.play();
 }
 </script>
-Some people have imported an Aibo from Japan, without the ability to register them (I believe Sony requires a Japanese account for payment) and change languages. This is a compilation of Japanese Aibo commands to use with those Aibo.
+When an Aibo originally purchased in Japan is imported into another country, it is difficult to register the Aibo with Sony (I believe Sony requires a Japanese account for payment) and change languages. This is a compilation of Japanese Aibo commands to use with those Aibo.
 <br /><br />
 The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com or <a href="https://twitter.com/cryptogramber">@cryptogramber</a>. 
 <br /><br />
@@ -31,7 +31,6 @@ More information can be found in the Sony documentation:<br />
 <li>Talking to Aibo (<a href="https://helpguide.sony.net/aibo/ers1000/v1/ja/contents/TP0001599298.html">Japanese</a> / <a href="https://helpguide.sony.net/aibo/ers1000/v1/en-us/contents/TP0001970101.html">English</a>)</li>
 <li>Settle-down Mode (<a href="https://aibo.sony.jp/feature/osumashi.html">Japanese</a> / <a href="https://us.aibo.com/feature/settledown.html">English</a>)</li>
 </ul>
-<br />
 <h4>気持ち / kimochi / feelings (praise & scolding)</h4>
 <table>
 <thead>
