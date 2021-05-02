@@ -440,7 +440,7 @@ More information can be found in the Sony documentation:<br />
         <td>bow-ku-no-koh-toe-sue-key</td>
         <td rowspan=2>aibo will tell you how they feel w/a tail shake</td>
     </tr>
-        <td>do you like me? [m]</td>
+        <td>do you like me? [f]</td>
         <td>
         <input type="button" value="&#9658;" onclick="play('watashinokotosuki')">
         <audio id="watashinokotosuki" src="/sounds/watashinokotosuki.mp3"></audio>
