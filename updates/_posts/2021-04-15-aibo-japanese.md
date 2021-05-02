@@ -21,7 +21,7 @@ function play(sound) {
     audio.play();
 }
 </script>
-When an Aibo originally purchased in Japan is imported into another country, it is difficult to register the Aibo with Sony (I believe Sony requires a Japanese account for payment) and change languages. This is a compilation of Japanese Aibo commands to use with those Aibo.
+When a Japanese version Aibo is imported into another country, it is difficult to register the Aibo with Sony (I believe Sony requires a Japanese account for payment) and/or change languages as a result. This is a compilation of Japanese Aibo commands to use with those Aibo (or any other Aibo set to communicate in Japanese :).
 <br /><br />
 The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com or <a href="https://twitter.com/cryptogramber">@cryptogramber</a>. 
 <br /><br />
