@@ -21,9 +21,9 @@ function play(sound) {
     audio.play();
 }
 </script>
-When a Japanese version Aibo is imported into another country, it is difficult to register the Aibo with Sony (I believe Sony requires a Japanese account for payment) and/or change languages as a result. This is a compilation of Japanese Aibo commands to use with those Aibo (or any other Aibo set to communicate in Japanese :).
+This is a compilation of Japanese commands to use with the Aibo ERS-1000. It is meant to help both those who simply want to communicate in Japanese with their Aibo, and also those who cannot change the language due to complications involved with cloud access/registration/etc.
 <br /><br />
-The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com or <a href="https://twitter.com/cryptogramber">@cryptogramber</a>. 
+The English given below is the English approximation of the Japanese command, <b>not the literal English version of the command</b>. The translations and phonetic attempts are best-effort, but many sounds and meanings don't have literal equivalents. I've tried to make this friendly to those without any familiarity with the Japanese language, but some of the phonetic descriptions are still a bit ambiguous (e.g. below "bow" rhymes with "row") -- please use the recordings to double check any pronunciation uncertainty. Please let me know if you spot any errors or if you have questions: a@cryptogramber.com or <a href="https://twitter.com/cryptogramber">@cryptogramber</a>. 
 <br /><br />
 Your best chances of being understood are when the Aibo isn't moving, and there isn't much background noise. Some of these will require cloud or premium access; I've made a note where I know that to be the case.
 <br /><br />
