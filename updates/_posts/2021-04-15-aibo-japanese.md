@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Japanese Aibo Commands
-tags: update japanese project aibo
+tags: aibo update japanese project
 ---
 <style>
 table, th, td {
