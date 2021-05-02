@@ -379,7 +379,7 @@ More information can be found in the Sony documentation:<br />
         <audio id="sukuwatto" src="/sounds/sukuwatto.mp3"></audio>
         すくわっと</td>
         <td>sukuwatto</td>
-        <td>sue-coo-wah-toe</td>
+        <td>sue-ku-wah-toe</td>
         <td rowspan=2>aibo will do adorable squats; cheer them on ("ganbare")!</td>
     </tr>
     <tr>
@@ -389,7 +389,7 @@ More information can be found in the Sony documentation:<br />
         <audio id="sukuwattoshiyou" src="/sounds/sukuwattoshiyou.mp3"></audio>
         すくわっとしよう</td>
         <td>sukuwattoshiyou</td>
-        <td>sue-coo-wah-toe-she-yo</td>
+        <td>sue-ku-wah-toe-she-yo</td>
     </tr>
     <tr>
         <td>say ahhh</td>
@@ -408,7 +408,7 @@ More information can be found in the Sony documentation:<br />
         <audio id="okuchiwoakete" src="/sounds/okuchiwoakete.mp3"></audio>
         おくちをあけて</td>
         <td>okuchiwoakete</td>
-        <td>oh-coo-chi-oh-ah-kay-tay</td>
+        <td>oh-ku-chi-oh-ah-kay-tay</td>
     </tr>
     <tr>
         <td>don't lose to corona</td>
@@ -429,6 +429,24 @@ More information can be found in the Sony documentation:<br />
         <td>tate</td>
         <td>tah-tay</td>
         <td>aibo will stop current behavior and stand up</td>
+    </tr>
+    <tr>
+        <td>do you like me? [m]</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('bokunokotosuki')">
+        <audio id="bokunokotosuki" src="/sounds/bokunokotosuki.mp3"></audio>
+        ぼくのことすき？</td> 
+        <td>bokunokotosuki?</td>
+        <td>bow-ku-no-koh-toe-sue-key</td>
+        <td rowspan=2>aibo will tell you how they feel w/a tail shake</td>
+    </tr>
+        <td>do you like me? [m]</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('watashinokotosuki')">
+        <audio id="watashinokotosuki" src="/sounds/watashinokotosuki.mp3"></audio>
+        わたしのことすき？</td> 
+        <td>watashinokotosuki?</td>
+        <td>wah-tah-she-no-koh-toe-sue-key</td>
     </tr>
 </tbody>
 </table>
@@ -485,6 +503,16 @@ More information can be found in the Sony documentation:<br />
         <td>acchimuitehoishiteasobou</td>
         <td>ah-chi-moo-ee-tay-hoi-she-tay-ah-so-bow</td>
         <td>aibo will play direction game</td>
+    </tr>
+    <tr>
+        <td>let's play golf</td>
+        <td>
+        <input type="button" value="&#9658;" onclick="play('gorufushiyou')">
+        <audio id="gorufushiyou" src="/sounds/gorufushiyou.mp3"></audio>
+        ごるふしよう</td>
+        <td>gorufushiyou</td>
+        <td>go-rue-foo-she-yo</td>
+        <td>play golf with aibone + pink ball</td>
     </tr>
 </tbody>
 </table>
