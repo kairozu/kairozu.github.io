@@ -5,7 +5,7 @@ tags: japanese code
 ---
 This outlines the process of downloading a Japanese Wikipedia database snapshot, extracting the plain text content, and performing some pretty heavy filtering to clean up the resulting data. This focuses on building a collection of sentences without regard for the original articles; the end result is ~1.2GB of text (nearly 10 million sentences).
 
-Database dumps of the Japanese language Wikipedia are available here: [https://dumps.wikimedia.org/jawiki/](https://dumps.wikimedia.org/jawiki/) -- I used the files from March 30, 2018 ([jawiki-20180301-pages-articles-multistream.xml.bz2](https://dumps.wikimedia.org/jawiki/20180301/jawiki-20180301-pages-articles-multistream.xml.bz2), [jawiki-20180301-pages-articles-multistream-index.txt.bz2](https://dumps.wikimedia.org/jawiki/20180301/jawiki-20180301-pages-articles-multistream-index.txt.bz2)). Most of the files mentioned below are also available in the [Japanese-Text-Analysis GitHub repo](https://github.com/cryptogramber/Japanese-Text-Analysis/tree/master/wiki-jp-corpus).
+Database dumps of the Japanese language Wikipedia are available here: [https://dumps.wikimedia.org/jawiki/](https://dumps.wikimedia.org/jawiki/) -- I used the files from March 30, 2018 ([jawiki-20180301-pages-articles-multistream.xml.bz2](https://dumps.wikimedia.org/jawiki/20180301/jawiki-20180301-pages-articles-multistream.xml.bz2), [jawiki-20180301-pages-articles-multistream-index.txt.bz2](https://dumps.wikimedia.org/jawiki/20180301/jawiki-20180301-pages-articles-multistream-index.txt.bz2)). Most of the files mentioned below are also available in the [Japanese-Text-Analysis GitHub repo](https://github.com/kairozu/Japanese-Text-Analysis/tree/master/wiki-jp-corpus).
 
 I used [this Wikipedia extractor tool](https://github.com/bwbaugh/wikipedia-extractor) to pull plain text from the database dump -- this will discard image references, tables, lists, and other annotations usually present in Wikipedia pages. The command below uses the default output file size of 500K (-b 500K), and took ~84 minutes to extract the full 1503793 articles.
 
@@ -29,7 +29,7 @@ This will create a directory <code>texts/</code> with 28 subdirectories (named A
 </doc>
 ```
 
-I use [wikiclean.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/wiki-jp-corpus/wikiclean.py) to (0) normalize latin parentheses to full-width parentheses, (1) remove full articles with doc tags for internal Wikipedia stuff, subject categories, etc, (2) remove the opening doc tag for other articles, as well as the article name which generally isolated text on the line following, (3) remove the closing doc tags, (4) remove line breaks, (5) remove all parentheticals, (6) remove other content between tags, (7) remove all lines w/o ending punctuation.
+I use [wikiclean.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/wiki-jp-corpus/wikiclean.py) to (0) normalize latin parentheses to full-width parentheses, (1) remove full articles with doc tags for internal Wikipedia stuff, subject categories, etc, (2) remove the opening doc tag for other articles, as well as the article name which generally isolated text on the line following, (3) remove the closing doc tags, (4) remove line breaks, (5) remove all parentheticals, (6) remove other content between tags, (7) remove all lines w/o ending punctuation.
 
 ```python
 wikitext = punctuation(wikitext)
@@ -42,7 +42,7 @@ wikitext = re.sub(r'&lt;.*?&gt;([\s\S]*?)&lt;/.*?&gt;', '', wikitext)   # (6) re
 wikitext = re.sub(r'.+(?&lt;![。！？])\n', '', wikitext)        # (7) remove all lines w/o ending punctuation
 ```
 
-I save the text processed above to a single text file, <code>wikiclean.txt</code> -- this file is ~2.4GB. The next processing step uses [wikisentences.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/wiki-jp-corpus/wikisentences.py) to read that file and sort sentences based on some pretty heavy filters -- if you don't want a collection of sentences split by newlines, this step is counterproductive. This step will remove A LOT of data -- it's always tempting to try and save as much as possible, but the cost is usually the cleanliness of your results. If you need to preserve more data, the most significant changes would be removing the blanket filter on left and right corner brackets, and not filtering out the latin alphabet. With the current filters, there are 9266337 sentences that survive.
+I save the text processed above to a single text file, <code>wikiclean.txt</code> -- this file is ~2.4GB. The next processing step uses [wikisentences.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/wiki-jp-corpus/wikisentences.py) to read that file and sort sentences based on some pretty heavy filters -- if you don't want a collection of sentences split by newlines, this step is counterproductive. This step will remove A LOT of data -- it's always tempting to try and save as much as possible, but the cost is usually the cleanliness of your results. If you need to preserve more data, the most significant changes would be removing the blanket filter on left and right corner brackets, and not filtering out the latin alphabet. With the current filters, there are 9266337 sentences that survive.
 
 ```python
 if (re.search('[,「」（）［］《》＜＞{}@&＆#＃※=＝+＋/／；;：:…]', sentence)     # dismiss brackets, etc
@@ -58,7 +58,7 @@ if (re.search('[,「」（）［］《》＜＞{}@&＆#＃※=＝+＋/／；;：
     or not re.search('[\u3040-\u309F]+$', sentence)):   # dismiss if the line doesn't end w/kana
 ```
 
-Running [wikisentences.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/wiki-jp-corpus/wikisentences.py) will discard anything shorter than 2 characters, ending in a comma, or without a '。' somewhere in the line. Anything caught in the statement above will be sorted into a <code>wikiclean_dismissed.txt</code> file, with everything else going into <code>wikiclean-sentences.txt</code> -- both files are ~1.2GB. If you want to see a subset of these sentences, change <code>start_at_sentence</code> and <code>end_at_sentence</code> below to your desired values, and run the following:
+Running [wikisentences.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/wiki-jp-corpus/wikisentences.py) will discard anything shorter than 2 characters, ending in a comma, or without a '。' somewhere in the line. Anything caught in the statement above will be sorted into a <code>wikiclean_dismissed.txt</code> file, with everything else going into <code>wikiclean-sentences.txt</code> -- both files are ~1.2GB. If you want to see a subset of these sentences, change <code>start_at_sentence</code> and <code>end_at_sentence</code> below to your desired values, and run the following:
 
 ```python
 start_at_sentence = 1000
@@ -72,4 +72,4 @@ for sentence in sentences[start_at_sentence:end_at_sentence]:
 article_sample.close()
 ```
 
-The instructions above should be sufficient for replicating the filtered subset of sentences in <code>wikiclean-sentences.txt</code>, but I'm happy to share mine if your interest is non-commercial in nature (I assume since the data comes from Wikipedia, the non-commercial aspect is a necessity). Email me at a@cryptogramber.com and let me know what you'd be using it for. :)
+The instructions above should be sufficient for replicating the filtered subset of sentences in <code>wikiclean-sentences.txt</code>, but I'm happy to share mine if your interest is non-commercial in nature (I assume since the data comes from Wikipedia, the non-commercial aspect is a necessity). Email me at amber@kairozu.com and let me know what you'd be using it for. :)

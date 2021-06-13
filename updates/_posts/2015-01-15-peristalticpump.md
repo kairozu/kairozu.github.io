@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Animal Fluid Reward
-hasgithub: https://github.com/cryptogramber/Peristaltic-Pump-Reward-System
+hasgithub: https://github.com/kairozu/Peristaltic-Pump-Reward-System
 hasimg: /images/pump_mini.jpg
 imgwidth: 240
 tags: project science code
@@ -27,7 +27,7 @@ Most commercial water/fluid reward systems used in research settings cost a few 
 ## Notes
 ***Raspberry Pi (or Arduino) with L293D***
 
-Git repo: [https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/tree/master/raspberry\_L293D\_version](https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/tree/master/raspberry\_L293D\_version)
+Git repo: [https://github.com/kairozu/Peristaltic-Pump-Reward-System/tree/master/raspberry\_L293D\_version](https://github.com/kairozu/Peristaltic-Pump-Reward-System/tree/master/raspberry\_L293D\_version)
 
 * Wiring diagram can be found below, and the L293D pinout can be found here: [http://www.ti.com/lit/ds/symlink/l293d.pdf](http://www.ti.com/lit/ds/symlink/l293d.pdf) -- additionally the DC motor tutorials at Adafruit (for both Arduino and Raspberry Pi) might be useful as a secondary reference if you have any trouble getting the motor running.
 * Update your Raspberry Pi & install WiringPi2 (Python port) from GitHub:
@@ -41,7 +41,7 @@ Git repo: [https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/tree/
 
 * Build everything! (Breadboard -> Final Version)
 * Download and run my Python script to drive the motor (or write your own)
-	* My code is here: [https://github.com/cryptogramber/Peristaltic-Pump.../raspberry\_L293D\_version/L293D\_pump\_code\_wiringPi.py](https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/blob/master/raspberry\_L293D\_version/L293D\_pump\_code\_wiringPi.py)
+	* My code is here: [https://github.com/kairozu/Peristaltic-Pump.../raspberry\_L293D\_version/L293D\_pump\_code\_wiringPi.py](https://github.com/kairozu/Peristaltic-Pump-Reward-System/blob/master/raspberry\_L293D\_version/L293D\_pump\_code\_wiringPi.py)
 	* ("startx" to enter the Raspberry Pi desktop environment before running this script -- if you wish to run everything from the console, cut out all of the pygame code)
 	* Press "w" to run the pump briefly.
 	* Press "esc" to quit the program.
@@ -51,12 +51,12 @@ Git repo: [https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/tree/
 
 ***Arduino & SeeedStudio Motor Shield***
 
-Git repo: [https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/tree/master/arduino\_version](https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/tree/master/arduino\_version)
+Git repo: [https://github.com/kairozu/Peristaltic-Pump-Reward-System/tree/master/arduino\_version](https://github.com/kairozu/Peristaltic-Pump-Reward-System/tree/master/arduino\_version)
 
 * If you use the Seeed motor shield you'll need a compatible Arduino pinout -- the duemilanova or the uno both work well. This motor shield is overkill, but it's cheap/simple & the wiki has good information: [http://www.seeedstudio.com/wiki/Motor\_Shield\_V1.0](http://www.seeedstudio.com/wiki/Motor\_Shield\_V1.0)
 * Connect your DC power adapter to the motor shield Vs / Gnd pins, and connect the motor to the M1+ / M1- pins.
 * Connect the motor shield to the Arduino.
-* Upload Arduino code via USB: [https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/.../arduino\_motor\_shield\_drive.ino](https://github.com/cryptogramber/Peristaltic-Pump-Reward-System/tree/master/arduino\_version/arduino\_motor\_shield\_drive.ino)
+* Upload Arduino code via USB: [https://github.com/kairozu/Peristaltic-Pump-Reward-System/.../arduino\_motor\_shield\_drive.ino](https://github.com/kairozu/Peristaltic-Pump-Reward-System/tree/master/arduino\_version/arduino\_motor\_shield\_drive.ino)
 * If you leave the J6 jumper connected, you don't need to provide a separate power source to the Arduino (it will pull power from the motor shield).
 * If you want a manual “push button to dispense fluid” feature, you can pick up a button module from Seeed and connect it via their Grove system to make life easy, but I used a 10kOhm resistor and an old button switch I had laying around.
 

@@ -3,9 +3,9 @@ layout: content
 title: Simple JP Text Analysis
 tags: japanese code
 ---
-This is a quick tutorial on using Python to 1) load a simple text file with some Japanese text, 2) perform word tokenization on individual sentences using MeCab, 3) count the most frequently used nouns in the text, 4) perform a quick-and-dirty conversion of past-tense sentences to present-tense. The files mentioned below are also available in the [Japanese-Text-Analysis GitHub repo](https://github.com/cryptogramber/Japanese-Text-Analysis).
+This is a quick tutorial on using Python to 1) load a simple text file with some Japanese text, 2) perform word tokenization on individual sentences using MeCab, 3) count the most frequently used nouns in the text, 4) perform a quick-and-dirty conversion of past-tense sentences to present-tense. The files mentioned below are also available in the [Japanese-Text-Analysis GitHub repo](https://github.com/kairozu/Japanese-Text-Analysis).
 
-We'll use a simplified version of the [Ant and the Grasshopper](http://read.gov/aesop/052.html), in the file [grasshopper.txt](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper.txt).
+We'll use a simplified version of the [Ant and the Grasshopper](http://read.gov/aesop/052.html), in the file [grasshopper.txt](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper.txt).
 
 ```
 夏は暑いです。螽斯が木の下にいます。螽斯は歌を歌います。楽しいです。蟻が来ました。
@@ -18,7 +18,7 @@ We'll use a simplified version of the [Ant and the Grasshopper](http://read.gov/
 蟻は言いました。私達は、夏、働きました。だから、食べ物があります。あなたは夏、何をしましたか。
 ```
 
-And the following Python script: [grasshopper_analysis.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_analysis.py).
+And the following Python script: [grasshopper_analysis.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_analysis.py).
 ```python
 import MeCab
 from collections import Counter                             # for counting most common elements
@@ -64,7 +64,7 @@ print(adjective_counts)                                     # print the 3 most c
 print(verb_counts)                                          # print the 3 most common verbs
 ```
 
-Running [grasshopper_analysis.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_analysis.py) from the command line will (should?) print a breakdown of the example sentence「今日はいい天気ですね」and a list of the 3 most common nouns, adjectives, and verbs.
+Running [grasshopper_analysis.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_analysis.py) from the command line will (should?) print a breakdown of the example sentence「今日はいい天気ですね」and a list of the 3 most common nouns, adjectives, and verbs.
 
 ```python
 $ python3 ./grasshopper_analysis.py
@@ -88,7 +88,7 @@ Looking at the bottom three lines of text above:
 <li>The three most common verbs are (in dictionary form): to sing (歌う・うたう), to exist (ある), to say (言う・いう).</li>
 </ul>
 
-Next, [grasshopper_past_present.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_past_present.py) will print all of the sentences which are in present tense, followed by the sentences in past-tense, followed by the sentences in past-tense converted into present-tense. Changing 'した' to 'す' is a pretty messy strategy for changing past-tense to present, but in this case we only have one edge case with a negative-past sentence (〜ませんでした).
+Next, [grasshopper_past_present.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/simple-jp-text-analysis/grasshopper_past_present.py) will print all of the sentences which are in present tense, followed by the sentences in past-tense, followed by the sentences in past-tense converted into present-tense. Changing 'した' to 'す' is a pretty messy strategy for changing past-tense to present, but in this case we only have one edge case with a negative-past sentence (〜ませんでした).
 
 ```python
 import MeCab, re                                                    # regex library (for finding tense)

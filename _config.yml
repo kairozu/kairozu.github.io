@@ -10,13 +10,13 @@ kramdown:
     css_class: 'highlight'
 
 title: Amber
-tagline: cryptogrAmber Sandbox
+tagline: Amber's Sandbox
 author:
   name: Amber Fechko
-  email: a@cryptogramber.com
-  github: cryptogramber
+  email: amber@kairozu.com
+  github: kairozu
     
-production_url: https://cryptogramber.github.io
+production_url: https://kairozu.github.io
 
 contentlist:
   - title: updates

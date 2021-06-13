@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Elo Live Update
-hasgithub: https://github.com/cryptogramber/Elo-Live-Score
+hasgithub: https://github.com/kairozu/Elo-Live-Score
 hasimg: /images/elolive.png
 imgwidth: 240
 tags: project code
@@ -12,7 +12,7 @@ FiveThirtyEight made a system for [comparing your own NFL forecasts to those mad
 
 When multiple games are being played concurrently, it's a bit of a hassle to track how the teams are doing relative to what my forecasts were.. so this Chrome extension was born. It pulls [current game data from the NFL](http://www.nfl.com/liveupdate/scorestrip/ss.xml), and when you're on [FiveThirtyEight's Elo game results page](https://projects.fivethirtyeight.com/2018-nfl-forecasting-game/results/), it uses some hacky javascript to insert the current quarter, time remaining, and score for each game that is currently live. When there is a live game, the page will refresh every minute. When there is no live game (and the page is still open for whatever reason), the page will refresh every hour.
 
-The code is messy and doesn't have much in the way of error handling, but the risk of trying it out is slim to none (if it doesn't work, just remove the extension). If you have polite comments (or if you're FiveThirtyEight and you want me to take this down): a@cryptogramber.com.
+The code is messy and doesn't have much in the way of error handling, but the risk of trying it out is slim to none (if it doesn't work, just remove the extension). If you have polite comments (or if you're FiveThirtyEight and you want me to take this down): amber@kairozu.com.
 
 To install from Chrome Web Store: [https://chrome.google.com/webstore/detail/elo-live-score/hggppcbcehnkplgbhccfcnejkaaipafn](https://chrome.google.com/webstore/detail/elo-live-score/hggppcbcehnkplgbhccfcnejkaaipafn)
 

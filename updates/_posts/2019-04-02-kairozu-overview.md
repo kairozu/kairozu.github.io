@@ -2,7 +2,7 @@
 layout: content
 title: Kairozu Overview
 hasimg: /images/kairozu-lesson.png
-hasgithub: https://github.com/cryptogramber/Kairozu-Backup
+hasgithub: https://github.com/kairozu/Kairozu-Backup
 imgwidth: 240
 tags: japanese project code
 ---
@@ -10,16 +10,16 @@ I find Socratic and programmed methods of inquiry to be particularly effective w
 
 I created a system to introduce grammatical constructs using these small, logical steps, which are organized by chapter around groups of new vocabulary words. I tried to minimize wordy grammar explanations and maximize immediate application of small grammar templates, which are then built upon word by word (or particle by particle). The lessons are an attempt to organize the grammar into an easily-referenced format.
 
-<span class="italics">Note: Kairozu is no longer public, but the source is available <a href="https://github.com/cryptogramber/Kairozu-Backup">here</a>. I've made full database dumps available to previous users and helped them set up their own instances. Thanks everyone for playing with my language-learning system!</span>
+<span class="italics">Note: Kairozu is no longer public, but the source is available <a href="https://github.com/kairozu/Kairozu-Backup">here</a>. I've made full database dumps available to previous users and helped them set up their own instances. Thanks everyone for playing with my language-learning system!</span>
 
 <div class="spacerClear"></div>
 
-I pulled data from a variety of Japanese language sources, e.g. <a href="https://cryptogramber.github.io/updates/nhk-easy-corpus">NHK Easy News (+a Google BigQuery of Reddit posts)</a> and <a href="https://cryptogramber.github.io/updates/japanese-wiki-corpus">Wikipedia</a>, and wrote a bunch of code to break down the most common words and grammatical constructs -- these are what the computer-generated sentences used in lesson practices and quizzes are drawn from. I've written about some of the basics for getting started with the analysis of Japanese text:
+I pulled data from a variety of Japanese language sources, e.g. <a href="https://kairozu.github.io/updates/nhk-easy-corpus">NHK Easy News (+a Google BigQuery of Reddit posts)</a> and <a href="https://kairozu.github.io/updates/japanese-wiki-corpus">Wikipedia</a>, and wrote a bunch of code to break down the most common words and grammatical constructs -- these are what the computer-generated sentences used in lesson practices and quizzes are drawn from. I've written about some of the basics for getting started with the analysis of Japanese text:
 <ul>
-<li><a href="https://cryptogramber.github.io/updates/japanese-tokenization">Japanese Tokenization</a></li>
-<li><a href="https://cryptogramber.github.io/updates/simple-jp-text-analysis">Simple Japanese Text Analysis</a></li>
-<li><a href="https://cryptogramber.github.io/updates/nltk-introduction">An Introduction to NLTK w/Japanese</a></li>
-<li><a href="https://cryptogramber.github.io/updates/cleaning-jp-text">Cleaning Japanese Text Sources</a></li>
+<li><a href="https://kairozu.github.io/updates/japanese-tokenization">Japanese Tokenization</a></li>
+<li><a href="https://kairozu.github.io/updates/simple-jp-text-analysis">Simple Japanese Text Analysis</a></li>
+<li><a href="https://kairozu.github.io/updates/nltk-introduction">An Introduction to NLTK w/Japanese</a></li>
+<li><a href="https://kairozu.github.io/updates/cleaning-jp-text">Cleaning Japanese Text Sources</a></li>
 </ul>
 
 ## Sentences (Practice & クイズ)
@@ -31,7 +31,7 @@ The fringe (?) benefit of requiring the input of full answers is getting used to
 Japanese often allows for lots of leeway when it comes to ordering the words in a sentence. Unless a sentence is internally marked as strict (this is invisible to the user), in which case the sentence entered must match Kairozu's exactly, an answer will be accepted as correct so long as all of the words are present, regardless of order. Users with accounts can enable an "Always Strict" mode which removes this leniency by going to Account > Kairozu Settings.
 
 ## User Accounts
-Previously an account was required to access most of the lesson/quiz material, as progress through the material was tracked and limited to require mastering previous content before continuing on. While all of the material is accessible now without an account, using non-default options (e.g. displaying hints in kanji) and creating custom flashcards requires an account to be created. The public view of Kairozu is no longer active, and most users have been transitioned to local instances maintained by other people, but I don't mind adding new people to my private instance if they shoot me an e-mail: a@cryptogramber.com.
+Previously an account was required to access most of the lesson/quiz material, as progress through the material was tracked and limited to require mastering previous content before continuing on. While all of the material is accessible now without an account, using non-default options (e.g. displaying hints in kanji) and creating custom flashcards requires an account to be created. The public view of Kairozu is no longer active, and most users have been transitioned to local instances maintained by other people, but I don't mind adding new people to my private instance if they shoot me an e-mail: amber@kairozu.com.
 
 ## Flashcards
 My personal usage of Kairozu is largely in the Flashcards system. You can import flashcards from the vocabulary lists or lesson quizzes, or you can upload a CSV file to batch-import flashcards from elsewhere. The review system follows a general spaced-review algorithm, with two possible input modes -- text reviews require entering the sentence in Japanese following an English prompt, and quick reviews are more akin to a typical flashcard system where you declare whether you knew the material or not once the answer is shown. Of course entering the text is better for memory retention, but when on a mobile device, the quick system is far more convenient. You can hop between them, or access text-entry mode for extra practice after answering a quick review question incorrectly.

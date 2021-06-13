@@ -3,12 +3,12 @@ layout: content
 title: Cleaning Japanese Text
 tags: japanese code
 ---
-Mining text sources from the web yields all sorts of textual oddities that'll destroy any morphological analysis and word-tokenization attempts. I remove residual formatting tags and other non-text data, and then try to dismiss text which falls outside of a normal sentence structure (contact information, headlines, etc). The files mentioned below are also available in the [jp-text-cleaning GitHub repo](https://github.com/cryptogramber/Japanese-Text-Analysis/tree/master/jp-text-cleaning).
+Mining text sources from the web yields all sorts of textual oddities that'll destroy any morphological analysis and word-tokenization attempts. I remove residual formatting tags and other non-text data, and then try to dismiss text which falls outside of a normal sentence structure (contact information, headlines, etc). The files mentioned below are also available in the [jp-text-cleaning GitHub repo](https://github.com/kairozu/Japanese-Text-Analysis/tree/master/jp-text-cleaning).
 
 ## HTML Tags
 I find it easiest to remove most HTML tags with a dedicated parser like [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) -- this works for both extracting desired text from a larger document, and dismissing unwanted text within certain elements.
 
-In the file [article.html](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/jp-text-cleaning/article.html), my desired text is inside the "newsarticle" div. The text itself is also littered with other HTML tags. The script below removes most of the HTML with BeautifulSoup before stripping out excess whitespace and line breaks. There are a few different regex options for removing residual HTML tags; I use a catch-all for anything that's between angle brackets. [Regex101](https://regex101.com/) is a good site for testing patterns with various text examples (make sure to choose a language on the left).
+In the file [article.html](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/jp-text-cleaning/article.html), my desired text is inside the "newsarticle" div. The text itself is also littered with other HTML tags. The script below removes most of the HTML with BeautifulSoup before stripping out excess whitespace and line breaks. There are a few different regex options for removing residual HTML tags; I use a catch-all for anything that's between angle brackets. [Regex101](https://regex101.com/) is a good site for testing patterns with various text examples (make sure to choose a language on the left).
 
 ```python
 from bs4 import BeautifulSoup
@@ -44,7 +44,7 @@ article_clean.write(text)
 article_clean.close()
 ```
 
-Now I have a text file, [article_clean.txt](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/jp-text-cleaning/article_clean.txt), with a "clean" paragraph of text. By clean, I mean free of HTML -- there might be other odds and ends mixed with the text (author names, phone numbers, text which originally served as a link, etc). 
+Now I have a text file, [article_clean.txt](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/jp-text-cleaning/article_clean.txt), with a "clean" paragraph of text. By clean, I mean free of HTML -- there might be other odds and ends mixed with the text (author names, phone numbers, text which originally served as a link, etc). 
 
 ## Japanese Unicode Ranges
 
@@ -81,7 +81,7 @@ I use [DecodeUnicode](http://www.decodeunicode.org) and [Unicode Table](https://
 </div>
 
 ## Splitting Paragraphs into Sentences
-Next, in [extract_sentences.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/jp-text-cleaning/extract_sentences.py), I perform the following steps (some of which are functions in the file [spring_clean.py](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/jp-text-cleaning/spring_clean.py)):
+Next, in [extract_sentences.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/jp-text-cleaning/extract_sentences.py), I perform the following steps (some of which are functions in the file [spring_clean.py](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/jp-text-cleaning/spring_clean.py)):
 <ul>
 <li>Change any Latin character set punctuation marks to their full-width Japanese equivalents, namely parentheses, question marks, and exclamation points. This makes for easier pattern matching.</li>
 <li>Split the text on the Japanese period (。), then split the resulting strings on exclamation points and question marks (！？).</li>
@@ -122,7 +122,7 @@ for sentence in sentence_collection:
 sentences_clean.close()
 ```
 
-This yields a file of sentences, [sentences_clean.txt](https://github.com/cryptogramber/Japanese-Text-Analysis/blob/master/jp-text-cleaning/sentences_clean.txt), with one sentence per line.
+This yields a file of sentences, [sentences_clean.txt](https://github.com/kairozu/Japanese-Text-Analysis/blob/master/jp-text-cleaning/sentences_clean.txt), with one sentence per line.
 
 ## Bad Sentences
 Unsurprisingly, when you scrape text from the internet, you end up with some weird edge cases. Unexpected characters. Paragraph headers and sub-headers. Lists. Dialogues. Phone numbers. Addresses. Typos. Odd spaces. Quizzes. Mixes of punctuation character types (e.g. roman character left parenthesis matched with a Japanese character right parenthesis). Song lyrics. The list goes on and on and on. While some amount of work is worthwhile for preserving useful text in a data set, the best strategy for cleaning data is similar to cleaning your fridge or your closet.. WHEN IN DOUBT, THROW IT OUT. It's not worth dealing with 100 sentence edge cases when you have 200,000 other sentences.

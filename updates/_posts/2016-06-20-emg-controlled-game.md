@@ -1,7 +1,7 @@
 ---
 layout: content
 title: EMG Controlled Game
-hasgithub: https://github.com/cryptogramber/NeuroGame-EMG-Game
+hasgithub: https://github.com/kairozu/NeuroGame-EMG-Game
 hasimg: /images/neurogame.png
 imgwidth: 200
 tags: project code
